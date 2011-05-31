@@ -1,0 +1,45 @@
+<includes>
+	<include name="ContentPanelBackgrounds">
+		<control type="image">
+			<posx>0</posx>
+			<posy>95r</posy>
+			<width>1280</width>
+			<height>95</height>
+			<texture>floor.png</texture>
+		</control>
+		<control type="scrollbar" id="60">
+			<posx>35r</posx>
+			<posy>80</posy>
+			<width>35</width>
+			<height>680</height>
+			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>ScrollBarNib.png</textureslidernib>
+			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+		</control>
+		<control type="group">
+			<include>Window_OpenClose_Animation</include>
+			<control type="group">
+				<control type="image">
+					<posx>30</posx>
+					<posy>60</posy>
+					<width>1220</width>
+					<height>720</height>
+					<texture border="15">ContentPanel.png</texture>
+				</control>
+				<control type="image">
+					<posx>30</posx>
+					<posy>772</posy>
+					<width>1220</width>
+					<height>64</height>
+					<texture border="15">ContentPanelMirror.png</texture>
+				</control>
+			</control>
+		</control>
+	</include>
+</includes>

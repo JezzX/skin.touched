@@ -1,0 +1,242 @@
+<window id="0">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>no</allowoverlay>	
+	<controls>
+		<include>CommonBackground</include>
+		<control type="image">
+			<posx>0</posx>
+			<posy>95r</posy>
+			<width>1280</width>
+			<height>95</height>
+			<texture>floor.png</texture>
+		</control>
+		<include>Clock</include>
+		<!-- weather Info -->
+		<control type="group">
+			<posx>30</posx>
+			<posy>10</posy>
+			<visible>Weather.IsFetched</visible>
+			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation</include>
+			<control type="button">
+				<description>Weather image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>400</width>
+				<height>140</height>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<onclick>ActivateWindow(Weather)</onclick>
+			</control>
+			<control type="image">
+				<description>Weather image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>140</width>
+				<height>140</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[Weather.Conditions]</texture>
+			</control>
+			<control type="label">
+				<description>Weather label</description>
+				<posx>160</posx>
+				<posy>15</posy>
+				<height>30</height>
+				<width>800</width>
+				<label>[B]$LOCALIZE[20088][/B]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>location label</description>
+				<posx>170</posx>
+				<posy>45</posy>
+				<height>30</height>
+				<width>800</width>
+				<label>$INFO[Weather.Location]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font16</font>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Temp Label</description>
+				<posx>160</posx>
+				<posy>80</posy>
+				<height>30</height>
+				<width>500</width>
+				<label>[B]$INFO[Weather.Temperature][/B]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font28_title</font>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
+		<control type="image">
+			<description>LOGO</description>
+			<posx>492</posx>
+			<posy>570r</posy>
+			<width>296</width>
+			<height>148</height>
+			<aspectratio aligny="bottom">keep</aspectratio>
+			<texture>xbmc-logo.png</texture>
+			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control>
+		<control type="list" id="9000">
+			<include>Window_OpenClose_Animation_Zoom</include>
+			<posx>128</posx>
+			<posy>490r</posy>
+			<width>1024</width>
+			<height>342</height>
+			<onleft>20</onleft>
+			<onright>22</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<pagecontrol>-</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<orientation>horizontal</orientation>
+			<itemlayout height="256" width="256">
+				<control type="image">
+					<posx>3</posx>
+					<posy>3</posy>
+					<width>250</width>
+					<height>250</height>
+					<texture border="10">BackPanel.png</texture>
+				</control>
+				<control type="image">
+					<posx>30</posx>
+					<posy>30</posy>
+					<width>196</width>
+					<height>196</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="label">
+					<posx>128</posx>
+					<posy>255</posy>
+					<width>256</width>
+					<height>20</height>
+					<font>font13caps_title</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="256" width="256">
+				<control type="image">
+					<posx>3</posx>
+					<posy>3</posy>
+					<width>250</width>
+					<height>250</height>
+					<texture border="10">BackPanel.png</texture>
+				</control>
+				<control type="image">
+					<posx>30</posx>
+					<posy>30</posy>
+					<width>196</width>
+					<height>196</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="label">
+					<posx>128</posx>
+					<posy>255</posy>
+					<width>256</width>
+					<height>20</height>
+					<font>font13caps_title</font>
+					<textcolor>white</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>[B]$INFO[ListItem.Label][/B]</label>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<label>3</label>
+					<onclick>ActivateWindow(Videos)</onclick>
+					<icon>DefaultVideo.png</icon>
+					<thumb>-</thumb>
+				</item>
+				<item id="2">
+					<label>2</label>
+					<onclick>ActivateWindow(Music)</onclick>
+					<icon>DefaultAudio.png</icon>
+					<thumb>-</thumb>
+				</item>
+				<item id="3">
+					<label>1</label>
+					<onclick>ActivateWindow(Pictures)</onclick>
+					<icon>DefaultPicture.png</icon>
+					<thumb>-</thumb>
+				</item>
+				<item id="4">
+					<label>0</label>
+					<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+					<icon>DefaultHardDisk.png</icon>
+					<thumb>-</thumb>
+				</item>
+			</content>
+		</control>
+		<control type="fixedlist" id="9002">
+			<include>SubMenuCommonLayout</include>
+			<content>
+				<item>
+					<label>13012</label>
+					<onclick>XBMC.Quit</onclick>
+					<icon>icon_shutdown.png</icon>
+				</item>
+				<item>
+					<label>5</label>
+					<onclick>ActivateWindow(Settings)</onclick>
+					<icon>icon_system.png</icon>
+				</item>
+				<item>
+					<label>1036</label>
+					<onclick>ActivateWindow(Favourites)</onclick>
+					<icon>icon_favourites.png</icon>
+				</item>
+				<item>
+					<label>13376</label>
+					<onclick>ActivateWindow(Volumebar)</onclick>
+					<icon>icon_volume.png</icon>
+				</item>
+				<item>
+					<label>16003</label>
+					<onclick>ActivateWindow(PlayerControls)</onclick>
+					<icon>icon_player.png</icon>
+					<visible>Player.HasMedia</visible>
+				</item>
+			</content>
+		</control>
+		<control type="group">
+			<posx>0</posx>
+			<posy>40r</posy>
+			<visible>system.getbool(lookandfeel.enablerssfeeds) + !Player.HasMedia</visible>
+			<include>Window_OpenClose_Animation</include>
+			<control type="rss">
+				<description>RSS feed</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>30</height>
+				<width>1240</width>
+				<font>font12</font>
+				<urlset>1</urlset>
+				<textcolor>blue</textcolor>
+				<titlecolor>blue</titlecolor>
+				<headlinecolor>white</headlinecolor>
+			</control>
+			<control type="image">
+				<description>RSS background</description>
+				<posx>1250</posx>
+				<posy>2</posy>
+				<width>24</width>
+				<height>24</height>
+				<texture>icon-rss.png</texture>
+			</control>
+		</control>
+		<include>CommonNowPlaying</include>
+	</controls>	
+</window>
