@@ -3,47 +3,37 @@
 	<!-- Normal Fonts -->
 	 	<font>
 			<name>font10</name>
-			<filename>DejaVuSans.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>12</size>
 		</font>
 	 	<font>
 			<name>font12</name>
-			<filename>DejaVuSans.ttf</filename>
-			<size>16</size>
-		</font>
-	 	<font>
-			<name>font12caps</name>
-			<filename>DefaultCaps.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>16</size>
 		</font>
 	 	<font>
 			<name>font13</name>
-			<filename>DejaVuSans.ttf</filename>
-			<size>20</size>
-		</font>
-	 	<font>
-			<name>font13caps</name>
-			<filename>DefaultCaps.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>20</size>
 		</font>
 	 	<font>
 			<name>font16</name>
-			<filename>DejaVuSans.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>25</size>
 		</font>
-	 	<font>
-			<name>font16caps</name>
-			<filename>DefaultCaps.ttf</filename>
-			<size>25</size>
-		</font>
-	 	<font>
+		<font>
 			<name>font30</name>
-			<filename>DejaVuSans.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>30</size>
+		</font>
+		<font>
+			<name>font60</name>
+			<filename>Arial.ttf</filename>
+			<size>60</size>
 		</font>
 	 	<font>
 			<name>fontContextMenu</name>
-			<filename>DejaVuSans.ttf</filename>
+			<filename>Arial.ttf</filename>
 			<size>18</size>
 		</font>
 

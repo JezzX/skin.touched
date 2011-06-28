@@ -4,16 +4,66 @@
 	<controls>
 		<include>CommonBackground</include>
 		<include>Clock</include>
-		<control type="label">
-			<include>WindowTitleCommons</include>
-			<label>$LOCALIZE[8]</label>
-		</control>
-		<control type="image">
+		<control type="grouplist">
+			<description>Top Left bar</description>
 			<posx>0</posx>
-			<posy>95r</posy>
-			<width>1280</width>
-			<height>95</height>
-			<texture>floor.png</texture>
+			<posy>0</posy>
+			<width>1000</width>
+			<height>64</height>
+			<align>left</align>
+			<itemgap>5</itemgap>
+			<orientation>horizontal</orientation>
+			<control type="button">
+				<description>Home Button</description>
+				<width>64</width>
+				<height>64</height>
+				<texturenofocus>icon_home.png</texturenofocus>
+				<texturefocus>icon_home.png</texturefocus>
+				<onclick>ActivateWindow(Home)</onclick>
+			</control>
+			<control type="image">
+				<width>2</width>
+				<height>62</height>
+				<texture>header-divide.png</texture>
+			</control>
+			<control type="label">
+				<description>Window label</description>
+				<height>60</height>
+				<width min="0" max="300">auto</width>
+				<label>  $LOCALIZE[8]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font16</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
+		<control type="grouplist">
+			<description>Top Right bar</description>
+			<posx>680</posx>
+			<posy>0</posy>
+			<width>600</width>
+			<height>64</height>
+			<align>right</align>
+			<itemgap>5</itemgap>
+			<orientation>horizontal</orientation>
+			<control type="image">
+				<width>2</width>
+				<height>62</height>
+				<texture>header-divide.png</texture>
+			</control>
+			<control type="button">
+				<description>Favourties Button</description>
+				<width>200</width>
+				<height>60</height>
+				<label>$LOCALIZE[5]</label>
+				<font>font16</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
+			</control>
 		</control>
 		<control type="group">
 			<animation type="WindowOpen" reversible="false">
@@ -26,25 +76,18 @@
 			</animation>			
 			<include>VisibleFadeEffect</include>
 			<control type="group">
-				<posx>100</posx>
-				<posy>120</posy>
+				<posx>80</posx>
+				<posy>150</posy>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>500</width>
 					<height>620</height>
-					<texture border="20">ContentPanel.png</texture>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>612</posy>
-					<width>500</width>
-					<height>64</height>
-					<texture border="10">ContentPanelMirror.png</texture>
+					<texture border="5">SubBack.png</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
-					<posy>5</posy>
+					<posy>0</posy>
 					<width>460</width>
 					<height>90</height>
 					<aspectratio>stretch</aspectratio>
@@ -53,7 +96,7 @@
 				<control type="label">
 					<description>header label</description>
 					<posx>20</posx>
-					<posy>13</posy>
+					<posy>10</posy>
 					<width>460</width>
 					<height>30</height>
 					<font>font13_title</font>
@@ -119,14 +162,14 @@
 					<posx>230</posx>
 					<posy>135</posy>
 					<width>230</width>
-					<height>180</height>
+					<height>230</height>
 					<info>Window.Property(Current.ConditionIcon)</info>
 					<aspectratio>keep</aspectratio>
 				</control>
 				<control type="label">
 					<description>current condition label</description>
 					<posx>20</posx>
-					<posy>320</posy>
+					<posy>340</posy>
 					<width>460</width>
 					<height>30</height>
 					<info>Window.Property(Current.Condition)</info>
@@ -276,26 +319,19 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>680</posx>
-				<posy>120</posy>
+				<posx>580</posx>
+				<posy>150</posy>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>500</width>
+					<width>620</width>
 					<height>620</height>
-					<texture border="20">ContentPanel.png</texture>
-				</control>
-				<control type="image">
-					<posx>0</posx>
-					<posy>612</posy>
-					<width>500</width>
-					<height>64</height>
-					<texture border="10">ContentPanelMirror.png</texture>
+					<texture border="5">SubBack.png</texture>
 				</control>
 				<control type="image">
 					<posx>20</posx>
-					<posy>5</posy>
-					<width>460</width>
+					<posy>0</posy>
+					<width>580</width>
 					<height>90</height>
 					<aspectratio>stretch</aspectratio>
 					<texture>GlassTitleBar.png</texture>
@@ -303,8 +339,8 @@
 				<control type="label">
 					<description>header label</description>
 					<posx>20</posx>
-					<posy>13</posy>
-					<width>460</width>
+					<posy>10</posy>
+					<width>580</width>
 					<height>30</height>
 					<font>font13_title</font>
 					<label>10508</label>
@@ -325,17 +361,17 @@
 						<height>35</height>
 						<font>font13_title</font>
 						<info>Window.Property(Day0.Title)</info>
-						<align>center</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="image">
 						<description>day icon</description>
-						<posx>370</posx>
-						<posy>40</posy>
-						<height>80</height>
-						<width>80</width>
+						<posx>450</posx>
+						<posy>0</posy>
+						<height>120</height>
+						<width>120</width>
 						<info>Window.Property(Day0.OutlookIcon)</info>
 						<aspectratio align="right">keep</aspectratio>
 					</control>
@@ -405,9 +441,9 @@
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="image">
-						<posx>20</posx>
+						<posx>0</posx>
 						<posy>120</posy>
-						<width>460</width>
+						<width>620</width>
 						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
@@ -424,17 +460,17 @@
 						<height>35</height>
 						<font>font13_title</font>
 						<info>Window.Property(Day1.Title)</info>
-						<align>center</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="image">
 						<description>day icon</description>
-						<posx>370</posx>
-						<posy>40</posy>
-						<height>80</height>
-						<width>80</width>
+						<posx>450</posx>
+						<posy>0</posy>
+						<height>120</height>
+						<width>120</width>
 						<info>Window.Property(Day1.OutlookIcon)</info>
 						<aspectratio align="right">keep</aspectratio>
 					</control>
@@ -506,7 +542,7 @@
 					<control type="image">
 						<posx>20</posx>
 						<posy>120</posy>
-						<width>460</width>
+						<width>620</width>
 						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
@@ -523,17 +559,17 @@
 						<height>35</height>
 						<font>font13_title</font>
 						<info>Window.Property(Day2.Title)</info>
-						<align>center</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="image">
 						<description>day icon</description>
-						<posx>370</posx>
-						<posy>40</posy>
-						<height>80</height>
-						<width>80</width>
+						<posx>450</posx>
+						<posy>0</posy>
+						<height>120</height>
+						<width>120</width>
 						<info>Window.Property(Day2.OutlookIcon)</info>
 						<aspectratio align="right">keep</aspectratio>
 					</control>
@@ -605,7 +641,7 @@
 					<control type="image">
 						<posx>20</posx>
 						<posy>120</posy>
-						<width>460</width>
+						<width>620</width>
 						<height>4</height>
 						<texture>separator.png</texture>
 					</control>
@@ -622,17 +658,17 @@
 						<height>35</height>
 						<font>font13_title</font>
 						<info>Window.Property(Day3.Title)</info>
-						<align>center</align>
+						<align>left</align>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="image">
 						<description>day icon</description>
-						<posx>370</posx>
-						<posy>40</posy>
-						<height>80</height>
-						<width>80</width>
+						<posx>450</posx>
+						<posy>0</posy>
+						<height>120</height>
+						<width>120</width>
 						<info>Window.Property(Day3.OutlookIcon)</info>
 						<aspectratio align="right">keep</aspectratio>
 					</control>
@@ -704,101 +740,31 @@
 				</control>
 			</control>
 		</control>
-		<include>CommonNowPlaying</include>
-		<control type="group">
-			<posx>-250</posx>
-			<include>SideBladeLeft</include>
-			<control type="grouplist" id="9000">
-				<posx>0</posx>
-				<posy>110</posy>
-				<width>250</width>
-				<height>550</height>
-				<onleft>9000</onleft>
-				<onright>50</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<itemgap>0</itemgap>
-				<control type="label" id="200">
-					<width>250</width>
-					<height>35</height>
-					<font>font12caps</font>
-					<label>31027</label>
-					<textcolor>blue</textcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-				</control>
-				<control type="spincontrolex" id="3">
-					<description>change location button</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<include>ButtonCommonValues</include>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>611</onup>
-					<ondown>2</ondown>
-				</control>
-				<control type="label" id="201">
-					<width>250</width>
-					<height>35</height>
-					<font>font12caps</font>
-					<label>31026</label>
-					<textcolor>blue</textcolor>
-					<align>center</align>
-					<aligny>center</aligny>
-				</control>
-				<control type="button" id="2">
-					<description>Refresh button</description>
-					<posx>0</posx>
-					<posy>40</posy>
-					<textwidth>235</textwidth>
-					<include>ButtonCommonValues</include>
-					<label>103</label>
-				</control>
-				<control type="button" id="5">
-					<description>Custom Weather Script Button</description>
-					<posx>0</posx>
-					<posy>80</posy>
-					<label>$INFO[Skin.String(WeatherScript_Label)]</label>
-					<onclick>SetFocus(50)</onclick>
-					<onclick>XBMC.RunScript($INFO[Skin.String(WeatherScript_Path)])</onclick>
-					<onclick>SetFocus(50)</onclick>
-					<textwidth>235</textwidth>
-					<include>ButtonCommonValues</include>
-					<visible>Skin.HasSetting(WeatherScript_Enable) + !IsEmpty(Skin.String(WeatherScript_Label))</visible>
-				</control>
-				<control type="button" id="4">
-					<description>Settings button</description>
-					<posx>0</posx>
-					<posy>120</posy>
-					<label>5</label>
-					<onclick>ActivateWindow(MyWeatherSettings)</onclick>
-					<textwidth>235</textwidth>
-					<include>ButtonCommonValues</include>
-				</control>
-				<control type="radiobutton" id="250">
-					<description>Fanart Toggle</description>
-					<include>ButtonCommonValues</include>
-					<label>31307</label>
-					<onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
-					<selected>!Skin.HasSetting(ShowWeatherFanart)</selected>
-				</control>
-				<control type="button" id="251">
-					<description>Search</description>
-					<include>ButtonCommonValues</include>
-					<label>31317</label>
-					<onclick>Skin.SetPath(WeatherFanartDir)</onclick>
-					<enable>Skin.HasSetting(ShowWeatherFanart)</enable>
-				</control>
-				<include>CommonNowPlaying_Controls</include>
-			</control>
-		</control>
-		<control type="button" id="50">
-			<description>Fake Button to fix Side Menu Navigation</description>
-			<onleft>3</onleft>
-			<onright>3</onright>
-			<onup>3</onup>
-			<ondown>3</ondown>
-			<visible allowhiddenfocus="true">false</visible>
+		<control type="list" id="9002">
+			<include>SubMenuCommonLayout</include>
+			<content>
+				<item>
+					<label>31200</label>
+					<onclick>ParentDir</onclick>
+					<icon>icon_back.png</icon>
+				</item>
+				<item>
+					<label>184</label>
+					<onclick>SendClick(2)</onclick>
+					<icon>icon_refresh.png</icon>
+				</item>
+				<item>
+					<label>31203</label>
+					<onclick>SendClick(3)</onclick>
+					<icon>icon_city.png</icon>
+				</item>
+				<item>
+					<label>16003</label>
+					<onclick>ActivateWindow(PlayerControls)</onclick>
+					<icon>icon_player.png</icon>
+					<visible>Player.HasMedia</visible>
+				</item>
+			</content>
 		</control>
 	</controls>
 </window>

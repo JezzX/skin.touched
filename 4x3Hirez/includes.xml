@@ -38,6 +38,20 @@
 			<height>ScreenHeight</height>
 			<visible>Player.HasVideo + Skin.HasSetting(ShowBackgroundVideo)</visible>
 		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>64</height>
+			<texture>Header.png</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>90r</posy>
+			<width>1280</width>
+			<height>90</height>
+			<texture>floor.png</texture>
+		</control>
 	</include>
 	<include name="BehindDialogFadeOut">
 		<control type="image">
@@ -63,25 +77,65 @@
 		<include>Window_OpenClose_Animation</include>
 	</include>
 	<include name="Clock">
-		<control type="label">
-			<description>time label</description>
-			<posx>60r</posx>
-			<posy>0</posy>
-			<width>400</width>
-			<height>70</height>
-			<align>right</align>
-			<aligny>center</aligny>
-			<font>font28_title</font>
-			<textcolor>white</textcolor>
-			<label>[B]$INFO[System.Time][/B]</label>
-			<include>Window_OpenClose_Animation</include>
+		<control type="group">
+			<posx>240r</posx>
+			<posy>125r</posy>
+			<control type="image">
+				<posx>15</posx>
+				<posy>0</posy>
+				<width>90</width>
+				<height>90</height>
+				<texture border="5">IconBack.png</texture>
+			</control>
+			<control type="label">
+				<description>time label</description>
+				<posx>15</posx>
+				<posy>0</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font60</font>
+				<textcolor>black</textcolor>
+				<label>[B]$INFO[System.Time(hh)][/B]</label>
+			</control>
+			<control type="image">
+				<posx>115</posx>
+				<posy>0</posy>
+				<width>90</width>
+				<height>90</height>
+				<texture border="5">IconBack.png</texture>
+			</control>
+			<control type="label">
+				<description>time label</description>
+				<posx>115</posx>
+				<posy>0</posy>
+				<width>90</width>
+				<height>90</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font60</font>
+				<textcolor>black</textcolor>
+				<label>[B]$INFO[System.Time(mm)][/B]</label>
+			</control>
+			<control type="label">
+				<description>time label</description>
+				<posx>0</posx>
+				<posy>90</posy>
+				<width>220</width>
+				<height>25</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<label>$INFO[System.Date]</label>
+			</control>
 		</control>
 	</include>
 	<include name="SubMenuCommonLayout">
-		<animation effect="slide" start="0,0" end="-70,0" time="0" condition="StringCompare(Container(9002).NumItems,2) | StringCompare(Container(9002).NumItems,4) | StringCompare(Container(9002).NumItems,6)">conditional</animation>
 		<include>Window_OpenClose_Animation</include>
-		<posx>10</posx>
-		<posy>165r</posy>
+		<posx>20</posx>
+		<posy>125r</posy>
 		<width>1260</width>
 		<height>120</height>
 		<onleft>9002</onleft>
@@ -90,31 +144,22 @@
 		<ondown>20</ondown>
 		<pagecontrol>-</pagecontrol>
 		<scrolltime>300</scrolltime>
-		<focusposition>4</focusposition>
-		<movement>3</movement>
 		<orientation>Horizontal</orientation>
-		<itemlayout height="200" width="140">
+		<itemlayout height="200" width="120">
 			<control type="image">
-				<posx>30</posx>
+				<posx>15</posx>
 				<posy>0</posy>
-				<width>80</width>
-				<height>80</height>
-				<bordertexture border="5">SubBack.png</bordertexture>
+				<width>90</width>
+				<height>90</height>
+				<bordertexture border="5">IconBack.png</bordertexture>
 				<bordersize>15</bordersize>
 				<texture>$INFO[ListItem.Icon]</texture>
 			</control>
-			<control type="image">
-				<posx>30</posx>
-				<posy>82</posy>
-				<width>80</width>
-				<height>40</height>
-				<texture border="10">SubBack-diffuse.png</texture>
-			</control>
 			<control type="label">
-				<posx>70</posx>
-				<posy>80</posy>
-				<width>130</width>
-				<height>20</height>
+				<posx>60</posx>
+				<posy>90</posy>
+				<width>110</width>
+				<height>25</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
@@ -122,28 +167,21 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout height="200" width="140">
+		<focusedlayout height="200" width="120">
 			<control type="image">
-				<posx>30</posx>
+				<posx>15</posx>
 				<posy>0</posy>
-				<width>80</width>
-				<height>80</height>
-				<bordertexture border="5">SubBack.png</bordertexture>
+				<width>90</width>
+				<height>90</height>
+				<bordertexture border="5">IconBack.png</bordertexture>
 				<bordersize>15</bordersize>
 				<texture>$INFO[ListItem.Icon]</texture>
 			</control>
-			<control type="image">
-				<posx>30</posx>
-				<posy>82</posy>
-				<width>80</width>
-				<height>40</height>
-				<texture border="10">SubBack-diffuse.png</texture>
-			</control>
 			<control type="label">
-				<posx>70</posx>
-				<posy>80</posy>
-				<width>130</width>
-				<height>20</height>
+				<posx>60</posx>
+				<posy>90</posy>
+				<width>110</width>
+				<height>25</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<align>center</align>
