@@ -389,7 +389,15 @@
 					<info>ListItem.Label</info>
 				</control>
 				<control type="image">
-					<posx>120</posx>
+					<posx>189</posx>
+					<posy>6</posy>
+					<width>40</width>
+					<height>30</height>
+					<texture>$INFO[ListItem.VideoResolution,light/,.png]</texture>
+					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="image">
+					<posx>200</posx>
 					<posy>160</posy>
 					<width>30</width>
 					<height>30</height>
@@ -435,7 +443,15 @@
 					<info>ListItem.Label</info>
 				</control>
 				<control type="image">
-					<posx>120</posx>
+					<posx>189</posx>
+					<posy>6</posy>
+					<width>40</width>
+					<height>30</height>
+					<texture>$INFO[ListItem.VideoResolution,dark/,.png]</texture>
+					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="image">
+					<posx>200</posx>
 					<posy>160</posy>
 					<width>30</width>
 					<height>30</height>
