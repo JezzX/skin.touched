@@ -4,6 +4,7 @@
 	<controls>
 		<include>CommonBackground</include>
 		<include>Clock</include>
+		<include>CommonNowPlaying</include>
 		<control type="grouplist">
 			<description>Top Left bar</description>
 			<posx>0</posx>
@@ -13,29 +14,12 @@
 			<align>left</align>
 			<itemgap>5</itemgap>
 			<orientation>horizontal</orientation>
-			<control type="button">
-				<description>Home Button</description>
-				<width>64</width>
-				<height>64</height>
-				<texturenofocus>icon_home.png</texturenofocus>
-				<texturefocus>icon_home.png</texturefocus>
-				<onclick>ActivateWindow(Home)</onclick>
-			</control>
-			<control type="image">
-				<width>2</width>
-				<height>62</height>
-				<texture>header-divide.png</texture>
-			</control>
+			<include>HomeButtonCommons</include>
 			<control type="label">
 				<description>Window label</description>
-				<height>60</height>
+				<include>WindowTitleCommons</include>
 				<width min="0" max="300">auto</width>
 				<label>  $LOCALIZE[8]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font16</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
 		<control type="grouplist">
@@ -740,7 +724,7 @@
 				</control>
 			</control>
 		</control>
-		<control type="list" id="9002">
+		<control type="panel" id="9002">
 			<include>SubMenuCommonLayout</include>
 			<content>
 				<item>
@@ -757,12 +741,6 @@
 					<label>31203</label>
 					<onclick>SendClick(3)</onclick>
 					<icon>icon_city.png</icon>
-				</item>
-				<item>
-					<label>16003</label>
-					<onclick>ActivateWindow(PlayerControls)</onclick>
-					<icon>icon_player.png</icon>
-					<visible>Player.HasMedia</visible>
 				</item>
 			</content>
 		</control>

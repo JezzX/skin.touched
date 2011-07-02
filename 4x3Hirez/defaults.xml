@@ -28,7 +28,7 @@
 		<font>font13</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>grey3</disabledcolor>
-		<textoffsetx>7</textoffsetx>
+		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>no</pulseonselect>
 	</default>
@@ -101,7 +101,7 @@
 		<font>font13</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>grey3</disabledcolor>
-		<textoffsetx>7</textoffsetx>
+		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
 		<reverse>yes</reverse>
 		<pulseonselect>no</pulseonselect>
@@ -111,8 +111,8 @@
 		<posy>200</posy>
 		<width>300</width>
 		<height>42</height>
-		<radiowidth>24</radiowidth>
-		<radioheight>24</radioheight>
+		<radiowidth>35</radiowidth>
+		<radioheight>35</radioheight>
 		<textureradiofocus>radiobutton-focus.png</textureradiofocus>
 		<textureradionofocus>radiobutton-nofocus.png</textureradionofocus>
 		<texturefocus>button-focus.png</texturefocus>
@@ -121,8 +121,9 @@
 		<font>font13</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>grey3</disabledcolor>
-		<textoffsetx>7</textoffsetx>
+		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
+		<pulseonselect>no</pulseonselect>
 	</default>
 	<default type="selectbutton">
 		<posx>490</posx>
@@ -149,7 +150,7 @@
 	</default>
 	<default type="sliderex">
 		<height>35</height>
-		<textoffsetx>7</textoffsetx>
+		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
 		<texturefocus border="5">button-focus.png</texturefocus>
 		<texturenofocus border="5">button-nofocus.png</texturenofocus>
@@ -184,7 +185,7 @@
 		<font>font13</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>grey3</disabledcolor>
-		<textoffsetx>7</textoffsetx>
+		<textoffsetx>10</textoffsetx>
 		<aligny>center</aligny>
 		<pulseonselect>no</pulseonselect>
 	</default>

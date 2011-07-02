@@ -2,14 +2,12 @@
 	<include file="defaults.xml" />
 	<include file="ViewsVideoLibrary.xml" />
 	<include file="ViewsMusicLibrary.xml" />
-	<include file="ViewsFileMode.xml" />
+	<include file="ViewsCommon.xml" />
 	<include file="ViewsPictures.xml" />
 	<include file="ViewsAddonBrowser.xml" />
 	<include file="ViewsLiveTV.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesHomeRecentlyAdded.xml" />
-	<include file="IncludesHomeMenuItems.xml" />
-	<include file="IncludesBackgroundBuilding.xml" />
 
 	<constant name="ScreenWidth">1280</constant>
 	<constant name="ScreenHeight">960</constant>
@@ -49,7 +47,7 @@
 			<posx>0</posx>
 			<posy>90r</posy>
 			<width>1280</width>
-			<height>90</height>
+			<height>91</height>
 			<texture>floor.png</texture>
 		</control>
 	</include>
@@ -57,8 +55,8 @@
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<width>ScreenWidth</width>
+			<height>ScreenHeight</height>
 			<texture>black-back.png</texture>
 			<animation effect="fade" time="400">Visible</animation>
 			<animation effect="fade" time="200">Hidden</animation>
@@ -66,15 +64,27 @@
 		</control>
 	</include>
 	<include name="WindowTitleCommons">
-		<posx>60</posx>
-		<posy>0</posy>
-		<width>700</width>
-		<height>70</height>
+		<height>60</height>
 		<align>left</align>
 		<aligny>center</aligny>
-		<font>font28_title</font>
+		<font>font16</font>
 		<textcolor>white</textcolor>
-		<include>Window_OpenClose_Animation</include>
+		<shadowcolor>black</shadowcolor>
+	</include>
+	<include name="HomeButtonCommons">
+		<control type="button">
+			<description>Home Button</description>
+			<width>64</width>
+			<height>64</height>
+			<texturenofocus>icon_home.png</texturenofocus>
+			<texturefocus>icon_home.png</texturefocus>
+			<onclick>ActivateWindow(Home)</onclick>
+		</control>
+		<control type="image">
+			<width>2</width>
+			<height>62</height>
+			<texture>header-divide.png</texture>
+		</control>
 	</include>
 	<include name="Clock">
 		<control type="group">
@@ -95,7 +105,7 @@
 				<height>90</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font60</font>
+				<font>font55</font>
 				<textcolor>black</textcolor>
 				<label>[B]$INFO[System.Time(hh)][/B]</label>
 			</control>
@@ -114,12 +124,12 @@
 				<height>90</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<font>font60</font>
+				<font>font55</font>
 				<textcolor>black</textcolor>
 				<label>[B]$INFO[System.Time(mm)][/B]</label>
 			</control>
 			<control type="label">
-				<description>time label</description>
+				<description>Date label</description>
 				<posx>0</posx>
 				<posy>90</posy>
 				<width>220</width>
@@ -132,11 +142,118 @@
 			</control>
 		</control>
 	</include>
+	<include name="SortOrderCommon">
+		<control type="group">
+			<visible>Skin.HasSetting(SortOrderVisible)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="button">
+				<description>Hidden button to close the sort when its focused</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>ScreenWidth</width>
+				<height>ScreenHeight</height>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<onclick>Skin.Reset(SortOrderVisible)</onclick>
+			</control>
+			<control type="group">
+				<posx>265</posx>
+				<posy>305r</posy>
+				<control type="image">
+					<description>Panel Background image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>270</width>
+					<height>150</height>
+					<texture border="5">SubBack.png</texture>
+				</control>
+				<control type="image">
+					<description>Panel Forground image</description>
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>250</width>
+					<height>120</height>
+					<texture border="5">SubBack2.png</texture>
+				</control>
+				<control type="image">
+					<description>Panel Arrow image</description>
+					<posx>40</posx>
+					<posy>142</posy>
+					<width>40</width>
+					<height>40</height>
+					<texture>arrow-big-down.png</texture>
+				</control>
+				<control type="grouplist">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>250</width>
+					<height>600</height>
+					<onleft>9000</onleft>
+					<onright>50</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<itemgap>-1</itemgap>
+					<control type="button" id="3">
+						<description>Sort by button</description>
+						<include>ButtonCommonValues</include>
+						<label>103</label>
+					</control>
+					<control type="togglebutton" id="4">
+						<description>Sort asc</description>
+						<include>ButtonCommonValues</include>
+						<alttexturefocus border="5">button-focus2.png</alttexturefocus>
+						<alttexturenofocus>button-nofocus2</alttexturenofocus>
+						<label>31051</label>
+						<altlabel>31050</altlabel>
+						<usealtlabel>Container.SortDirection(Ascending)</usealtlabel>
+					</control>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="MediaSubMenu">
+		<control type="button" id="19">
+			<description>Filter button needed for panel below to work</description>
+			<visible>false</visible>
+		</control>
+		<control type="panel" id="9002">
+			<include>SubMenuCommonLayout</include>
+			<content>
+				<item>
+					<label>31200</label>
+					<onclick>ParentDir</onclick>
+					<icon>icon_back.png</icon>
+				</item>
+				<item>
+					<label>31201</label>
+					<onclick>Container.NextViewMode</onclick>
+					<icon>icon_view.png</icon>
+				</item>
+				<item>
+					<label>31202</label>
+					<onclick>Skin.ToggleSetting(SortOrderVisible)</onclick>
+					<icon>icon_sort.png</icon>
+				</item>
+				<item>
+					<label>587</label>
+					<onclick>SendClick(19)</onclick>
+					<icon>icon_filter.png</icon>
+					<visible>IsEmpty(Window.Property(filter))</visible>
+				</item>
+				<item>
+					<label>587</label>
+					<onclick>SendClick(19)</onclick>
+					<icon>icon_filter_on.png</icon>
+					<visible>!IsEmpty(Window.Property(filter))</visible>
+				</item>
+			</content>
+		</control>
+	</include>
 	<include name="SubMenuCommonLayout">
 		<include>Window_OpenClose_Animation</include>
 		<posx>20</posx>
 		<posy>125r</posy>
-		<width>1260</width>
+		<width>620</width>
 		<height>120</height>
 		<onleft>9002</onleft>
 		<onright>9002</onright>
@@ -173,7 +290,7 @@
 				<posy>0</posy>
 				<width>90</width>
 				<height>90</height>
-				<bordertexture border="5">IconBack.png</bordertexture>
+				<bordertexture border="5">IconBack-focus.png</bordertexture>
 				<bordersize>15</bordersize>
 				<texture>$INFO[ListItem.Icon]</texture>
 			</control>
@@ -191,14 +308,29 @@
 		</focusedlayout>
 	</include>
 	<include name="ButtonCommonValues">
-		<height>40</height>
+		<height>60</height>
 		<width>250</width>
 		<textoffsetx>10</textoffsetx>
 		<textwidth>200</textwidth>
+		<textcolor>black</textcolor>
+		<align>center</align>
 		<aligny>center</aligny>
 		<font>font13</font>
-		<texturefocus border="5">button-focus.png</texturefocus>
-		<texturenofocus>-</texturenofocus>
+		<texturefocus border="5">button-focus2.png</texturefocus>
+		<texturenofocus border="5">button-nofocus2.png</texturenofocus>
+		<pulseonselect>false</pulseonselect>
+	</include>
+	<include name="ButtonCommonValues2">
+		<height>60</height>
+		<width>300</width>
+		<textoffsetx>10</textoffsetx>
+		<textwidth>200</textwidth>
+		<textcolor>black</textcolor>
+		<align>left</align>
+		<aligny>center</aligny>
+		<font>font13</font>
+		<texturefocus border="5">button-focus2.png</texturefocus>
+		<texturenofocus border="5">button-nofocus2.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="ButtonMediaSubCommonValues">
@@ -224,19 +356,6 @@
 		<texturefocus border="5">HomeSubFO.png</texturefocus>
 		<texturenofocus border="5">HomeSubNF.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
-	</include>
-	<include name="HomeSubMenuCommonValues">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>1280</width>
-		<height>35</height>
-		<align>center</align>
-		<onup>9000</onup>
-		<ondown>9002</ondown>
-		<itemgap>0</itemgap>
-		<orientation>Horizontal</orientation>
-		<animation effect="slide" start="0,-40" end="0,0" delay="200" time="200" tween="quadratic" easing="out">Visible</animation>
-		<animation effect="slide" start="0,0" end="0,-40" time="200" tween="quadratic" easing="out">Hidden</animation>
 	</include>
 	<include name="ButtonInfoDialogsCommonValues">
 		<height>40</height>
@@ -294,73 +413,129 @@
 	</include>
 	<include name="CommonNowPlaying">
 		<control type="group">
-			<posx>20</posx>
-			<posy>55r</posy>
+			<posx>525r</posx>
+			<posy>125r</posy>
 			<visible>Player.HasMedia</visible>
 			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
 			<control type="label">
+				<description>Duration</description>
+				<posx>0</posx>
+				<posy>90</posy>
+				<width>270</width>
+				<height>25</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<label>$INFO[Player.Time(hh:mm:ss)] / $INFO[Player.Duration(hh:mm:ss)]</label>
+			</control>
+			<control type="button">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>700</width>
-				<height>20</height>
-				<label>$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<width>270</width>
+				<height>90</height>
+				<texturefocus border="5">IconBack.png</texturefocus>
+				<texturenofocus border="5">IconBack.png</texturenofocus>
+				<onclick>ActivateWindow(PlayerControls)</onclick>
 			</control>
-			<control type="label">
-				<posx>0</posx>
-				<posy>20</posy>
-				<width>700</width>
+			<control type="image">
+				<posx>5</posx>
+				<posy>5</posy>
+				<width>40</width>
+				<height>40</height>
+				<texture>icon_player.png</texture>
+			</control>
+			<control type="button">
+				<description>Go Fullscreen</description>
+				<posx>225</posx>
+				<posy>5</posy>
+				<width>40</width>
+				<height>40</height>
+				<onclick>fullscreen</onclick>
+				<texturefocus>GoFullscreen.png</texturefocus>
+				<texturenofocus>GoFullscreen.png</texturenofocus>
+			</control>
+			<control type="fadelabel">
+				<posx>50</posx>
+				<posy>15</posy>
+				<width>170</width>
 				<height>20</height>
-				<label>$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album, - ]</label>
-				<align>left</align>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<label>$LOCALIZE[31040]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font12_title</font>
+				<textcolor>black</textcolor>
+			</control>
+			<control type="fadelabel">
+				<posx>15</posx>
+				<posy>40</posy>
+				<width>240</width>
+				<height>20</height>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<label>[B]$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Title][/B]</label>
+				<align>center</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>black</textcolor>
+			</control>
+			<control type="fadelabel">
+				<posx>15</posx>
+				<posy>60</posy>
+				<width>240</width>
+				<height>20</height>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<label>[B]$INFO[MusicPlayer.Artist][/B]</label>
+				<label>[B]$INFO[MusicPlayer.Album][/B]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>black</textcolor>
 				<visible>Player.HasAudio</visible>
 			</control>
-			<control type="label">
-				<posx>0</posx>
-				<posy>20</posy>
-				<width>700</width>
+			<control type="fadelabel">
+				<posx>15</posx>
+				<posy>60</posy>
+				<width>240</width>
 				<height>20</height>
-				<label>$INFO[VideoPlayer.Studio]</label>
-				<align>left</align>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<label>[B]$INFO[VideoPlayer.Studio][/B]</label>
+				<align>center</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>black</textcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(Movies)</visible>
 			</control>
-			<control type="label">
-				<posx>0</posx>
-				<posy>20</posy>
-				<width>700</width>
+			<control type="fadelabel">
+				<posx>15</posx>
+				<posy>60</posy>
+				<width>240</width>
 				<height>20</height>
-				<label>$INFO[VideoPlayer.TVShowTitle]</label>
-				<align>left</align>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<label>[B]$INFO[VideoPlayer.TVShowTitle][/B]</label>
+				<align>center</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>black</textcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(Episodes)</visible>
 			</control>
-			<control type="label">
-				<posx>0</posx>
-				<posy>20</posy>
-				<width>700</width>
+			<control type="fadelabel">
+				<posx>15</posx>
+				<posy>60</posy>
+				<width>240</width>
 				<height>20</height>
-				<label>$INFO[VideoPlayer.Artist]</label>
-				<align>left</align>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<label>[B]$INFO[VideoPlayer.Artist][/B]</label>
+				<align>center</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>black</textcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(MusicVideos)</visible>
 			</control>
 		</control>
