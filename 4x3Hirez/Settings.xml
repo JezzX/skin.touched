@@ -27,8 +27,13 @@
 			<content>
 				<item>
 					<label>31200</label>
-					<onclick>ParentDir</onclick>
+					<onclick>PreviousMenu</onclick>
 					<icon>icon_back.png</icon>
+				</item>
+				<item>
+					<label>130</label>
+					<onclick>ActivateWindow(SystemInfo)</onclick>
+					<icon>icon_systeminfo.png</icon>
 				</item>
 			</content>
 		</control>
