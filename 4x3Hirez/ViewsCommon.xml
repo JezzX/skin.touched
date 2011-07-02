@@ -60,22 +60,6 @@
 					<aspectratio align="left">keep</aspectratio>
 					<texture>light/left_rating/$INFO[ListItem.StarRating]</texture>
 				</control>
-				<control type="image">
-					<posx>625</posx>
-					<posy>8</posy>
-					<width>40</width>
-					<height>26</height>
-					<texture>$INFO[ListItem.VideoResolution,light/,.png]</texture>
-					<visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-				</control>
-				<control type="image">
-					<posx>665</posx>
-					<posy>14</posy>
-					<width>20</width>
-					<height>16</height>
-					<texture>light/$INFO[ListItem.Overlay]</texture>
-					<visible>Window.IsVisible(Videos)</visible>
-				</control>
 			</itemlayout>
 			<focusedlayout height="60" width="1180">
 				<control type="image">
@@ -126,21 +110,214 @@
 					<aspectratio align="left">keep</aspectratio>
 					<texture>dark/left_rating/$INFO[ListItem.StarRating]</texture>
 				</control>
+			</focusedlayout>
+		</control>
+		<control type="label">
+			<description>Page Count Label</description>
+			<posx>1230</posx>
+			<posy>780</posy>
+			<width>500</width>
+			<height>20</height>
+			<font>font13</font>
+			<textcolor>black</textcolor>
+			<scroll>false</scroll>
+			<align>right</align>
+			<aligny>center</aligny>
+			<label>$INFO[Window.Property(filter),$LOCALIZE[587] (,) - ]$INFO[Container.NumItems,(,) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] (]$INFO[Container.NumPages,/,)]</label>
+			<include>Window_OpenClose_Animation</include>
+			<visible>Control.IsVisible(50)</visible>
+		</control>
+	</include>
+	<include name="CommonRootViewVideo">
+		<control type="panel" id="50">
+			<posx>50</posx>
+			<posy>110</posy>
+			<width>1180</width>
+			<height>660</height>
+			<onleft>2</onleft>
+			<onright>60</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<viewtype label="535">list</viewtype>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="60" width="1180">
 				<control type="image">
-					<posx>625</posx>
-					<posy>8</posy>
-					<width>40</width>
-					<height>26</height>
-					<texture>$INFO[ListItem.VideoResolution,dark/,.png]</texture>
-					<visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1180</width>
+					<height>60</height>
+					<texture border="5">ListNF.png</texture>
 				</control>
 				<control type="image">
-					<posx>665</posx>
-					<posy>14</posy>
-					<width>20</width>
-					<height>16</height>
+					<posx>10</posx>
+					<posy>5</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="label">
+					<posx>75</posx>
+					<posy>0</posy>
+					<width>1000</width>
+					<height>40</height>
+					<font>font16</font>
+					<textcolor>grey2</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>1160</posx>
+					<posy>2</posy>
+					<width>400</width>
+					<height>30</height>
+					<font>font13</font>
+					<textcolor>grey2</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="image">
+					<description>Rating value</description>
+					<posx>1065</posx>
+					<posy>30</posy>
+					<width>100</width>
+					<height>25</height>
+					<aspectratio align="left">keep</aspectratio>
+					<texture>light/left_rating/$INFO[ListItem.StarRating]</texture>
+					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="label">
+					<posx>1070</posx>
+					<posy>2</posy>
+					<width>400</width>
+					<height>30</height>
+					<font>font13</font>
+					<textcolor>grey2</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="image">
+					<description>Rating value</description>
+					<posx>970</posx>
+					<posy>30</posy>
+					<width>100</width>
+					<height>25</height>
+					<aspectratio align="left">keep</aspectratio>
+					<texture>light/left_rating/$INFO[ListItem.StarRating]</texture>
+					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="image">
+					<posx>1080</posx>
+					<posy>10</posy>
+					<width>60</width>
+					<height>40</height>
+					<texture>$INFO[ListItem.VideoResolution,light/,.png]</texture>
+					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="image">
+					<posx>1140</posx>
+					<posy>10</posy>
+					<width>30</width>
+					<height>40</height>
+					<texture>light/$INFO[ListItem.Overlay]</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout height="60" width="1180">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1180</width>
+					<height>60</height>
+					<texture border="5">IconBack.png</texture>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>5</posy>
+					<width>50</width>
+					<height>50</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="label">
+					<posx>75</posx>
+					<posy>0</posy>
+					<width>1000</width>
+					<height>40</height>
+					<font>font16</font>
+					<textcolor>black</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<posx>1160</posx>
+					<posy>2</posy>
+					<width>400</width>
+					<height>30</height>
+					<font>font13</font>
+					<textcolor>black</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="image">
+					<description>Rating value</description>
+					<posx>1065</posx>
+					<posy>30</posy>
+					<width>100</width>
+					<height>25</height>
+					<aspectratio align="left">keep</aspectratio>
+					<texture>dark/left_rating/$INFO[ListItem.StarRating]</texture>
+					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="label">
+					<posx>1070</posx>
+					<posy>2</posy>
+					<width>400</width>
+					<height>30</height>
+					<font>font13</font>
+					<textcolor>black</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="image">
+					<description>Rating value</description>
+					<posx>970</posx>
+					<posy>30</posy>
+					<width>100</width>
+					<height>25</height>
+					<aspectratio align="left">keep</aspectratio>
+					<texture>dark/left_rating/$INFO[ListItem.StarRating]</texture>
+					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="image">
+					<posx>1080</posx>
+					<posy>10</posy>
+					<width>60</width>
+					<height>40</height>
+					<texture>$INFO[ListItem.VideoResolution,dark/,.png]</texture>
+					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+				</control>
+				<control type="image">
+					<posx>1140</posx>
+					<posy>10</posy>
+					<width>30</width>
+					<height>40</height>
 					<texture>dark/$INFO[ListItem.Overlay]</texture>
-					<visible>Window.IsVisible(Videos)</visible>
 				</control>
 			</focusedlayout>
 		</control>
