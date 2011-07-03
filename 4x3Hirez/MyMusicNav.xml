@@ -117,6 +117,7 @@
 					<control type="radiobutton" id="99">
 						<description>Library button</description>
 						<label>$LOCALIZE[29800]</label>
+						<onclick>Skin.Reset(MediaSubMenuVisible)</onclick>
 						<onclick>ReplaceWindow(MusicFiles)</onclick>
 						<selected>Window.IsVisible(MusicLibrary)</selected>
 						<include>ButtonCommonValues2</include>
