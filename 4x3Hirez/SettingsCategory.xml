@@ -29,6 +29,8 @@
 			</control>
 		</control>
 		<control type="panel" id="9002">
+			<visible>!Window.IsActive(PlayerControls)</visible>
+			<include>VisibleFadeEffect</include>
 			<include>SubMenuCommonLayout</include>
 			<content>
 				<item>

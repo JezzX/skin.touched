@@ -29,6 +29,8 @@
 			</control>
 		</control>
 		<control type="panel">
+			<visible>!Window.IsActive(PlayerControls)</visible>
+			<include>VisibleFadeEffect</include>
 			<include>SubMenuCommonLayout</include>
 			<content>
 				<item>
@@ -348,9 +350,9 @@
 				<control type="progress">
 					<description>CPU BAR</description>
 					<posx>810</posx>
-					<posy>45</posy>
+					<posy>40</posy>
 					<width>320</width>
-					<height>16</height>
+					<height>25</height>
 					<info>System.CPUUsage</info>
 				</control>
 				<control type="label">
@@ -369,9 +371,9 @@
 				<control type="progress">
 					<description>Memory BAR</description>
 					<posx>810</posx>
-					<posy>75</posy>
+					<posy>70</posy>
 					<width>320</width>
-					<height>16</height>
+					<height>25</height>
 					<info>system.memory(used)</info>
 				</control>
 			</control>

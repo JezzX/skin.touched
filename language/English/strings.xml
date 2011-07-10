@@ -2,12 +2,12 @@
 <strings>
   <!-- Misc labels -->
   <string id="31000">Change Your</string>
-  <string id="31001">Love</string>
-  <string id="31002">Hate</string>
+  <string id="31001">Close</string>
+  <string id="31002">Audio Settings</string>
   <string id="31003">IP</string>
   <string id="31004">Caps[CR]Lock</string>
-  <string id="31005">Hide INFO</string>
-  <string id="31006">View Options</string>
+  <string id="31005">Visualization Options</string>
+  <string id="31006">Visualization Presets</string>
   <string id="31007">Plugins</string>
   <string id="31008">Fullscreen</string>
 

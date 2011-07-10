@@ -59,11 +59,12 @@
 	<default type="progress">
 		<posx>100</posx>
 		<posy>325</posy>
-		<texturebg border="6,0,6,0">OSDProgressBack.png</texturebg>
+		<texturebg border="16,0,16,0">OSDProgressBack.png</texturebg>
 		<lefttexture>-</lefttexture>
-		<midtexture border="6,0,6,0">OSDProgressMid.png</midtexture>
+		<midtexture border="16,0,16,0">OSDProgressMid.png</midtexture>
 		<righttexture>-</righttexture>
 		<overlaytexture>-</overlaytexture>
+		<reveal>true</reveal>
 	</default>
 	<default type="spincontrol">
 		<posx>330</posx>

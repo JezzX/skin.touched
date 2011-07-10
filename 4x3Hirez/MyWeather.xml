@@ -725,6 +725,8 @@
 			</control>
 		</control>
 		<control type="panel" id="9002">
+			<visible>!Window.IsActive(PlayerControls)</visible>
+			<include>VisibleFadeEffect</include>
 			<include>SubMenuCommonLayout</include>
 			<content>
 				<item>
@@ -734,12 +736,12 @@
 				</item>
 				<item>
 					<label>184</label>
-					<onclick>SendClick(2)</onclick>
+					<onclick>Weather.Refresh</onclick>
 					<icon>icon_refresh.png</icon>
 				</item>
 				<item>
 					<label>31203</label>
-					<onclick>SendClick(3)</onclick>
+					<onclick>Weather.LocationNext</onclick>
 					<icon>icon_city.png</icon>
 				</item>
 			</content>
