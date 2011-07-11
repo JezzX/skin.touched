@@ -588,148 +588,6 @@
 		</control>
 
 		<control type="group">
-			<visible>Skin.HasSetting(PlayerControlsSubMenuVisible)</visible>
-			<include>VisibleFadeEffect</include>
-			<control type="button">
-				<description>Hidden button to close the sort when its focused</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>ScreenWidth</width>
-				<height>ScreenHeight</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
-			</control>
-			<control type="group">
-				<posx>570r</posx>
-				<posy>93</posy>
-				<control type="button">
-					<description>Panel Background image</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>320</width>
-					<height>380</height>
-					<texturefocus border="5">SubBack.png</texturefocus>
-					<texturenofocus border="5">SubBack.png</texturenofocus>
-					<onclick>-</onclick>
-				</control>
-				<control type="image">
-					<description>Panel Forground image</description>
-					<posx>10</posx>
-					<posy>10</posy>
-					<width>300</width>
-					<height>354</height>
-					<texture border="5">SubBack2.png</texture>
-				</control>
-				<control type="image">
-					<description>Panel Arrow image</description>
-					<posx>140</posx>
-					<posy>-34</posy>
-					<width>40</width>
-					<height>40</height>
-					<texture>arrow-big-up.png</texture>
-				</control>
-				<control type="grouplist">
-					<posx>10</posx>
-					<posy>10</posy>
-					<width>300</width>
-					<height>354</height>
-					<onleft>9000</onleft>
-					<onright>50</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<itemgap>-1</itemgap>
-					<control type="radiobutton">
-						<description>Random Toggle</description>
-						<textwidth>170</textwidth>
-						<include>ButtonCommonValues2</include>
-						<label>$LOCALIZE[191]</label>
-						<onclick>XBMC.PlayerControl(Random)</onclick>
-						<selected>Playlist.IsRandom</selected>
-					</control>
-					<control type="button">
-						<description>Repeat</description>
-						<include>ButtonCommonValues2</include>
-						<label>$LOCALIZE[486]$INFO[Playlist.Repeat,: ]</label>
-						<onclick>XBMC.PlayerControl(Repeat)</onclick>
-					</control>
-					<!-- Buttons for Fullscreen Video -->
-					<control type="button">
-						<include>ButtonCommonValues2</include>
-						<label>13395</label>
-						<onclick>Dialog.Close(VideoOSD,true)</onclick>
-						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
-						<onclick>XBMC.ActivateWindow(123)</onclick>
-						<visible>Window.IsVisible(FullScreenVideo)</visible>
-					</control>
-					<control type="button">
-						<include>ButtonCommonValues2</include>
-						<label>31002</label>
-						<onclick>Dialog.Close(VideoOSD,true)</onclick>
-						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
-						<onclick>XBMC.ActivateWindow(124)</onclick>
-						<visible>Window.IsVisible(FullScreenVideo)</visible>
-					</control>
-					<control type="button">
-						<include>ButtonCommonValues2</include>
-						<label>298</label>
-						<onclick>Dialog.Close(VideoOSD,true)</onclick>
-						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
-						<onclick>XBMC.ActivateWindow(125)</onclick>
-						<visible>Window.IsVisible(FullScreenVideo)</visible>
-					</control>
-					<control type="togglebutton">
-						<include>ButtonCommonValues2</include>
-						<label>31018</label>
-						<onclick>-</onclick>
-						<onclick>Close</onclick>
-						<onclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
-						<altclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</altclick>
-						<altclick>Close</altclick>
-						<altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
-						<alttexturefocus border="5">button-focus2.png</alttexturefocus>
-						<alttexturenofocus>-</alttexturenofocus>
-						<usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
-						<visible>false</visible>
-						<visible>Window.IsVisible(FullScreenVideo)</visible>
-					</control>
-					<control type="button">
-						<include>ButtonCommonValues2</include>
-						<label>31027</label>
-						<onclick>PlayerControl(ShowVideoMenu)</onclick>
-						<visible>VideoPlayer.HasMenu</visible>
-						<visible>Window.IsVisible(FullScreenVideo)</visible>
-					</control>
-					<!-- Buttons for Fullscreen Audio -->
-					<control type="button">
-						<include>ButtonCommonValues2</include>
-						<label>250</label>
-						<onclick>Dialog.Close(MusicOSD,true)</onclick>
-						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
-						<onclick>Addon.Default.Set(xbmc.player.musicviz)</onclick>
-						<visible>Window.IsVisible(Visualisation)</visible>
-					</control>
-					<control type="button">
-						<include>ButtonCommonValues2</include>
-						<label>31005</label>
-						<onclick>Dialog.Close(MusicOSD,true)</onclick>
-						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
-						<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
-						<visible>Window.IsVisible(Visualisation)</visible>
-					</control>
-					<control type="button">
-						<include>ButtonCommonValues2</include>
-						<label>31006</label>
-						<onclick>Dialog.Close(MusicOSD,true)</onclick>
-						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
-						<onclick>XBMC.ActivateWindow(122)</onclick>
-						<visible>Window.IsVisible(Visualisation)</visible>
-					</control>
-				</control>
-			</control>
-		</control>
-
-		<control type="group">
 			<posx>0</posx>
 			<posy>70r</posy>
 			<control type="image">
@@ -886,6 +744,148 @@
 				<onup>405</onup>
 				<ondown>405</ondown>
 				<onclick>XBMC.PlayerControl(Next)</onclick>
+			</control>
+		</control>
+
+		<control type="group">
+			<visible>Skin.HasSetting(PlayerControlsSubMenuVisible)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="button">
+				<description>Hidden button to close the sort when its focused</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>ScreenWidth</width>
+				<height>ScreenHeight</height>
+				<texturenofocus>-</texturenofocus>
+				<texturefocus>-</texturefocus>
+				<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
+			</control>
+			<control type="group">
+				<posx>570r</posx>
+				<posy>93</posy>
+				<control type="button">
+					<description>Panel Background image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>320</width>
+					<height>380</height>
+					<texturefocus border="5">SubBack.png</texturefocus>
+					<texturenofocus border="5">SubBack.png</texturenofocus>
+					<onclick>-</onclick>
+				</control>
+				<control type="image">
+					<description>Panel Forground image</description>
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>300</width>
+					<height>354</height>
+					<texture border="5">SubBack2.png</texture>
+				</control>
+				<control type="image">
+					<description>Panel Arrow image</description>
+					<posx>140</posx>
+					<posy>-34</posy>
+					<width>40</width>
+					<height>40</height>
+					<texture>arrow-big-up.png</texture>
+				</control>
+				<control type="grouplist">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>300</width>
+					<height>354</height>
+					<onleft>9000</onleft>
+					<onright>50</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<itemgap>-1</itemgap>
+					<control type="radiobutton">
+						<description>Random Toggle</description>
+						<textwidth>170</textwidth>
+						<include>ButtonCommonValues2</include>
+						<label>$LOCALIZE[191]</label>
+						<onclick>XBMC.PlayerControl(Random)</onclick>
+						<selected>Playlist.IsRandom</selected>
+					</control>
+					<control type="button">
+						<description>Repeat</description>
+						<include>ButtonCommonValues2</include>
+						<label>$LOCALIZE[486]$INFO[Playlist.Repeat,: ]</label>
+						<onclick>XBMC.PlayerControl(Repeat)</onclick>
+					</control>
+					<!-- Buttons for Fullscreen Video -->
+					<control type="button">
+						<include>ButtonCommonValues2</include>
+						<label>13395</label>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
+						<onclick>XBMC.ActivateWindow(123)</onclick>
+						<visible>Window.IsVisible(FullScreenVideo)</visible>
+					</control>
+					<control type="button">
+						<include>ButtonCommonValues2</include>
+						<label>31002</label>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
+						<onclick>XBMC.ActivateWindow(124)</onclick>
+						<visible>Window.IsVisible(FullScreenVideo)</visible>
+					</control>
+					<control type="button">
+						<include>ButtonCommonValues2</include>
+						<label>298</label>
+						<onclick>Dialog.Close(VideoOSD,true)</onclick>
+						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
+						<onclick>XBMC.ActivateWindow(125)</onclick>
+						<visible>Window.IsVisible(FullScreenVideo)</visible>
+					</control>
+					<control type="togglebutton">
+						<include>ButtonCommonValues2</include>
+						<label>31018</label>
+						<onclick>-</onclick>
+						<onclick>Close</onclick>
+						<onclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</onclick>
+						<altclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</altclick>
+						<altclick>Close</altclick>
+						<altclick>XBMC.RunScript($INFO[Skin.String(SubtitleScript_Path)])</altclick>
+						<alttexturefocus border="5">button-focus2.png</alttexturefocus>
+						<alttexturenofocus>-</alttexturenofocus>
+						<usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
+						<visible>false</visible>
+						<visible>Window.IsVisible(FullScreenVideo)</visible>
+					</control>
+					<control type="button">
+						<include>ButtonCommonValues2</include>
+						<label>31027</label>
+						<onclick>PlayerControl(ShowVideoMenu)</onclick>
+						<visible>VideoPlayer.HasMenu</visible>
+						<visible>Window.IsVisible(FullScreenVideo)</visible>
+					</control>
+					<!-- Buttons for Fullscreen Audio -->
+					<control type="button">
+						<include>ButtonCommonValues2</include>
+						<label>250</label>
+						<onclick>Dialog.Close(MusicOSD,true)</onclick>
+						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
+						<onclick>Addon.Default.Set(xbmc.player.musicviz)</onclick>
+						<visible>Window.IsVisible(Visualisation)</visible>
+					</control>
+					<control type="button">
+						<include>ButtonCommonValues2</include>
+						<label>31005</label>
+						<onclick>Dialog.Close(MusicOSD,true)</onclick>
+						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
+						<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
+						<visible>Window.IsVisible(Visualisation)</visible>
+					</control>
+					<control type="button">
+						<include>ButtonCommonValues2</include>
+						<label>31006</label>
+						<onclick>Dialog.Close(MusicOSD,true)</onclick>
+						<onclick>Skin.Reset(PlayerControlsSubMenuVisible)</onclick>
+						<onclick>XBMC.ActivateWindow(122)</onclick>
+						<visible>Window.IsVisible(Visualisation)</visible>
+					</control>
+				</control>
 			</control>
 		</control>
 	</include>
