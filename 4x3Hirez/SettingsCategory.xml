@@ -116,8 +116,6 @@
 			<focusedcolor>black</focusedcolor>
 			<texturefocus border="5">IconBack.png</texturefocus>
 			<texturenofocus border="5">ListNF.png</texturenofocus>
-			<spinwidth>45</spinwidth>
-			<spinheight>45</spinheight>
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>

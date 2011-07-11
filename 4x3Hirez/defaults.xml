@@ -69,6 +69,8 @@
 	<default type="spincontrol">
 		<posx>330</posx>
 		<posy>126</posy>
+		<spinwidth>45</spinwidth>
+		<spinheight>45</spinheight>
 		<textureup>scroll-up-2.png</textureup>
 		<texturedown>scroll-down-2.png</texturedown>
 		<textureupfocus>scroll-up-focus-2.png</textureupfocus>
@@ -91,8 +93,8 @@
 		<posy>160</posy>
 		<width>300</width>
 		<height>42</height>
-		<spinwidth>33</spinwidth>
-		<spinheight>22</spinheight>
+		<spinwidth>45</spinwidth>
+		<spinheight>45</spinheight>
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
 		<textureup>arrow-big-up.png</textureup>
@@ -155,7 +157,7 @@
 		<aligny>center</aligny>
 		<texturefocus border="5">button-focus.png</texturefocus>
 		<texturenofocus border="5">button-nofocus.png</texturenofocus>
-		<sliderwidth>150</sliderwidth>
+		<sliderwidth>250</sliderwidth>
 		<sliderheight>20</sliderheight>
 		<texturesliderbar>osd_slider_bg.png</texturesliderbar>
 		<textureslidernib>osd_slider_nibNF.png</textureslidernib>
