@@ -855,7 +855,7 @@
 					</control>
 					<control type="button">
 						<include>ButtonCommonValues2</include>
-						<label>31027</label>
+						<label>31355</label>
 						<onclick>PlayerControl(ShowVideoMenu)</onclick>
 						<visible>VideoPlayer.HasMenu</visible>
 						<visible>Window.IsVisible(FullScreenVideo)</visible>

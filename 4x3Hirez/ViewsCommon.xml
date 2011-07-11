@@ -629,7 +629,7 @@
 		<control type="panel" id="502">
 			<visible>!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(Seasons) + !Container.Content(MusicVideos)</visible>
 			<posx>40</posx>
-			<posy>110</posy>
+			<posy>120</posy>
 			<width>1200</width>
 			<height>640</height>
 			<onleft>502</onleft>
@@ -721,7 +721,7 @@
 		<control type="group">
 			<visible>Control.IsVisible(502)</visible>
 			<posx>605</posx>
-			<posy>75</posy>
+			<posy>80</posy>
 			<control type="button">
 				<description>Down Arrow</description>
 				<posx>0</posx>
@@ -737,7 +737,7 @@
 			<control type="button">
 				<description>Down Arrow</description>
 				<posx>0</posx>
-				<posy>685</posy>
+				<posy>695</posy>
 				<width>60</width>
 				<height>30</height>
 				<texturefocus>arrow-big-down.png</texturefocus>
@@ -750,7 +750,7 @@
 		<control type="label">
 			<description>Page Count Label</description>
 			<posx>1230</posx>
-			<posy>780</posy>
+			<posy>800</posy>
 			<include>FileCountCommons</include>
 			<visible>Control.IsVisible(502)</visible>
 		</control>

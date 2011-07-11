@@ -12,23 +12,12 @@
   <string id="31008">Fullscreen</string>
   <string id="31009">Working...</string>
 
-  <string id="31020">Recently Added</string>
   <string id="31021">Video - Files</string>
   <string id="31022">Music - Files</string>
-  <string id="31023">Playing</string>
+
   <string id="31024">Page</string>
   <string id="31025">Items</string>
-  <string id="31026">Misc Options</string>
-  <string id="31027">Location</string>
  
-  <!-- View Type labels -->
-  <string id="31028">Poster Wrap</string>
-  <string id="31029">Fanart</string>
-  <string id="31030">Full list</string>
-  <string id="31031">Pic Thumbs</string>
-  <string id="31032">Image Wrap</string>
-  <string id="31033">Info</string>
-
   <!-- Extra labels -->
   <string id="31040">Now Playing</string>
 
@@ -53,50 +42,6 @@
   <string id="31060">This file is stacked, select the part you want to play from.</string>
   <string id="31061">Current Selected</string>
   
-  <!-- Skin Settings labels -->
-  <string id="31100"></string>
-  <string id="31101">Home screen options</string>
-  <string id="31102">Background</string>
-  <string id="31103">Show "Paused" in picture slide show</string>
-  <string id="31104">Play Trailers in a window [COLOR=grey3](Video Information Dialog Only)[/COLOR]</string>
-  <string id="31105"></string>
-  <string id="31106">Miscellaneous options</string>
-  <string id="31107">Hide Flagging read from video filenames [COLOR=grey3](Blu-ray, HD-DVD)[/COLOR]</string>
-  <string id="31108">Hide Main Menu Buttons</string>
-  <string id="31109">Media backgrounds</string>
-  <string id="31110">Edit Background for Media Type</string>
-  <string id="31111">Hide</string>
-  <string id="31112">Options</string>
-  <string id="31113">Single Image</string>
-  <string id="31114">Multi Image</string>
-  <string id="31115">Customizer</string>
-  <string id="31116"></string>
-  <string id="31117">Show Recently added Videos</string>
-  <string id="31118">Home Page Programs Submenu</string>
-  <string id="31119">Hide Background Fanart</string>
-  <string id="31120">BUTTON LABEL</string>
-  <string id="31121"></string>  <!-- blanked 2010-11-12 -->
-  <string id="31122">Weather Page</string>
-  <string id="31123">Use "Posters" instead of "Banners" for TV Shows</string>
-  <string id="31124">Show Background "Now Playing" Video</string>
-  <string id="31125">Show Background "Now Playing" Visualization</string>
-
-  <string id="31126"></string>  <!-- blanked 2010-11-12 -->
-  <string id="31127"></string>  <!-- blanked 2010-11-12 -->
-  <string id="31128">Lyrics</string>
-  <string id="31129"></string>  <!-- blanked 2010-11-12 -->
-  <string id="31130"></string>  <!-- blanked 2010-11-12 -->
-  
-  <string id="31131"></string> <!-- blanked 2010-12-23 -->
-  <string id="31132">Lyrics Add-on</string>
-  <string id="31133">Subtitle Add-on</string>
-  <string id="31134">Home Page Videos Submenu</string>
-  <string id="31135">Home Page Music Submenu</string>
-  <string id="31136">Home Page Pictures Submenu</string>
-
-  <string id="31140">Music OSD</string>
-  <string id="31141">Video OSD</string>
-
   <!-- Submenu Icon labels -->
   <string id="31200">Back</string>
   <string id="31201">Change View</string>
@@ -106,45 +51,29 @@
   <!-- Extra labels -->
   <string id="31300">Current Temp</string>
   <string id="31301">Last Updated</string>
-  <string id="31302">Menu</string>
-  <string id="31303"></string>
-  <string id="31304">Picture</string>
-  <string id="31305">No Disc Media Detected</string>
-  <string id="31306">Eject</string>
-  <string id="31307">Hide Fanart</string>
-  <string id="31308">Movie Details</string>
+
   <string id="31309">Memory Used:</string>
-  <string id="31310">Track Number</string>
-  <string id="31311">Fanart image[CR][CR]Unavailable[CR][CR] Click button to set</string>
   <string id="31312">Current Scraper</string>
   <string id="31313">Choose a Scraper</string>
   <string id="31314">Content Scanning Options</string>
   <string id="31315">Basic</string>
-  <string id="31316"></string>
-  <string id="31317">Set Fanart Path</string>
-  <string id="31318">Small Fanart</string>
+
   <string id="31319">Selected Profile</string>
   <string id="31320">Last Logged In</string>
   <string id="31321">Karaoke Song Selector</string>
   <string id="31322">Aired</string>
-  <string id="31323">Latest Movies</string>
-  <string id="31324">Latest Episodes</string>
+
   <string id="31325">Playlist Options</string>
   <string id="31326">Created</string>
   <string id="31327">Resolution</string>
-  <string id="31328">Recently Added</string>
-  <string id="31329">[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]</string>
-  <string id="31330">Click button to play[CR][CR]Movie trailer</string>
-  <string id="31331">Album Details</string>
 
   <!-- Video and Music OSD Labels  -->
   <string id="31351">Pause</string>
   <string id="31352">Stop</string>
   <string id="31353">Fast Forward</string>
   <string id="31354">Rewind</string>
-  <string id="31355">Movie menu</string>
+  <string id="31355">Video Menu</string>
   <string id="31356">Download Subtitles</string>
-  <string id="31357"></string>
 
   <!-- Skin Fontsets -->
   <string id="31390">Skin default</string>
