@@ -15,15 +15,6 @@
 			</control>
 			<control type="group">
 				<visible>!player.passthrough</visible>
-				<control type="image">
-					<description>Lite Volume Logo</description>
-					<posx>10</posx>
-					<posy>0</posy>
-					<width>40</width>
-					<height>35</height>
-					<aspectratio>keep</aspectratio>
-					<texture>VolumeIcon.png</texture>
-				</control>
 				<control type="progress" id="1">
 					<description>progress control</description>
 					<posx>50</posx>
@@ -35,16 +26,6 @@
 			</control>
 			<control type="group">
 				<visible>player.passthrough</visible>
-				<control type="image">
-					<description>Lite Volume Logo</description>
-					<posx>10</posx>
-					<posy>0</posy>
-					<width>40</width>
-					<height>35</height>
-					<aspectratio>keep</aspectratio>
-					<colordiffuse>CCFF0000</colordiffuse>
-					<texture>VolumeIcon.png</texture>
-				</control>
 				<control type="label">
 					<description>Passthrough Label</description>
 					<posx>50</posx>

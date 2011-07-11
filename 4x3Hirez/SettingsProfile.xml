@@ -116,8 +116,6 @@
 					<width>240</width>
 					<height>200</height>
 					<aspectratio>keep</aspectratio>
-					<bordertexture border="12">ThumbBorder.png</bordertexture>
-					<bordersize>10</bordersize>
 					<texture fallback="unknown-user.png">$INFO[Container(2).Listitem.Icon]</texture>
 				</control>
 				<control type="label">

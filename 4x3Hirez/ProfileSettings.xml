@@ -62,8 +62,6 @@
 			<align>left</align>
 			<aspectratio>stretch</aspectratio>
 			<texture>unknown-user.png</texture>
-			<bordertexture border="12">ThumbBorder.png</bordertexture>
-			<bordersize>10</bordersize>
 		</control>
 		<control type="label">
 			<description>profile name label</description>

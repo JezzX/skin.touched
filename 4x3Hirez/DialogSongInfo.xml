@@ -71,14 +71,6 @@
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<texture>$INFO[ListItem.Icon]</texture>
 			</control>
-			<control type="image">
-				<posx>35</posx>
-				<posy>240</posy>
-				<width>200</width>
-				<height>200</height>
-				<aspectratio aligny="top">keep</aspectratio>
-				<texture flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
-			</control>
 			<control type="label">
 				<description>Song Title value</description>
 				<posx>280</posx>
