@@ -245,10 +245,10 @@
 				</control>
 				<control type="image">
 					<posx>1140</posx>
-					<posy>10</posy>
+					<posy>15</posy>
 					<width>30</width>
-					<height>40</height>
-					<texture>light/$INFO[ListItem.Overlay]</texture>
+					<height>30</height>
+					<texture>$INFO[ListItem.Overlay,light/]</texture>
 				</control>
 			</itemlayout>
 			<focusedlayout height="60" width="1180">
@@ -335,10 +335,10 @@
 				</control>
 				<control type="image">
 					<posx>1140</posx>
-					<posy>10</posy>
+					<posy>15</posy>
 					<width>30</width>
-					<height>40</height>
-					<texture>dark/$INFO[ListItem.Overlay]</texture>
+					<height>30</height>
+					<texture>$INFO[ListItem.Overlay,dark/]</texture>
 				</control>
 			</focusedlayout>
 		</control>
