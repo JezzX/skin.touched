@@ -190,7 +190,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1160</posx>
+					<posx>1130</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -204,7 +204,7 @@
 				</control>
 				<control type="image">
 					<description>Rating value</description>
-					<posx>1065</posx>
+					<posx>1030</posx>
 					<posy>30</posy>
 					<width>100</width>
 					<height>25</height>
@@ -280,7 +280,7 @@
 					<label>$INFO[ListItem.Label]</label>
 				</control>
 				<control type="label">
-					<posx>1160</posx>
+					<posx>1130</posx>
 					<posy>2</posy>
 					<width>400</width>
 					<height>30</height>
@@ -294,7 +294,7 @@
 				</control>
 				<control type="image">
 					<description>Rating value</description>
-					<posx>1065</posx>
+					<posx>1030</posx>
 					<posy>30</posy>
 					<width>100</width>
 					<height>25</height>
