@@ -27,7 +27,7 @@
 				<width>370</width>
 				<height>18</height>
 				<font>font10_title</font>
-				<textcolor>selected</textcolor>
+				<textcolor>blue</textcolor>
 				<align>left</align>
 				<aligny>center</aligny>
 			</control>
