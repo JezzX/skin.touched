@@ -38,7 +38,7 @@
 			<posy>0</posy>
 			<width>ScreenWidth</width>
 			<height>64</height>
-			<texture>Header.png</texture>
+			<texture>header.png</texture>
 		</control>
 		<control type="image">
 			<posx>0</posx>
