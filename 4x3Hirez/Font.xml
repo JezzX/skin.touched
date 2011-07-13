@@ -31,11 +31,6 @@
 			<filename>Arial.ttf</filename>
 			<size>55</size>
 		</font>
-	 	<font>
-			<name>fontContextMenu</name>
-			<filename>Arial.ttf</filename>
-			<size>18</size>
-		</font>
 
 
 	<!-- Title Fonts -->

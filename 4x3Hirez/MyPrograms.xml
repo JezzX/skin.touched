@@ -62,6 +62,7 @@
 			<include>ThumbnailView</include> <!-- view id = 500 -->
 		</control>
 		<include>MediaSubMenu</include>
+		<include>ScrollOffsetLabel</include>
 		<include>SortOrderCommon</include>
 		<include>BehindDialogFadeOut</include>
 	</controls>
