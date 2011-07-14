@@ -130,9 +130,9 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<posx>760</posx>
+				<posx>765</posx>
 				<posy>65</posy>
-				<width>25</width>
+				<width>20</width>
 				<height>390</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
