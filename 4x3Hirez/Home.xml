@@ -13,8 +13,8 @@
 			<width>1280</width>
 			<font>font11</font>
 			<urlset>1</urlset>
-			<textcolor>black</textcolor>
-			<titlecolor>black</titlecolor>
+			<textcolor>blue</textcolor>
+			<titlecolor>blue</titlecolor>
 			<headlinecolor>white</headlinecolor>
 			<include>Window_OpenClose_Animation</include>
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
