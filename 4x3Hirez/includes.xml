@@ -96,6 +96,26 @@
 			<texture>header-divide.png</texture>
 		</control>
 	</include>
+	<include name="DialogCloseButtonCommons">
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>2</width>
+			<height>59</height>
+			<texture>header-divide.png</texture>
+		</control>
+		<control type="button">
+			<description>Close Button</description>
+			<posx>7</posx>
+			<posy>0</posy>
+			<width>60</width>
+			<height>60</height>
+			<font>-</font>
+			<onclick>previousmenu</onclick>
+			<texturefocus>icon_close.png</texturefocus>
+			<texturenofocus>icon_close.png</texturenofocus>
+		</control>
+	</include>
 	<include name="Clock">
 		<control type="group">
 			<posx>240r</posx>

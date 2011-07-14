@@ -23,29 +23,10 @@
 			<width>910</width>
 			<label>-</label>
 		</control>
-		<control type="grouplist">
-			<description>Top Right bar</description>
+		<control type="group">
 			<posx>930</posx>
 			<posy>0</posy>
-			<width>70</width>
-			<height>60</height>
-			<align>right</align>
-			<itemgap>2</itemgap>
-			<orientation>horizontal</orientation>
-			<control type="image">
-				<width>2</width>
-				<height>59</height>
-				<texture>header-divide.png</texture>
-			</control>
-			<control type="button">
-				<description>Close Button</description>
-				<width>60</width>
-				<height>60</height>
-				<font>-</font>
-				<onclick>previousmenu</onclick>
-				<texturefocus>icon_close.png</texturefocus>
-				<texturenofocus>icon_close.png</texturenofocus>
-			</control>
+			<include>DialogCloseButtonCommons</include>
 		</control>
 		<control type="image">
 			<posx>0</posx>

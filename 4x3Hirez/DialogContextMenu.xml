@@ -22,23 +22,10 @@
 			<width>300</width>
 			<label>$LOCALIZE[31007]</label>
 		</control>
-		<control type="image">
+		<control type="group">
 			<posx>330</posx>
 			<posy>-60</posy>
-			<width>2</width>
-			<height>59</height>
-			<texture>header-divide.png</texture>
-		</control>
-		<control type="button">
-			<description>Close Button</description>
-			<posx>337</posx>
-			<posy>-60</posy>
-			<width>60</width>
-			<height>60</height>
-			<font>-</font>
-			<onclick>previousmenu</onclick>
-			<texturefocus>icon_close.png</texturefocus>
-			<texturenofocus>icon_close.png</texturenofocus>
+			<include>DialogCloseButtonCommons</include>
 		</control>
 		<control type="image" id="999">
 			<posx>0</posx>
