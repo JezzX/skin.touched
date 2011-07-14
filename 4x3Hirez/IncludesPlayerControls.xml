@@ -506,7 +506,7 @@
 			</control>
 			<control type="radiobutton">
 				<description>Show Info Button</description>
-				<width>230</width>
+				<width>270</width>
 				<height>60</height>
 				<label>$LOCALIZE[544]</label>
 				<font>font16</font>

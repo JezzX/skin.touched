@@ -71,10 +71,10 @@
 		<posy>126</posy>
 		<spinwidth>45</spinwidth>
 		<spinheight>45</spinheight>
-		<textureup>scroll-up-2.png</textureup>
-		<texturedown>scroll-down-2.png</texturedown>
-		<textureupfocus>scroll-up-focus-2.png</textureupfocus>
-		<texturedownfocus>scroll-down-focus-2.png</texturedownfocus>
+		<textureup>Select_Up.png</textureup>
+		<texturedown>Select_Down.png</texturedown>
+		<textureupfocus>Select_Up.png</textureupfocus>
+		<texturedownfocus>Select_Down.png</texturedownfocus>
 		<align>right</align>
 		<width>33</width>
 		<height>22</height>
@@ -97,10 +97,10 @@
 		<spinheight>45</spinheight>
 		<texturefocus>button-focus.png</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<textureup>arrow-big-up.png</textureup>
-		<texturedown>arrow-big-down.png</texturedown>
-		<textureupfocus>arrow-big-up.png</textureupfocus>
-		<texturedownfocus>arrow-big-down.png</texturedownfocus>
+		<textureup>Select_Up.png</textureup>
+		<texturedown>Select_Down.png</texturedown>
+		<textureupfocus>Select_Up.png</textureupfocus>
+		<texturedownfocus>Select_Down.png</texturedownfocus>
 		<font>font13</font>
 		<textcolor>white</textcolor>
 		<disabledcolor>grey3</disabledcolor>
@@ -114,8 +114,8 @@
 		<posy>200</posy>
 		<width>300</width>
 		<height>42</height>
-		<radiowidth>35</radiowidth>
-		<radioheight>35</radioheight>
+		<radiowidth>90</radiowidth>
+		<radioheight>45</radioheight>
 		<textureradiofocus>radiobutton-focus.png</textureradiofocus>
 		<textureradionofocus>radiobutton-nofocus.png</textureradionofocus>
 		<texturefocus>button-focus.png</texturefocus>
