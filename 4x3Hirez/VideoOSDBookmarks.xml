@@ -1,10 +1,5 @@
 <window id="125">
-	<defaultcontrol always="true">2</defaultcontrol>
-	<coordinates>
-		<system>1</system>
-		<posx>240</posx>
-		<posy>115</posy>
-	</coordinates>
+	<include>Window_OpenClose_Animation_Zoom</include>
 	<coordinates>
 		<system>1</system>
 		<posx>240</posx>
