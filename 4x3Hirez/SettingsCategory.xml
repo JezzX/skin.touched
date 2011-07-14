@@ -105,8 +105,6 @@
 			<focusedcolor>black</focusedcolor>
 			<texturefocus border="5">IconBack.png</texturefocus>
 			<texturenofocus border="5">ListNF.png</texturenofocus>
-			<radiowidth>90</radiowidth>
-			<radioheight>45</radioheight>
 		</control>
 		<control type="spincontrolex" id="9">
 			<description>Default SpinControlex</description>
