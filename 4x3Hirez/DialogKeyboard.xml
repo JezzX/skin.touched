@@ -81,7 +81,7 @@
 					<posy>0</posy>
 					<width>65</width>
 					<height>80</height>
-					<texture border="5">IconBackDark.png</texture>
+					<texture border="5">KeyboardKeyDark.png</texture>
 				</control>
 				<control type="button" id="49">
 					<description>'1' button</description>
@@ -89,8 +89,8 @@
 					<posy>0</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -102,8 +102,8 @@
 					<posy>0</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -115,8 +115,8 @@
 					<posy>0</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -128,8 +128,8 @@
 					<posy>0</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -141,8 +141,8 @@
 					<posy>0</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -154,8 +154,8 @@
 					<posy>0</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -167,8 +167,8 @@
 					<posy>0</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -180,8 +180,8 @@
 					<posy>0</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -193,8 +193,8 @@
 					<posy>0</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -206,8 +206,8 @@
 					<posy>0</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -219,10 +219,10 @@
 					<posy>0</posy>
 					<width>180</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBackDark.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
-					<alttexturenofocus border="5">IconBackDark.png</alttexturenofocus>
-					<alttexturefocus border="5">IconBack-focus.png</alttexturefocus>
+					<texturenofocus border="5">KeyboardKeyDark.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
+					<alttexturenofocus border="5">KeyboardKeyDark.png</alttexturenofocus>
+					<alttexturefocus border="5">KeyboardKeyFocus.png</alttexturefocus>
 					<textcolor>white</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -237,8 +237,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBackDark.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKeyDark.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>white</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -251,8 +251,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -264,8 +264,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -277,8 +277,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -290,8 +290,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -303,8 +303,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -316,8 +316,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -329,8 +329,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -342,8 +342,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -355,8 +355,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -368,8 +368,8 @@
 					<posy>85</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -381,8 +381,8 @@
 					<posy>85</posy>
 					<width>150</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBackDark.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKeyDark.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>white</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -404,10 +404,10 @@
 					<posy>170</posy>
 					<width>125</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBackDark.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
-					<alttexturenofocus border="5">IconBackDark.png</alttexturenofocus>
-					<alttexturefocus border="5">IconBack-focus.png</alttexturefocus>
+					<texturenofocus border="5">KeyboardKeyDark.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
+					<alttexturenofocus border="5">KeyboardKeyDark.png</alttexturenofocus>
+					<alttexturefocus border="5">KeyboardKeyFocus.png</alttexturefocus>
 					<textcolor>white</textcolor>
 					<font>font13</font>
 					<align>center</align>
@@ -421,8 +421,8 @@
 					<posy>170</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -434,8 +434,8 @@
 					<posy>170</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -447,8 +447,8 @@
 					<posy>170</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -460,8 +460,8 @@
 					<posy>170</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -473,8 +473,8 @@
 					<posy>170</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -486,8 +486,8 @@
 					<posy>170</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -499,8 +499,8 @@
 					<posy>170</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -512,8 +512,8 @@
 					<posy>170</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -525,8 +525,8 @@
 					<posy>170</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -538,8 +538,8 @@
 					<posy>170</posy>
 					<width>220</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBackDark.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKeyDark.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>white</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -562,8 +562,8 @@
 					<posy>255</posy>
 					<width>150</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBackDark.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKeyDark.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>white</textcolor>
 					<font>font16</font>
 					<align>left</align>
@@ -585,8 +585,8 @@
 					<posy>255</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -598,8 +598,8 @@
 					<posy>255</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -611,8 +611,8 @@
 					<posy>255</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -624,8 +624,8 @@
 					<posy>255</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -637,8 +637,8 @@
 					<posy>255</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -650,8 +650,8 @@
 					<posy>255</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -663,8 +663,8 @@
 					<posy>255</posy>
 					<width>95</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -676,8 +676,8 @@
 					<posy>255</posy>
 					<width>193</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBackDark.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKeyDark.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>white</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -699,8 +699,8 @@
 					<posy>255</posy>
 					<width>191</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBackDark.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKeyDark.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>white</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -723,7 +723,7 @@
 					<posy>340</posy>
 					<width>185</width>
 					<height>80</height>
-					<texture border="5">IconBackDark.png</texture>
+					<texture border="5">KeyboardKeyDark.png</texture>
 				</control>
 				<control type="button" id="32">
 					<description>SPACE button</description>
@@ -731,8 +731,8 @@
 					<posy>340</posy>
 					<width>695</width>
 					<height>80</height>
-					<texturenofocus border="5">IconBack.png</texturenofocus>
-					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<texturenofocus border="5">KeyboardKey.png</texturenofocus>
+					<texturefocus border="5">KeyboardKeyFocus.png</texturefocus>
 					<textcolor>black</textcolor>
 					<font>font16</font>
 					<align>center</align>
@@ -745,7 +745,7 @@
 					<posy>340</posy>
 					<width>360</width>
 					<height>80</height>
-					<texture border="5">IconBackDark.png</texture>
+					<texture border="5">KeyboardKeyDark.png</texture>
 				</control>
 			</control>
 		</control>

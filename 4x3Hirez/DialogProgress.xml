@@ -21,7 +21,7 @@
 			<posy>0</posy>
 			<width>700</width>
 			<height>60</height>
-			<texture border="5">IconBackDark.png</texture>
+			<texture border="5">DialogHeader.png</texture>
 		</control>
 		<control type="group">
 			<posx>630</posx>
