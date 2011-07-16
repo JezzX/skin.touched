@@ -19,20 +19,6 @@
 			<height>ScreenHeight</height>
 			<texture>special://skin/background/background.png</texture>
 		</control>
-		<control type="visualisation">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>ScreenWidth</width>
-			<height>ScreenHeight</height>
-			<visible>Player.HasAudio + Skin.HasSetting(ShowBackgroundVis)</visible>
-		</control>
-		<control type="videowindow">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>ScreenWidth</width>
-			<height>ScreenHeight</height>
-			<visible>Player.HasVideo + Skin.HasSetting(ShowBackgroundVideo)</visible>
-		</control>
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
