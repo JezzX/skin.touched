@@ -63,6 +63,15 @@
 				<onclick>ActivateWindow(Favourites)</onclick>
 			</control>
 		</control>
+		<control type="image">
+			<description>Shadow Background</description>
+			<posx>60</posx>
+			<posy>230</posy>
+			<width>1160</width>
+			<height>480</height>
+			<texture border="30">DialogShadow.png</texture>
+			<include>Window_OpenClose_Animation_Zoom</include>
+		</control>
 		<!-- weather Info -->
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
