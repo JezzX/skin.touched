@@ -106,7 +106,7 @@
 		<control type="group">
 			<posx>240r</posx>
 			<posy>125r</posy>
-			<visible>!Window.IsActive(PlayerControls)</visible>
+			<visible>!Window.IsActive(PlayerControls) + !Window.IsActive(InfoDialog)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<posx>15</posx>
@@ -365,7 +365,7 @@
 	</include>
 	<include name="CommonNowPlaying">
 		<control type="group">
-			<visible>!Window.IsActive(PlayerControls)</visible>
+			<visible>!Window.IsActive(PlayerControls) + !Window.IsActive(InfoDialog)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>525r</posx>
 			<posy>125r</posy>
