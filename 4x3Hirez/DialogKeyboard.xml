@@ -28,8 +28,7 @@
 		<control type="group">
 			<animation effect="slide" start="0,500" end="0,0" time="400" easing="out" tween="quadratic" >WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,500" time="400" easing="in" tween="quadratic" >WindowClose</animation>
-			<include>VisibleFadeEffect</include>
-			<visible>!Window.IsVisible(numericinput)</visible>
+			<animation effect="slide" start="0,0" end="0,500" time="400" easing="in" tween="quadratic" condition="Window.IsVisible(numericinput)">Conditional</animation>
 			<posx>15</posx>
 			<posy>500r</posy>
 			<control type="button">
@@ -708,7 +707,7 @@
 					<label></label>
 				</control>
 				<control type="image">
-					<description>Previous Icon image</description>
+					<description>Next Icon image</description>
 					<posx>1135</posx>
 					<posy>275</posy>
 					<width>50</width>
