@@ -317,6 +317,12 @@
 					<icon>icon_shutdown.png</icon>
 				</item>
 				<item>
+					<label>20126</label>
+					<onclick>System.LogOff</onclick>
+					<icon>icon_logoff.png</icon>
+					<visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
+				</item>
+				<item>
 					<label>5</label>
 					<onclick>ActivateWindow(Settings)</onclick>
 					<icon>icon_system.png</icon>

@@ -11,6 +11,7 @@
   <string id="31007">Context Menu</string>
   <string id="31008">Fullscreen</string>
   <string id="31009">Working...</string>
+  <string id="31010">Currently logged in as</string>
 
   <string id="31021">Video - Files</string>
   <string id="31022">Music - Files</string>
@@ -58,7 +59,7 @@
   <string id="31314">Content Scanning Options</string>
   <string id="31315">Basic</string>
 
-  <string id="31319">Selected Profile</string>
+  <string id="31319">Currently available XBMC user profiles</string>
   <string id="31320">Last Logged In</string>
   <string id="31321">Karaoke Song Selector</string>
   <string id="31322">Aired</string>
