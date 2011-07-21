@@ -21,13 +21,6 @@
 			<control type="image">
 				<posx>260</posx>
 				<posy>10</posy>
-				<width>620</width>
-				<height>448</height>
-				<texture border="5">black-back2.png</texture>
-			</control>
-			<control type="image">
-				<posx>260</posx>
-				<posy>10</posy>
 				<width>610</width>
 				<height>100</height>
 				<aspectratio>stretch</aspectratio>
