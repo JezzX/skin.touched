@@ -78,6 +78,14 @@
 			<control type="group">
 				<posx>330r</posx>
 				<posy>93</posy>
+				<control type="image">
+					<description>Shadow Background</description>
+					<posx>-30</posx>
+					<posy>-30</posy>
+					<width>380</width>
+					<height>440</height>
+					<texture border="30">ShadowBorder.png</texture>
+				</control>
 				<control type="button">
 					<description>Panel Background image</description>
 					<posx>0</posx>

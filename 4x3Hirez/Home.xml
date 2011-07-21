@@ -305,6 +305,14 @@
 					</item>
 				</content>
 			</control>
+			<control type="image">
+				<posx>80</posx>
+				<posy>250</posy>
+				<width>540</width>
+				<height>440</height>
+				<colordiffuse>55FFFFFF</colordiffuse>
+				<texture>GlassOverlay.png</texture>
+			</control>
 		</control>
 		<control type="panel" id="9002">
 			<visible>!Window.IsActive(PlayerControls)</visible>

@@ -193,6 +193,14 @@
 				<posx>265</posx>
 				<posy>305r</posy>
 				<control type="image">
+					<description>Shadow Background</description>
+					<posx>-30</posx>
+					<posy>-30</posy>
+					<width>330</width>
+					<height>210</height>
+					<texture border="30">ShadowBorder.png</texture>
+				</control>
+				<control type="image">
 					<description>Panel Background image</description>
 					<posx>0</posx>
 					<posy>0</posy>
