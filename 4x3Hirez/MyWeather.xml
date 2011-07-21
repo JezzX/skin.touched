@@ -59,6 +59,15 @@
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>			
 			<include>VisibleFadeEffect</include>
+			<control type="image">
+				<description>Shadow Background</description>
+				<posx>50</posx>
+				<posy>120</posy>
+				<width>1180</width>
+				<height>680</height>
+				<texture border="30">ShadowBorder.png</texture>
+				<include>Window_OpenClose_Animation_Zoom</include>
+			</control>
 			<control type="group">
 				<posx>80</posx>
 				<posy>150</posy>

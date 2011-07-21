@@ -65,11 +65,11 @@
 		</control>
 		<control type="image">
 			<description>Shadow Background</description>
-			<posx>60</posx>
-			<posy>230</posy>
-			<width>1160</width>
-			<height>480</height>
-			<texture border="30">DialogShadow.png</texture>
+			<posx>50</posx>
+			<posy>220</posy>
+			<width>1180</width>
+			<height>500</height>
+			<texture border="30">ShadowBorder.png</texture>
 			<include>Window_OpenClose_Animation_Zoom</include>
 		</control>
 		<!-- weather Info -->

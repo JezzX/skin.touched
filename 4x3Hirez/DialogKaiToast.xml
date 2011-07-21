@@ -2,8 +2,8 @@
 	<include>Window_OpenClose_Animation</include>
 	<controls>
 		<control type="group">
-			<posx>525r</posx>
-			<posy>125r</posy>
+			<posx>545r</posx>
+			<posy>130r</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
