@@ -63,255 +63,253 @@
 				<onclick>ActivateWindow(Favourites)</onclick>
 			</control>
 		</control>
-		<control type="image">
-			<description>Shadow Background</description>
-			<posx>50</posx>
-			<posy>220</posy>
-			<width>1180</width>
-			<height>500</height>
-			<texture border="30">ShadowBorder.png</texture>
-			<include>Window_OpenClose_Animation_Zoom</include>
-		</control>
 		<!-- weather Info -->
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<control type="group">
-				<posx>80</posx>
-				<posy>250</posy>
+				<posx>820r</posx>
+				<posy>64</posy>
 				<control type="button">
-					<description>Weather Background image</description>
-					<posx>0</posx>
+					<description>Goto Weather button</description>
+					<posx>630</posx>
 					<posy>0</posy>
-					<width>560</width>
+					<width>160</width>
 					<height>160</height>
-					<texturenofocus flipy="true" border="5">SubBack.png</texturenofocus>
-					<texturefocus flipy="true" border="5">SubBack.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<texturefocus>-</texturefocus>
 					<onclick>ActivateWindow(Weather)</onclick>
 				</control>
-				<control type="group">
-					<control type="image">
-						<description>Weather image</description>
-						<posx>355</posx>
-						<posy>-73</posy>
-						<width>240</width>
-						<height>240</height>
-						<aspectratio>keep</aspectratio>
-						<texture diffuse="WeatherIconDiffuse.png">$INFO[Weather.Conditions]</texture>
-					</control>
+				<control type="image">
+					<description>Weather image</description>
+					<posx>632</posx>
+					<posy>0</posy>
+					<width>150</width>
+					<height>150</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[Weather.Conditions]</texture>
+				</control>
+				<control type="label">
+					<description>location label</description>
+					<posx>620</posx>
+					<posy>40</posy>
+					<height>30</height>
+					<width>410</width>
+					<label>[B]$INFO[Weather.Location][/B]</label>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font16</font>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="grouplist">
+					<posx>0</posx>
+					<posy>75</posy>
+					<width>620</width>
+					<height>35</height>
+					<orientation>horizontal</orientation>
+					<align>right</align>
+					<itemgap>0</itemgap>
 					<control type="label">
 						<description>Weather label</description>
-						<posx>20</posx>
-						<posy>15</posy>
 						<height>30</height>
-						<width>520</width>
-						<label>[B]$LOCALIZE[20088][/B]</label>
-						<align>left</align>
-						<aligny>center</aligny>
+						<width max="400">auto</width>
+						<label>$INFO[Window(Weather).Property(Current.Condition)]  </label>
 						<font>font13</font>
-						<textcolor>grey</textcolor>
-						<shadowcolor>black</shadowcolor>
-					</control>
-					<control type="label">
-						<description>location label</description>
-						<posx>30</posx>
-						<posy>47</posy>
-						<height>30</height>
-						<width>520</width>
-						<label>[B]$INFO[Weather.Location][/B]</label>
-						<align>left</align>
 						<aligny>center</aligny>
-						<font>font16</font>
-						<shadowcolor>black</shadowcolor>
-					</control>
-					<control type="textbox">
-						<description>Weather label</description>
-						<posx>20</posx>
-						<posy>80</posy>
-						<height>60</height>
-						<width>250</width>
-						<label>$INFO[Window(Weather).Property(Current.Condition)]</label>
-						<align>left</align>
-						<font>font13</font>
 						<textcolor>grey</textcolor>
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="label">
 						<description>Temp Label</description>
-						<posx>350</posx>
-						<posy>100</posy>
-						<height>25</height>
-						<width>200</width>
+						<height>30</height>
+						<width max="400">auto</width>
 						<label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
-						<align>right</align>
-						<aligny>top</aligny>
-						<font>font35_title</font>
+						<aligny>center</aligny>
+						<font>font30_title</font>
 						<shadowcolor>black</shadowcolor>
 					</control>
 					<control type="label">
 						<description>Temp Units Label</description>
-						<posx>355</posx>
-						<posy>105</posy>
-						<height>30</height>
-						<width>200</width>
+						<posy>2</posy>
+						<height>20</height>
+						<width max="200">auto</width>
 						<label>$INFO[System.TemperatureUnits]</label>
-						<align>left</align>
-						<aligny>top</aligny>
 						<font>font13</font>
+						<aligny>center</aligny>
 						<shadowcolor>black</shadowcolor>
 						<visible>!IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
 					</control>
 				</control>
 			</control>
 			<control type="group">
-				<posx>640</posx>
-				<posy>250</posy>
+				<posx>0</posx>
+				<posy>320</posy>
 				<control type="image">
-					<description>Panel Background image</description>
 					<posx>0</posx>
-					<posy>0</posy>
-					<width>560</width>
-					<height>160</height>
-					<texture flipy="true" border="5">SubBack.png</texture>
+					<posy>225</posy>
+					<width>ScreenWidth</width>
+					<height>64</height>
+					<texture>shelf.png</texture>
 				</control>
-			</control>
-			<control type="button">
-				<description>left Arrow</description>
-				<posx>30</posx>
-				<posy>510</posy>
-				<width>40</width>
-				<height>60</height>
-				<texturefocus>arrow-big-left.png</texturefocus>
-				<texturenofocus>arrow-big-left.png</texturenofocus>
-				<onclick>Control.Move(9000,-1)</onclick>
-				<visible>Container(9000).HasPrevious</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="button">
-				<description>right Arrow</description>
-				<posx>70r</posx>
-				<posy>510</posy>
-				<width>40</width>
-				<height>60</height>
-				<texturefocus>arrow-big-right.png</texturefocus>
-				<texturenofocus>arrow-big-right.png</texturenofocus>
-				<onclick>Control.Move(9000,1)</onclick>
-				<visible>Container(9000).HasNext</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="list" id="9000">
-				<posx>80</posx>
-				<posy>410</posy>
-				<width>1120</width>
-				<height>280</height>
-				<onleft>20</onleft>
-				<onright>22</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
-				<pagecontrol>-</pagecontrol>
-				<scrolltime>200</scrolltime>
-				<orientation>horizontal</orientation>
-				<itemlayout height="280" width="280">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>280</width>
-						<height>280</height>
-						<texture border="5">SubBack.png</texture>
-					</control>
-					<control type="image">
-						<posx>40</posx>
-						<posy>20</posy>
-						<width>200</width>
-						<height>200</height>
-						<texture>$INFO[ListItem.Icon]</texture>
-					</control>
-					<control type="label">
-						<posx>140</posx>
-						<posy>245</posy>
-						<width>270</width>
-						<height>20</height>
-						<font>font13caps_title</font>
-						<textcolor>grey2</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
-					</control>
-				</itemlayout>
-				<focusedlayout height="280" width="280">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>280</width>
-						<height>280</height>
-						<texture border="5">SubBack.png</texture>
-					</control>
-					<control type="image">
-						<posx>40</posx>
-						<posy>20</posy>
-						<width>200</width>
-						<height>200</height>
-						<texture>$INFO[ListItem.Icon]</texture>
-					</control>
-					<control type="label">
-						<posx>140</posx>
-						<posy>245</posy>
-						<width>270</width>
-						<height>20</height>
-						<font>font13caps_title</font>
-						<textcolor>grey2</textcolor>
-						<align>center</align>
-						<aligny>center</aligny>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
-					</control>
-				</focusedlayout>
-				<content>
-					<item>
-						<label>3</label>
-						<onclick>ActivateWindow(Videos)</onclick>
-						<icon>icon_big_video.png</icon>
-						<thumb>-</thumb>
-					</item>
-					<item>
-						<label>20342</label>
-						<onclick>ActivateWindow(Videos,MovieTitles,Return)</onclick>
-						<icon>icon_big_movies.png</icon>
-						<thumb>-</thumb>
-						<visible>Library.HasContent(Movies)</visible>
-					</item>
-					<item>
-						<label>20343</label>
-						<onclick>ActivateWindow(Videos,TVShowTitles,Return)</onclick>
-						<icon>icon_big_tvshows.png</icon>
-						<thumb>-</thumb>
-						<visible>Library.HasContent(TVShows)</visible>
-					</item>
-					<item>
-						<label>2</label>
-						<onclick>ActivateWindow(Music)</onclick>
-						<icon>icon_big_music.png</icon>
-						<thumb>-</thumb>
-					</item>
-					<item>
-						<label>1</label>
-						<onclick>ActivateWindow(Pictures)</onclick>
-						<icon>icon_big_pictures.png</icon>
-						<thumb>-</thumb>
-					</item>
-					<item>
-						<label>0</label>
-						<onclick>ActivateWindow(Programs,Addons,return)</onclick>
-						<icon>DefaultHardDisk.png</icon>
-						<thumb>-</thumb>
-					</item>
-				</content>
-			</control>
-			<control type="image">
-				<posx>80</posx>
-				<posy>250</posy>
-				<width>540</width>
-				<height>440</height>
-				<colordiffuse>55FFFFFF</colordiffuse>
-				<texture>GlassOverlay.png</texture>
+				<control type="image">
+					<posx>0</posx>
+					<posy>289</posy>
+					<width>ScreenWidth</width>
+					<height>100</height>
+					<texture>shelf_shadow.png</texture>
+				</control>
+				<control type="button">
+					<description>left Arrow</description>
+					<posx>30</posx>
+					<posy>100</posy>
+					<width>40</width>
+					<height>60</height>
+					<texturefocus>arrow-big-left.png</texturefocus>
+					<texturenofocus>arrow-big-left.png</texturenofocus>
+					<onclick>Control.Move(9000,-1)</onclick>
+					<visible>Container(9000).HasPrevious</visible>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="button">
+					<description>right Arrow</description>
+					<posx>70r</posx>
+					<posy>100</posy>
+					<width>40</width>
+					<height>60</height>
+					<texturefocus>arrow-big-right.png</texturefocus>
+					<texturenofocus>arrow-big-right.png</texturenofocus>
+					<onclick>Control.Move(9000,1)</onclick>
+					<visible>Container(9000).HasNext</visible>
+					<include>VisibleFadeEffect</include>
+				</control>
+				<control type="list" id="9000">
+					<posx>80</posx>
+					<posy>0</posy>
+					<width>1120</width>
+					<height>300</height>
+					<onleft>20</onleft>
+					<onright>22</onright>
+					<onup>9000</onup>
+					<ondown>9000</ondown>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>horizontal</orientation>
+					<itemlayout height="280" width="280">
+						<control type="image">
+							<posx>15</posx>
+							<posy>250</posy>
+							<width>250</width>
+							<height>30</height>
+							<texture>SubBackMirror.png</texture>
+						</control>
+						<control type="image">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>250</width>
+							<height>250</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<bordertexture border="5">SubBack.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>250</width>
+							<height>250</height>
+							<colordiffuse>88FFFFFF</colordiffuse>
+							<texture>GlassOverlay.png</texture>
+						</control>
+						<control type="label">
+							<posx>140</posx>
+							<posy>260</posy>
+							<width>270</width>
+							<height>20</height>
+							<font>font13caps_title</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>[B]$INFO[ListItem.Label][/B]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="280" width="280">
+						<control type="image">
+							<posx>15</posx>
+							<posy>250</posy>
+							<width>250</width>
+							<height>30</height>
+							<texture>SubBackMirror.png</texture>
+						</control>
+						<control type="image">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>250</width>
+							<height>250</height>
+							<texture>$INFO[ListItem.Icon]</texture>
+							<bordertexture border="5">SubBack.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<posx>15</posx>
+							<posy>0</posy>
+							<width>250</width>
+							<height>250</height>
+							<colordiffuse>88FFFFFF</colordiffuse>
+							<texture>GlassOverlay.png</texture>
+						</control>
+						<control type="label">
+							<posx>140</posx>
+							<posy>260</posy>
+							<width>270</width>
+							<height>20</height>
+							<font>font13caps_title</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>[B]$INFO[ListItem.Label][/B]</label>
+						</control>
+					</focusedlayout>
+					<content>
+						<item>
+							<label>3</label>
+							<onclick>ActivateWindow(Videos)</onclick>
+							<icon>icon_big_video.png</icon>
+							<thumb>-</thumb>
+						</item>
+						<item>
+							<label>20342</label>
+							<onclick>ActivateWindow(Videos,MovieTitles,Return)</onclick>
+							<icon>icon_big_movies.png</icon>
+							<thumb>-</thumb>
+							<visible>Library.HasContent(Movies)</visible>
+						</item>
+						<item>
+							<label>20343</label>
+							<onclick>ActivateWindow(Videos,TVShowTitles,Return)</onclick>
+							<icon>icon_big_tvshows.png</icon>
+							<thumb>-</thumb>
+							<visible>Library.HasContent(TVShows)</visible>
+						</item>
+						<item>
+							<label>2</label>
+							<onclick>ActivateWindow(Music)</onclick>
+							<icon>icon_big_music.png</icon>
+							<thumb>-</thumb>
+						</item>
+						<item>
+							<label>1</label>
+							<onclick>ActivateWindow(Pictures)</onclick>
+							<icon>icon_big_pictures.png</icon>
+							<thumb>-</thumb>
+						</item>
+						<item>
+							<label>0</label>
+							<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+							<icon>DefaultHardDisk.png</icon>
+							<thumb>-</thumb>
+						</item>
+					</content>
+				</control>
 			</control>
 		</control>
 		<control type="panel" id="9002">
