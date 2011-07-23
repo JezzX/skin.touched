@@ -28,6 +28,17 @@
 				<label>$INFO[Control.GetLabel(40),[COLOR=blue] > [/COLOR]]</label>
 			</control>
 		</control>
+		<control type="grouplist">
+			<description>Top Right bar</description>
+			<posx>680</posx>
+			<posy>0</posy>
+			<width>600</width>
+			<height>64</height>
+			<align>right</align>
+			<itemgap>5</itemgap>
+			<orientation>horizontal</orientation>
+			<include>BatteryLevelReadOut</include>
+		</control>
 		<control type="panel">
 			<visible>!Window.IsActive(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>

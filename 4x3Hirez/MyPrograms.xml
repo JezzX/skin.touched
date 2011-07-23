@@ -38,23 +38,7 @@
 			<align>right</align>
 			<itemgap>5</itemgap>
 			<orientation>horizontal</orientation>
-			<control type="image">
-				<width>2</width>
-				<height>62</height>
-				<texture>header-divide.png</texture>
-			</control>
-			<control type="button">
-				<description>Submenu Button</description>
-				<width>200</width>
-				<height>60</height>
-				<label>$LOCALIZE[33063]</label>
-				<font>font16</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<onclick>Skin.ToggleSetting(MediaSubMenuVisible)</onclick>
-			</control>
+			<include>BatteryLevelReadOut</include>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>		

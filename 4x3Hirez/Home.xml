@@ -62,6 +62,7 @@
 				<texturefocus>-</texturefocus>
 				<onclick>ActivateWindow(Favourites)</onclick>
 			</control>
+			<include>BatteryLevelReadOut</include>
 		</control>
 		<!-- weather Info -->
 		<control type="group">

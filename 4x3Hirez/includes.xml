@@ -176,6 +176,42 @@
 			</control>
 		</control>
 	</include>
+	<include name="BatteryLevelReadOut">
+		<control type="image">
+			<width>2</width>
+			<height>62</height>
+			<texture>header-divide.png</texture>
+		</control>
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>40</width>
+			<height>64</height>
+			<control type="progress">
+				<description>Volume</description>
+				<posx>4</posx>
+				<posy>15</posy>
+				<width>30</width>
+				<height>17</height>
+				<texturebg>BatteryBack.png</texturebg>
+				<midtexture>BatteryFront.png</midtexture>
+				<info>System.BatteryLevel</info>
+				<animation effect="rotate" start="0" end="90" center="auto" time="0" condition="true">conditional</animation>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>40</posy>
+				<width>40</width>
+				<height>20</height>
+				<font>font10</font>
+				<textcolor>grey2</textcolor>
+				<selectedcolor>selected</selectedcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[System.BatteryLevel]</label>
+			</control>
+		</control>
+	</include>
 	<include name="SortOrderCommon">
 		<control type="group">
 			<visible>Skin.HasSetting(SortOrderVisible)</visible>

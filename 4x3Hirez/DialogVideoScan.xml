@@ -3,7 +3,7 @@
 	<include>dialogeffect</include>
 	<controls>
 		<control type="group">
-			<posx>610r</posx>
+			<posx>675r</posx>
 			<posy>0</posy>
 			<visible>!Window.IsVisible(FullscreenVideo) + !Window.IsVisible(Visualisation)</visible>
 			<animation effect="slide" end="-315,0" time="0" condition="Window.IsVisible(Seekbar)">conditional</animation>

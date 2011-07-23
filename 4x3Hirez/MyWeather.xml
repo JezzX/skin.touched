@@ -48,6 +48,7 @@
 				<texturefocus>-</texturefocus>
 				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 			</control>
+			<include>BatteryLevelReadOut</include>
 		</control>
 		<control type="group">
 			<animation type="WindowOpen" reversible="false">

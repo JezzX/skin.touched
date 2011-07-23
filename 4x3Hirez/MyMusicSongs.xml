@@ -55,6 +55,7 @@
 				<texturefocus>-</texturefocus>
 				<onclick>Skin.ToggleSetting(MediaSubMenuVisible)</onclick>
 			</control>
+			<include>BatteryLevelReadOut</include>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>		
