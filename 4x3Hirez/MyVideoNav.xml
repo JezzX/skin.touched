@@ -81,7 +81,7 @@
 				<onclick>Skin.Reset(MediaSubMenuVisible)</onclick>
 			</control>
 			<control type="group">
-				<posx>330r</posx>
+				<posx>350r</posx>
 				<posy>93</posy>
 				<control type="image">
 					<description>Shadow Background</description>
@@ -111,7 +111,7 @@
 				</control>
 				<control type="image">
 					<description>Panel Arrow image</description>
-					<posx>250</posx>
+					<posx>230</posx>
 					<posy>-34</posy>
 					<width>40</width>
 					<height>40</height>
