@@ -56,10 +56,12 @@
 			</control>
 			<include>BatteryLevelReadOut</include>
 		</control>
-		<!-- weather Info -->
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<control type="group">
+				<!-- weather Info -->
+				<visible>Weather.IsFetched</visible>
+				<include>VisibleFadeEffect</include>
 				<posx>820r</posx>
 				<posy>64</posy>
 				<control type="button">
