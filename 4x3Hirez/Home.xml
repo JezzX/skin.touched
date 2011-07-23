@@ -19,22 +19,14 @@
 			<include>Window_OpenClose_Animation</include>
 			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 		</control>
-		<control type="grouplist">
-			<description>Top Left bar</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>700</width>
-			<height>64</height>
-			<align>left</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<include>HomeButtonCommons</include>
-			<control type="label">
-				<description>Window label</description>
-				<include>WindowTitleCommons</include>
-				<width min="0" max="300">auto</width>
-				<label>  $LOCALIZE[10000]</label>
-			</control>
+		<control type="image">
+			<description>XBMC Logo</description>
+			<posx>20</posx>
+			<posy>8</posy>
+			<width>360</width>
+			<height>48</height>
+			<aspectratio align="left">keep</aspectratio>
+			<texture>xbmc-logo.png</texture>
 		</control>
 		<control type="grouplist">
 			<description>Top Right bar</description>
