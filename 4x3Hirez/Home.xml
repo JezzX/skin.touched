@@ -22,7 +22,7 @@
 		<control type="image">
 			<description>XBMC Logo</description>
 			<posx>20</posx>
-			<posy>8</posy>
+			<posy>5</posy>
 			<width>360</width>
 			<height>48</height>
 			<aspectratio align="left">keep</aspectratio>
