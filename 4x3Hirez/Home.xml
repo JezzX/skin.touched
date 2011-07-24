@@ -60,6 +60,7 @@
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<control type="group">
 				<!-- weather Info -->
+				<animation effect="slide" start="0,0" end="0,30" time="0" condition="system.getbool(lookandfeel.enablerssfeeds)">conditional</animation>
 				<visible>Weather.IsFetched</visible>
 				<include>VisibleFadeEffect</include>
 				<posx>820r</posx>
