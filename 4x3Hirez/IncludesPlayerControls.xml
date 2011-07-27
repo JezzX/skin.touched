@@ -521,6 +521,7 @@
 				<width>2</width>
 				<height>62</height>
 				<texture>header-divide.png</texture>
+				<visible>!Window.IsVisible(Karaoke)</visible>
 			</control>
 			<control type="button">
 				<description>Submenu Button</description>
@@ -533,11 +534,13 @@
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
 				<onclick>Skin.ToggleSetting(PlayerControlsSubMenuVisible)</onclick>
+				<visible>!Window.IsVisible(Karaoke)</visible>
 			</control>
 			<control type="image">
 				<width>2</width>
 				<height>62</height>
 				<texture>header-divide.png</texture>
+				<visible>!Window.IsVisible(Karaoke)</visible>
 			</control>
 			<control type="radiobutton">
 				<description>Fullscreen Button</description>
@@ -552,7 +555,7 @@
 				<onclick>fullscreen</onclick>
 				<textureradiofocus>GoFullscreen2.png</textureradiofocus>
 				<textureradionofocus>GoFullscreen2.png</textureradionofocus>
-				<visible>!Window.IsVisible(Visualisation) + !Window.IsVisible(FullScreenVideo)</visible>
+				<visible>!Window.IsVisible(Visualisation) + !Window.IsVisible(FullScreenVideo) + !Window.IsVisible(Karaoke)</visible>
 			</control>
 			<control type="radiobutton">
 				<description>Fullscreen Button</description>
@@ -569,7 +572,7 @@
 				<onclick>fullscreen</onclick>
 				<textureradiofocus flipx="true" flipy="true">GoFullscreen2.png</textureradiofocus>
 				<textureradionofocus flipx="true" flipy="true">GoFullscreen2.png</textureradionofocus>
-				<visible>Window.IsVisible(Visualisation) | Window.IsVisible(FullScreenVideo)</visible>
+				<visible>Window.IsVisible(Visualisation) | Window.IsVisible(FullScreenVideo) + !Window.IsVisible(Karaoke)</visible>
 			</control>
 			<control type="image">
 				<width>2</width>

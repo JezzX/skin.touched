@@ -5,6 +5,7 @@
 	<include file="ViewsAddonBrowser.xml" />
 	<include file="IncludesCodecFlagging.xml" />
 	<include file="IncludesPlayerControls.xml" />
+	<include file="IncludesKeypad.xml" />
 
 	<constant name="ScreenWidth">1280</constant>
 	<constant name="ScreenHeight">960</constant>
@@ -46,7 +47,7 @@
 			<texture>black-back.png</texture>
 			<animation effect="fade" time="400">Visible</animation>
 			<animation effect="fade" time="200">Hidden</animation>
-			<visible>Window.IsActive(ContextMenu) | Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(SongInformation) | Window.IsActive(FileBrowser) | Window.IsActive(TextViewer) | Window.IsActive(AddonSettings) | Window.IsActive(ContentSettings) | Window.IsActive(SelectDialog) | Window.IsActive(FileStackingDialog) | Window.IsActive(MediaSource) | Window.IsActive(PictureInfo) | [Window.IsActive(NumericInput) + !Window.IsVisible(VirtualKeyboard)] | Window.IsActive(ProfileSettings) | Window.IsActive(LockSettings) | Window.IsActive(SmartPlaylistEditor) | Window.IsActive(SmartPlaylistRule) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml) | Window.IsActive(AddonInformation) | Window.IsActive(Favourites) | Window.IsActive(PictureInfo)</visible>
+			<visible>Window.IsActive(ContextMenu) | Window.IsActive(MovieInformation) | Window.IsActive(MusicInformation) | Window.IsActive(SongInformation) | Window.IsActive(FileBrowser) | Window.IsActive(TextViewer) | Window.IsActive(AddonSettings) | Window.IsActive(ContentSettings) | Window.IsActive(SelectDialog) | Window.IsActive(FileStackingDialog) | Window.IsActive(MediaSource) | Window.IsActive(PictureInfo) | [Window.IsActive(NumericInput) + !Window.IsVisible(VirtualKeyboard)] | Window.IsActive(ProfileSettings) | Window.IsActive(LockSettings) | Window.IsActive(SmartPlaylistEditor) | Window.IsActive(SmartPlaylistRule) | Window.IsActive(script-RSS_Editor-rssEditor.xml) | Window.IsActive(script-RSS_Editor-setEditor.xml) | Window.IsActive(AddonInformation) | Window.IsActive(Favourites) | Window.IsActive(PictureInfo) | Window.IsActive(KaraokeLargeSelector)</visible>
 		</control>
 	</include>
 	<include name="WindowTitleCommons">
