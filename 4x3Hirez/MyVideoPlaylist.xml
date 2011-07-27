@@ -52,7 +52,7 @@
 			<include>BatteryLevelReadOut</include>
 		</control>
 		<control type="group">
-			<include>Window_OpenClose_Animation_Zoom</include>		
+			<include>Window_OpenClose_Animation_Zoom</include>
 			<include>CommonRootView</include> <!-- view id = 50 -->
 			<include>ThumbnailView</include> <!-- view id = 500 -->
 		</control>

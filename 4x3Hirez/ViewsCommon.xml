@@ -58,7 +58,7 @@
 					<width>100</width>
 					<height>25</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture>light/left_rating/$INFO[ListItem.StarRating]</texture>
+					<texture fallback="light/left_rating/rating0.png">$INFO[ListItem.StarRating,light/left_rating/]</texture>
 				</control>
 			</itemlayout>
 			<focusedlayout height="60" width="1180">
@@ -108,7 +108,7 @@
 					<width>100</width>
 					<height>25</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture>dark/left_rating/$INFO[ListItem.StarRating]</texture>
+					<texture fallback="dark/left_rating/rating0.png">$INFO[ListItem.StarRating,dark/left_rating/]</texture>
 				</control>
 			</focusedlayout>
 		</control>
@@ -209,7 +209,7 @@
 					<width>100</width>
 					<height>25</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture>light/left_rating/$INFO[ListItem.StarRating]</texture>
+					<texture fallback="light/left_rating/rating0.png">$INFO[ListItem.StarRating,light/left_rating/]</texture>
 					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 				</control>
 				<control type="label">
@@ -232,7 +232,7 @@
 					<width>100</width>
 					<height>25</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture>light/left_rating/$INFO[ListItem.StarRating]</texture>
+					<texture fallback="light/left_rating/rating0.png">$INFO[ListItem.StarRating,light/left_rating/]</texture>
 					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 				</control>
 				<control type="image">
@@ -299,7 +299,7 @@
 					<width>100</width>
 					<height>25</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture>dark/left_rating/$INFO[ListItem.StarRating]</texture>
+					<texture fallback="dark/left_rating/rating0.png">$INFO[ListItem.StarRating,dark/left_rating/]</texture>
 					<visible>![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 				</control>
 				<control type="label">
@@ -322,7 +322,7 @@
 					<width>100</width>
 					<height>25</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture>dark/left_rating/$INFO[ListItem.StarRating]</texture>
+					<texture fallback="dark/left_rating/rating0.png">$INFO[ListItem.StarRating,dark/left_rating/]</texture>
 					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 				</control>
 				<control type="image">

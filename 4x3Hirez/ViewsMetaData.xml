@@ -78,7 +78,7 @@
 					<width>100</width>
 					<height>25</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture>light/left_rating/$INFO[ListItem.StarRating]</texture>
+					<texture fallback="light/left_rating/rating0.png">$INFO[ListItem.StarRating,light/left_rating/]</texture>
 				</control>
 				<control type="image">
 					<posx>1080</posx>
@@ -170,7 +170,7 @@
 					<width>100</width>
 					<height>25</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture>dark/left_rating/$INFO[ListItem.StarRating]</texture>
+					<texture fallback="dark/left_rating/rating0.png">$INFO[ListItem.StarRating,dark/left_rating/]</texture>
 				</control>
 				<control type="image">
 					<posx>1080</posx>
@@ -263,7 +263,7 @@
 					<width>100</width>
 					<height>25</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture>light/left_rating/$INFO[ListItem.StarRating]</texture>
+					<texture fallback="light/left_rating/rating0.png">$INFO[ListItem.StarRating,light/left_rating/]</texture>
 				</control>
 				<control type="image">
 					<posx>1080</posx>
@@ -356,7 +356,7 @@
 					<width>100</width>
 					<height>25</height>
 					<aspectratio align="left">keep</aspectratio>
-					<texture>dark/left_rating/$INFO[ListItem.StarRating]</texture>
+					<texture fallback="dark/left_rating/rating0.png">$INFO[ListItem.StarRating,dark/left_rating/]</texture>
 				</control>
 				<control type="image">
 					<posx>1080</posx>

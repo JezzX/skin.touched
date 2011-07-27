@@ -21,7 +21,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<include>Window_OpenClose_Animation_Zoom</include>		
+			<include>Window_OpenClose_Animation_Zoom</include>
 			<control type="label">
 				<posx>295</posx>
 				<posy>100</posy>
