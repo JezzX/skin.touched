@@ -78,8 +78,7 @@
 
   <!-- Skin Fontsets -->
   <string id="31390">Skin default</string>
-  <string id="31391">Skin default with no Caps</string>
-  <string id="31392">Arial based</string>
+  <string id="31391">Arial based</string>
 
   <!-- Description Labels  -->
   <string id="31400">Change the skin · Set language and region · Change file listing options · Set up a screensaver</string>
