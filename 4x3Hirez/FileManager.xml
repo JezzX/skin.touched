@@ -27,7 +27,7 @@
 				<posy>50</posy>
 				<width>570</width>
 				<height>30</height>
-				<font>font35_title</font>
+				<font>font30_title</font>
 				<label>A</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -188,7 +188,7 @@
 				<posy>50</posy>
 				<width>570</width>
 				<height>30</height>
-				<font>font35_title</font>
+				<font>font30_title</font>
 				<label>B</label>
 				<align>right</align>
 				<aligny>center</aligny>

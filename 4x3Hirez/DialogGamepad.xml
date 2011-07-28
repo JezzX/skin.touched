@@ -77,7 +77,7 @@
 			<align>left</align>
 			<aligny>center</aligny>
 			<label>-</label>
-			<font>font35_title</font>
+			<font>font30_title</font>
 			<textcolor>black</textcolor>
 		</control>
 	</controls>

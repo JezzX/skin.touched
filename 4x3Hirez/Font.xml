@@ -69,21 +69,6 @@
 			<filename>DejaVuSans-Bold.ttf</filename>
 			<size>30</size>
 		</font>
-	 	<font>
-			<name>font35_title</name>
-			<filename>DejaVuSans-Bold.ttf</filename>
-			<size>35</size>
-		</font>
-	 	<font>
-			<name>font50caps_title</name>
-			<filename>DejaVuSans-Bold-Caps.ttf</filename>
-			<size>35</size>
-		</font>
-	 	<font>
-			<name>font45caps_title</name>
-			<filename>DejaVuSans-Bold-Caps.ttf</filename>
-			<size>45</size>
-		</font>
 
 	 	<font>
 			<name>WeatherTemp</name>
