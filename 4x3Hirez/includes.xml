@@ -25,17 +25,88 @@
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>ScreenWidth</width>
-			<height>64</height>
-			<texture>header.png</texture>
+			<height>20</height>
+			<texture>black.png</texture>
+		</control>
+		<control type="label">
+			<description>XBMC label</description>
+			<posx>5</posx>
+			<posy>0</posy>
+			<width>200</width>
+			<height>18</height>
+			<align>left</align>
+			<aligny>center</aligny>
+			<font>font10_title</font>
+			<textcolor>white</textcolor>
+			<label>XBMC</label>
+		</control>
+		<control type="label">
+			<description>time label</description>
+			<posx>200</posx>
+			<posy>0</posy>
+			<width>880</width>
+			<height>18</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>font10_title</font>
+			<textcolor>white</textcolor>
+			<label>$INFO[System.Time]</label>
+		</control>
+		<control type="progress">
+			<description>Volume</description>
+			<posx>35r</posx>
+			<posy>2</posy>
+			<width>30</width>
+			<height>15</height>
+			<texturebg>BatteryBack.png</texturebg>
+			<midtexture>BatteryFront.png</midtexture>
+			<info>System.BatteryLevel</info>
+		</control>
+		<control type="label">
+			<posx>45r</posx>
+			<posy>0</posy>
+			<width>200</width>
+			<height>18</height>
+			<font>font10_title</font>
+			<textcolor>white</textcolor>
+			<align>right</align>
+			<aligny>center</aligny>
+			<label>$INFO[System.BatteryLevel]</label>
 		</control>
 		<control type="image">
 			<posx>0</posx>
-			<posy>65r</posy>
+			<posy>100</posy>
+			<width>ScreenWidth</width>
+			<height>10</height>
+			<texture>shelf_shadow.png</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>20</posy>
+			<width>ScreenWidth</width>
+			<height>80</height>
+			<texture border="0,0,0,2">header.png</texture>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>64r</posy>
 			<width>ScreenWidth</width>
 			<height>64</height>
-			<texture>shelf.png</texture>
-			<visible>!Window.IsActive(PlayerControls)</visible>
-			<include>VisibleFadeEffect</include>
+			<texture>floor.png</texture>
+		</control>
+		<control type="button">
+			<description>Favourties Button</description>
+			<posx>160r</posx>
+			<posy>55r</posy>
+			<width>150</width>
+			<height>46</height>
+			<label>$LOCALIZE[1036]</label>
+			<font>font12</font>
+			<align>center</align>
+			<aligny>center</aligny>
+			<texturenofocus border="5">floor_button.png</texturenofocus>
+			<texturefocus border="5">floor_buttonFO.png</texturefocus>
+			<onclick>ActivateWindow(Favourites)</onclick>
 		</control>
 	</include>
 	<include name="BehindDialogFadeOut">
@@ -107,7 +178,7 @@
 	<include name="Clock">
 		<control type="group">
 			<posx>260r</posx>
-			<posy>130r</posy>
+			<posy>194r</posy>
 			<visible>!Window.IsActive(PlayerControls) + !Window.IsActive(InfoDialog)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
@@ -180,18 +251,18 @@
 	<include name="BatteryLevelReadOut">
 		<control type="image">
 			<width>2</width>
-			<height>62</height>
+			<height>78</height>
 			<texture>header-divide.png</texture>
 		</control>
 		<control type="group">
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>40</width>
-			<height>64</height>
+			<height>80</height>
 			<control type="progress">
 				<description>Volume</description>
 				<posx>4</posx>
-				<posy>15</posy>
+				<posy>20</posy>
 				<width>30</width>
 				<height>17</height>
 				<texturebg>BatteryBack.png</texturebg>
@@ -201,7 +272,7 @@
 			</control>
 			<control type="label">
 				<posx>0</posx>
-				<posy>40</posy>
+				<posy>45</posy>
 				<width>40</width>
 				<height>20</height>
 				<font>font10</font>
@@ -332,10 +403,10 @@
 	</include>
 	<include name="SubMenuCommonLayout">
 		<include>Window_OpenClose_Animation</include>
-		<posx>40</posx>
-		<posy>130r</posy>
+		<posx>10</posx>
+		<posy>55r</posy>
 		<width>620</width>
-		<height>120</height>
+		<height>56</height>
 		<onleft>9002</onleft>
 		<onright>9002</onright>
 		<onup>9001</onup>
@@ -343,28 +414,19 @@
 		<pagecontrol>-</pagecontrol>
 		<scrolltime>300</scrolltime>
 		<orientation>Horizontal</orientation>
-		<itemlayout height="200" width="120">
+		<itemlayout height="46" width="160">
 			<control type="image">
-				<posx>15</posx>
-				<posy>90</posy>
-				<width>90</width>
-				<height>45</height>
-				<texture border="5">IconBack_reflect.png</texture>
-			</control>
-			<control type="image">
-				<posx>15</posx>
+				<posx>0</posx>
 				<posy>0</posy>
-				<width>90</width>
-				<height>90</height>
-				<bordertexture border="5">IconBack.png</bordertexture>
-				<bordersize>15</bordersize>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<width>150</width>
+				<height>46</height>
+				<texture border="6">floor_button.png</texture>
 			</control>
 			<control type="label">
-				<posx>60</posx>
-				<posy>95</posy>
-				<width>110</width>
-				<height>25</height>
+				<posx>75</posx>
+				<posy>0</posy>
+				<width>140</width>
+				<height>46</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
@@ -373,28 +435,19 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout height="200" width="120">
+		<focusedlayout height="56" width="160">
 			<control type="image">
-				<posx>15</posx>
-				<posy>90</posy>
-				<width>90</width>
-				<height>45</height>
-				<texture border="5">IconBack_reflect.png</texture>
-			</control>
-			<control type="image">
-				<posx>15</posx>
+				<posx>0</posx>
 				<posy>0</posy>
-				<width>90</width>
-				<height>90</height>
-				<bordertexture border="5">IconBack-focus.png</bordertexture>
-				<bordersize>15</bordersize>
-				<texture>$INFO[ListItem.Icon]</texture>
+				<width>150</width>
+				<height>46</height>
+				<texture border="6">floor_buttonFO.png</texture>
 			</control>
 			<control type="label">
-				<posx>60</posx>
-				<posy>95</posy>
-				<width>110</width>
-				<height>25</height>
+				<posx>75</posx>
+				<posy>0</posy>
+				<width>140</width>
+				<height>46</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
