@@ -2,9 +2,9 @@
 	<include name="CommonRootViewAddons">
 		<control type="panel" id="50">
 			<posx>50</posx>
-			<posy>110</posy>
+			<posy>140</posy>
 			<width>1180</width>
-			<height>660</height>
+			<height>720</height>
 			<onleft>2</onleft>
 			<onright>60</onright>
 			<onup>50</onup>
@@ -157,42 +157,6 @@
 					<visible>stringcompare(ListItem.Label2,$LOCALIZE[305])</visible>
 				</control>
 			</focusedlayout>
-		</control>
-		<control type="group">
-			<visible>Control.IsVisible(50)</visible>
-			<posx>610</posx>
-			<posy>75</posy>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>60</width>
-				<height>30</height>
-				<texturefocus>arrow-big-up.png</texturefocus>
-				<texturenofocus>arrow-big-up.png</texturenofocus>
-				<onclick>FirstPage</onclick>
-				<visible>Container.HasPrevious</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>700</posy>
-				<width>60</width>
-				<height>30</height>
-				<texturefocus>arrow-big-down.png</texturefocus>
-				<texturenofocus>arrow-big-down.png</texturenofocus>
-				<onclick>LastPage</onclick>
-				<visible>Container.HasNext</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-		</control>
-		<control type="label">
-			<description>Page Count Label</description>
-			<posx>1230</posx>
-			<posy>780</posy>
-			<include>FileCountCommons</include>
-			<visible>Control.IsVisible(50)</visible>
 		</control>
 	</include>
 </includes>

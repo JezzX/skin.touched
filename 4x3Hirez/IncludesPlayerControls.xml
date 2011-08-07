@@ -598,7 +598,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>71</height>
-				<texture flipy="true">header.png</texture>
+				<texture>floor.png</texture>
 			</control>
 			<control type="label">
 				<posx>180</posx>
