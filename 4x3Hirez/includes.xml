@@ -21,6 +21,89 @@
 			<height>ScreenHeight</height>
 			<texture>special://skin/background/background.png</texture>
 		</control>
+		<include>CommonHeader</include>
+		<control type="group">
+			<visible>!Window.IsActive(PlayerControls)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>100</posy>
+				<width>ScreenWidth</width>
+				<height>10</height>
+				<texture>shelf_shadow.png</texture>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>20</posy>
+				<width>ScreenWidth</width>
+				<height>80</height>
+				<texture border="0,0,0,2">header.png</texture>
+			</control>
+			<control type="button">
+				<description>Previous Button</description>
+				<posx>550</posx>
+				<posy>30</posy>
+				<width>45</width>
+				<height>45</height>
+				<label>-</label>
+				<texturenofocus>PlayerControls2-PreviousNF.png</texturenofocus>
+				<texturefocus>PlayerControls2-PreviousFO.png</texturefocus>
+				<onclick>XBMC.PlayerControl(Previous)</onclick>
+			</control>
+			<control type="button">
+				<description>Play Button</description>
+				<posx>612</posx>
+				<posy>23</posy>
+				<width>56</width>
+				<height>56</height>
+				<label>-</label>
+				<texturenofocus>PlayerControls2-PlayNF.png</texturenofocus>
+				<texturefocus>PlayerControls2-PlayFO.png</texturefocus>
+				<onclick>XBMC.PlayerControl(Play)</onclick>
+			</control>
+			<control type="button">
+				<description>Next Button</description>
+				<posx>680</posx>
+				<posy>30</posy>
+				<width>45</width>
+				<height>45</height>
+				<label>-</label>
+				<texturenofocus>PlayerControls2-NextNF.png</texturenofocus>
+				<texturefocus>PlayerControls2-NextFO.png</texturefocus>
+				<onclick>XBMC.PlayerControl(Next)</onclick>
+			</control>
+			<control type="progress">
+				<description>Progressbar</description>
+				<posx>450</posx>
+				<posy>83</posy>
+				<width>380</width>
+				<height>15</height>
+				<info>Player.Progress</info>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>64r</posy>
+				<width>ScreenWidth</width>
+				<height>64</height>
+				<texture>floor.png</texture>
+			</control>
+			<control type="button">
+				<description>Favourties Button</description>
+				<posx>160r</posx>
+				<posy>55r</posy>
+				<width>150</width>
+				<height>46</height>
+				<label>$LOCALIZE[1036]</label>
+				<font>font12</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<onclick>ActivateWindow(Favourites)</onclick>
+			</control>
+		</control>
+	</include>
+	<include name="CommonHeader">
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -53,7 +136,7 @@
 			<label>$INFO[System.Time]</label>
 		</control>
 		<control type="progress">
-			<description>Volume</description>
+			<description>Battery Percent</description>
 			<posx>35r</posx>
 			<posy>2</posy>
 			<width>30</width>
@@ -72,82 +155,6 @@
 			<align>right</align>
 			<aligny>center</aligny>
 			<label>$INFO[System.BatteryLevel]</label>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>100</posy>
-			<width>ScreenWidth</width>
-			<height>10</height>
-			<texture>shelf_shadow.png</texture>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>20</posy>
-			<width>ScreenWidth</width>
-			<height>80</height>
-			<texture border="0,0,0,2">header.png</texture>
-		</control>
-		<control type="button">
-			<description>Previous Button</description>
-			<posx>550</posx>
-			<posy>30</posy>
-			<width>45</width>
-			<height>45</height>
-			<label>-</label>
-			<texturenofocus>PlayerControls2-PreviousNF.png</texturenofocus>
-			<texturefocus>PlayerControls2-PreviousFO.png</texturefocus>
-			<onclick>XBMC.PlayerControl(Previous)</onclick>
-		</control>
-		<control type="button">
-			<description>Play Button</description>
-			<posx>612</posx>
-			<posy>23</posy>
-			<width>56</width>
-			<height>56</height>
-			<label>-</label>
-			<texturenofocus>PlayerControls2-PlayNF.png</texturenofocus>
-			<texturefocus>PlayerControls2-PlayFO.png</texturefocus>
-			<onclick>XBMC.PlayerControl(Play)</onclick>
-		</control>
-		<control type="button">
-			<description>Next Button</description>
-			<posx>680</posx>
-			<posy>30</posy>
-			<width>45</width>
-			<height>45</height>
-			<label>-</label>
-			<texturenofocus>PlayerControls2-NextNF.png</texturenofocus>
-			<texturefocus>PlayerControls2-NextFO.png</texturefocus>
-			<onclick>XBMC.PlayerControl(Next)</onclick>
-		</control>
-		<control type="progress">
-			<description>Progressbar</description>
-			<posx>450</posx>
-			<posy>83</posy>
-			<width>380</width>
-			<height>15</height>
-			<info>Player.Progress</info>
-		</control>
-		<control type="image">
-			<posx>0</posx>
-			<posy>64r</posy>
-			<width>ScreenWidth</width>
-			<height>64</height>
-			<texture>floor.png</texture>
-		</control>
-		<control type="button">
-			<description>Favourties Button</description>
-			<posx>160r</posx>
-			<posy>55r</posy>
-			<width>150</width>
-			<height>46</height>
-			<label>$LOCALIZE[1036]</label>
-			<font>font12</font>
-			<align>center</align>
-			<aligny>center</aligny>
-			<texturenofocus border="5">floor_button.png</texturenofocus>
-			<texturefocus border="5">floor_buttonFO.png</texturefocus>
-			<onclick>ActivateWindow(Favourites)</onclick>
 		</control>
 	</include>
 	<include name="BehindDialogFadeOut">
@@ -405,83 +412,6 @@
 			</control>
 		</control>
 	</include>
-	<include name="SortOrderCommon">
-		<control type="group">
-			<visible>Skin.HasSetting(SortOrderVisible)</visible>
-			<include>VisibleFadeEffect</include>
-			<control type="button">
-				<description>Hidden button to close the sort when its focused</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>ScreenWidth</width>
-				<height>ScreenHeight</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<onclick>Skin.Reset(SortOrderVisible)</onclick>
-			</control>
-			<control type="group">
-				<posx>265</posx>
-				<posy>305r</posy>
-				<control type="image">
-					<description>Shadow Background</description>
-					<posx>-30</posx>
-					<posy>-30</posy>
-					<width>330</width>
-					<height>210</height>
-					<texture border="30">ShadowBorder.png</texture>
-				</control>
-				<control type="image">
-					<description>Panel Background image</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>270</width>
-					<height>150</height>
-					<texture border="5">SubBack.png</texture>
-				</control>
-				<control type="image">
-					<description>Panel Forground image</description>
-					<posx>10</posx>
-					<posy>10</posy>
-					<width>250</width>
-					<height>120</height>
-					<texture border="5">SubBack2.png</texture>
-				</control>
-				<control type="image">
-					<description>Panel Arrow image</description>
-					<posx>40</posx>
-					<posy>142</posy>
-					<width>40</width>
-					<height>40</height>
-					<texture>arrow-big-down.png</texture>
-				</control>
-				<control type="grouplist">
-					<posx>10</posx>
-					<posy>10</posy>
-					<width>250</width>
-					<height>600</height>
-					<onleft>9000</onleft>
-					<onright>50</onright>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
-					<itemgap>-1</itemgap>
-					<control type="button" id="3">
-						<description>Sort by button</description>
-						<include>ButtonCommonValues</include>
-						<label>103</label>
-					</control>
-					<control type="togglebutton" id="4">
-						<description>Sort asc</description>
-						<include>ButtonCommonValues</include>
-						<alttexturefocus border="5">button-focus2.png</alttexturefocus>
-						<alttexturenofocus>button-nofocus2</alttexturenofocus>
-						<label>31051</label>
-						<altlabel>31050</altlabel>
-						<usealttexture>Container.SortDirection(Ascending)</usealttexture>
-					</control>
-				</control>
-			</control>
-		</control>
-	</include>
 	<include name="MediaSubMenu">
 		<control type="button" id="19">
 			<description>Filter button needed for panel below to work</description>
@@ -599,11 +529,10 @@
 	</include>
 	<include name="CommonNowPlaying">
 		<control type="group">
-			<posx>70</posx>
+			<posx>110</posx>
 			<posy>25</posy>
-			<visible>Player.HasMedia</visible>
+			<visible>Player.HasMedia + !Window.IsVisible(PlayerControls)</visible>
 			<include>VisibleFadeEffect</include>
-			<include>Window_OpenClose_Animation</include>
 			<control type="button">
 				<posx>0</posx>
 				<posy>0</posy>
