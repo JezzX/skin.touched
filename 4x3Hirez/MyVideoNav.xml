@@ -13,22 +13,6 @@
 			<include>MediaWindowTitleCommons</include>
 			<label>$LOCALIZE[3]</label>
 		</control>
-		<!-- control type="grouplist">
-			<description>Top Left bar</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1000</width>
-			<height>64</height>
-			<align>left</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<control type="label">
-				<description>Folder label</description>
-				<include>WindowTitleCommons</include>
-				<width min="0" max="1000">auto</width>
-				<label>$INFO[Container.FolderName,[COLOR=blue] > [/COLOR]]</label>
-			</control>
-		</control  -->
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<include>CommonRootViewVideo</include> <!-- view id = 50 -->
