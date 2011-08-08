@@ -100,6 +100,7 @@
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<onclick>ActivateWindow(Favourites)</onclick>
+				<visible>!Window.IsVisible(LoginScreen)</visible>
 			</control>
 		</control>
 	</include>

@@ -3,67 +3,30 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
-		<include>Clock</include>
+		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
-		<control type="grouplist">
-			<description>Top Left bar</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1000</width>
-			<height>64</height>
-			<align>left</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<include>HomeButtonCommons</include>
-			<control type="label">
-				<description>Window label</description>
-				<include>WindowTitleCommons</include>
-				<width min="0" max="300">auto</width>
-				<label>  $LOCALIZE[8]</label>
-			</control>
+		<include>OptionsButtonCommons</include>
+		<control type="label">
+			<description>Window label</description>
+			<include>MediaWindowTitleCommons</include>
+			<label>$LOCALIZE[8]</label>
 		</control>
-		<control type="grouplist">
-			<description>Top Right bar</description>
-			<posx>680</posx>
-			<posy>0</posy>
-			<width>600</width>
+		<control type="button">
+			<description>Options Button</description>
+			<posx>64r</posx>
+			<posy>25</posy>
+			<width>64</width>
 			<height>64</height>
-			<align>right</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<control type="image">
-				<width>2</width>
-				<height>62</height>
-				<texture>header-divide.png</texture>
-			</control>
-			<control type="button">
-				<description>Favourties Button</description>
-				<width>200</width>
-				<height>60</height>
-				<label>$LOCALIZE[5]</label>
-				<font>font16</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
-			</control>
-			<include>BatteryLevelReadOut</include>
+			<texturenofocus>icon_system.png</texturenofocus>
+			<texturefocus>icon_system.png</texturefocus>
+			<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 		</control>
 		<control type="group">
-			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="300" />
-				<effect type="fade" start="0" end="100" time="300" />
-			</animation>
-			<animation type="WindowClose" reversible="false">
-				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
-				<effect type="fade" start="100" end="0" time="300" />
-			</animation>			
-			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation_Zoom</include>
 			<control type="image">
 				<description>Shadow Background</description>
 				<posx>50</posx>
-				<posy>120</posy>
+				<posy>160</posy>
 				<width>1180</width>
 				<height>680</height>
 				<texture border="30">ShadowBorder.png</texture>
@@ -71,7 +34,7 @@
 			</control>
 			<control type="group">
 				<posx>80</posx>
-				<posy>150</posy>
+				<posy>190</posy>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -314,7 +277,7 @@
 			</control>
 			<control type="group">
 				<posx>580</posx>
-				<posy>150</posy>
+				<posy>190</posy>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
