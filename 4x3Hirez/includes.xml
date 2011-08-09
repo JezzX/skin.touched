@@ -320,12 +320,12 @@
 				<item>
 					<label>31200</label>
 					<onclick>ParentDir</onclick>
-					<icon>icon_back.png</icon>
+					<icon>-</icon>
 				</item>
 				<item>
 					<label>587</label>
 					<onclick>SendClick(19)</onclick>
-					<icon>icon_filter_on.png</icon>
+					<icon>-</icon>
 				</item>
 			</content>
 		</control>

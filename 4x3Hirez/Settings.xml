@@ -18,17 +18,17 @@
 				<item>
 					<label>31200</label>
 					<onclick>PreviousMenu</onclick>
-					<icon>icon_back.png</icon>
+					<icon>-</icon>
 				</item>
 				<item>
 					<label>13200</label>
 					<onclick>ActivateWindow(Profiles)</onclick>
-					<icon>icon_profile.png</icon>
+					<icon>-</icon>
 				</item>
 				<item>
 					<label>130</label>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
-					<icon>icon_systeminfo.png</icon>
+					<icon>-</icon>
 				</item>
 			</content>
 		</control>

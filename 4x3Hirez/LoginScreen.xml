@@ -125,7 +125,7 @@
 				<item>
 					<label>13012</label>
 					<onclick>XBMC.Quit</onclick>
-					<icon>icon_shutdown.png</icon>
+					<icon>-</icon>
 				</item>
 			</content>
 		</control>

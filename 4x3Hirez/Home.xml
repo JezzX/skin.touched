@@ -263,30 +263,30 @@
 				<item>
 					<label>13012</label>
 					<onclick>XBMC.Quit</onclick>
-					<icon>icon_shutdown.png</icon>
+					<icon>-</icon>
 				</item>
 				<item>
 					<label>20126</label>
 					<onclick>System.LogOff</onclick>
-					<icon>icon_logoff.png</icon>
+					<icon>-</icon>
 					<visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
 				</item>
 				<item>
 					<label>5</label>
 					<onclick>ActivateWindow(Settings)</onclick>
-					<icon>icon_system.png</icon>
+					<icon>-</icon>
 				</item>
 				<item>
 					<label>13376</label>
 					<onclick>ActivateWindow(1112)</onclick>
-					<icon>icon_volume.png</icon>
+					<icon>-</icon>
 					<visible>false</visible>
 				</item>
 				<item>
 					<label>Reload Skin</label>
 					<onclick>ReloadSkin</onclick>
-					<icon>icon_refresh.png</icon>
-					<visible>true</visible>
+					<icon>-</icon>
+					<visible>false</visible>
 				</item>
 			</content>
 		</control>
