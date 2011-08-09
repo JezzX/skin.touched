@@ -307,115 +307,6 @@
 			<texturenofocus>icon_close.png</texturenofocus>
 		</control>
 	</include>
-	<include name="Clock">
-		<control type="group">
-			<posx>260r</posx>
-			<posy>194r</posy>
-			<visible>!Window.IsActive(PlayerControls) + !Window.IsActive(InfoDialog)</visible>
-			<include>VisibleFadeEffect</include>
-			<control type="image">
-				<posx>15</posx>
-				<posy>90</posy>
-				<width>90</width>
-				<height>45</height>
-				<texture border="5">IconBack_reflect.png</texture>
-			</control>
-			<control type="image">
-				<posx>15</posx>
-				<posy>0</posy>
-				<width>90</width>
-				<height>90</height>
-				<texture border="5">IconBack.png</texture>
-			</control>
-			<control type="label">
-				<description>time label</description>
-				<posx>15</posx>
-				<posy>0</posy>
-				<width>90</width>
-				<height>90</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font55</font>
-				<textcolor>black</textcolor>
-				<label>[B]$INFO[System.Time(hh)][/B]</label>
-			</control>
-			<control type="image">
-				<posx>115</posx>
-				<posy>90</posy>
-				<width>90</width>
-				<height>45</height>
-				<texture border="5">IconBack_reflect.png</texture>
-			</control>
-			<control type="image">
-				<posx>115</posx>
-				<posy>0</posy>
-				<width>90</width>
-				<height>90</height>
-				<texture border="5">IconBack.png</texture>
-			</control>
-			<control type="label">
-				<description>time label</description>
-				<posx>115</posx>
-				<posy>0</posy>
-				<width>90</width>
-				<height>90</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font55</font>
-				<textcolor>black</textcolor>
-				<label>[B]$INFO[System.Time(mm)][/B]</label>
-			</control>
-			<control type="label">
-				<description>Date label</description>
-				<posx>0</posx>
-				<posy>95</posy>
-				<width>220</width>
-				<height>25</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<font>font12</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<label>$INFO[System.Date]</label>
-			</control>
-		</control>
-	</include>
-	<include name="BatteryLevelReadOut">
-		<control type="image">
-			<width>2</width>
-			<height>78</height>
-			<texture>header-divide.png</texture>
-		</control>
-		<control type="group">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>40</width>
-			<height>80</height>
-			<control type="progress">
-				<description>Volume</description>
-				<posx>4</posx>
-				<posy>20</posy>
-				<width>30</width>
-				<height>17</height>
-				<texturebg>BatteryBack.png</texturebg>
-				<midtexture>BatteryFront.png</midtexture>
-				<info>System.BatteryLevel</info>
-				<animation effect="rotate" start="0" end="90" center="auto" time="0" condition="true">conditional</animation>
-			</control>
-			<control type="label">
-				<posx>0</posx>
-				<posy>45</posy>
-				<width>40</width>
-				<height>20</height>
-				<font>font10</font>
-				<textcolor>grey2</textcolor>
-				<selectedcolor>selected</selectedcolor>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[System.BatteryLevel]</label>
-			</control>
-		</control>
-	</include>
 	<include name="MediaSubMenu">
 		<control type="button" id="19">
 			<description>Filter button needed for panel below to work</description>
@@ -494,19 +385,6 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</focusedlayout>
-	</include>
-	<include name="ButtonCommonValues">
-		<height>60</height>
-		<width>250</width>
-		<textoffsetx>10</textoffsetx>
-		<textwidth>200</textwidth>
-		<textcolor>black</textcolor>
-		<align>center</align>
-		<aligny>center</aligny>
-		<font>font13</font>
-		<texturefocus border="5">button-focus2.png</texturefocus>
-		<texturenofocus border="5">button-nofocus2.png</texturenofocus>
-		<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="ButtonCommonValues2">
 		<height>60</height>
