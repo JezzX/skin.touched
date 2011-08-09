@@ -19,7 +19,7 @@
 		<control type="group">
 			<!-- weather Info -->
 			<include>Window_OpenClose_Animation</include>
-			<visible>Weather.IsFetched</visible>
+			<visible>Weather.IsFetched + ![Window.IsVisible(VideoScan) | Window.IsVisible(MusicScan)]</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>720r</posx>
 			<posy>23</posy>
