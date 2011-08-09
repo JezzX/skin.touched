@@ -50,15 +50,18 @@
 				<texturefocus>PlayerControls2-PreviousFO.png</texturefocus>
 				<onclick>XBMC.PlayerControl(Previous)</onclick>
 			</control>
-			<control type="button">
+			<control type="togglebutton">
 				<description>Play Button</description>
 				<posx>612</posx>
 				<posy>23</posy>
 				<width>56</width>
 				<height>56</height>
 				<label>-</label>
-				<texturenofocus>PlayerControls2-PlayNF.png</texturenofocus>
 				<texturefocus>PlayerControls2-PlayFO.png</texturefocus>
+				<texturenofocus>PlayerControls2-PlayNF.png</texturenofocus>
+				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+				<alttexturefocus>PlayerControls2-PauseFO.png</alttexturefocus>
+				<alttexturenofocus>PlayerControls2-PauseNF.png</alttexturenofocus>
 				<onclick>XBMC.PlayerControl(Play)</onclick>
 			</control>
 			<control type="button">
@@ -555,6 +558,21 @@
 				<aligny>center</aligny>
 				<font>font10_title</font>
 				<textcolor>black</textcolor>
+				<visible>!Player.Paused</visible>
+			</control>
+			<control type="fadelabel">
+				<posx>10</posx>
+				<posy>5</posy>
+				<width>250</width>
+				<height>15</height>
+				<scrollout>false</scrollout>
+				<pauseatend>3000</pauseatend>
+				<label>$LOCALIZE[31043]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font10_title</font>
+				<textcolor>black</textcolor>
+				<visible>Player.Paused</visible>
 			</control>
 			<control type="fadelabel">
 				<posx>10</posx>
