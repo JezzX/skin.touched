@@ -750,26 +750,83 @@
 		</control>
 		<control type="group">
 			<visible>Window.IsVisible(FullscreenVideo)</visible>
-			<posx>60r</posx>
-			<posy>445</posy>
+			<posx>80r</posx>
+			<posy>385</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>70</width>
-				<height>70</height>
-				<texture border="5">SubBack.png</texture>
+				<width>90</width>
+				<height>170</height>
+				<colordiffuse>EEFFFFFF</colordiffuse>
+				<texture border="3">PlayerControls-Background.png</texture>
+			</control>
+			<control type="label">
+				<description>header label</description>
+				<posx>0</posx>
+				<posy>10</posy>
+				<height>20</height>
+				<width>80</width>
+				<label>287</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font8_title</font>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Video Has no Subtitles label</description>
+				<posx>0</posx>
+				<posy>40</posy>
+				<height>20</height>
+				<width>80</width>
+				<label>31011</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font10_title</font>
+				<textcolor>grey2</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>!VideoPlayer.HasSubtitles</visible>
 			</control>
 			<control type="togglebutton">
-				<posx>5</posx>
-				<posy>8</posy>
-				<width>55</width>
-				<height>55</height>
+				<description>Download with Subtitles script</description>
+				<posx>10</posx>
+				<posy>38</posy>
+				<width>60</width>
+				<height>35</height>
+				<hitrect x="5" y="5" w="75" h="80" />
 				<label>31356</label>
 				<font>-</font>
-				<texturefocus>PlayerControls-SubtitleNF.png</texturefocus>
-				<texturenofocus>PlayerControls-SubtitleNF.png</texturenofocus>
-				<alttexturefocus>PlayerControls-SubtitleNF.png</alttexturefocus>
-				<alttexturenofocus>PlayerControls-SubtitleNF.png</alttexturenofocus>
+				<texturefocus>radiobutton-nofocus.png</texturefocus>
+				<texturenofocus>radiobutton-nofocus.png</texturenofocus>
+				<alttexturefocus>radiobutton-focus.png</alttexturefocus>
+				<alttexturenofocus>radiobutton-focus.png</alttexturenofocus>
+				<onleft>605</onleft>
+				<onright>702</onright>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onclick>Dialog.Close(VideoOSD,true)</onclick>
+				<onclick>ShowSubtitles</onclick>
+				<usealttexture>VideoPlayer.SubtitlesEnabled</usealttexture>
+				<visible>VideoPlayer.HasSubtitles</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>88</posy>
+				<width>80</width>
+				<height>2</height>
+				<texture>header-divide.png</texture>
+			</control>
+			<control type="togglebutton">
+				<posx>10</posx>
+				<posy>100</posy>
+				<width>65</width>
+				<height>60</height>
+				<label>31356</label>
+				<hitrect x="5" y="100" w="75" h="70" />
+				<font>-</font>
+				<texturefocus flipy="true">icon_shift.png</texturefocus>
+				<texturenofocus flipy="true">icon_shift.png</texturenofocus>
+				<alttexturefocus flipy="true">icon_shift.png</alttexturefocus>
+				<alttexturenofocus flipy="true">icon_shift.png</alttexturenofocus>
 				<onleft>605</onleft>
 				<onright>702</onright>
 				<onup>1000</onup>

@@ -33,6 +33,11 @@
 		</font>
 	<!-- Title Fonts -->
 	 	<font>
+			<name>font8_title</name>
+			<filename>DejaVuSans-Bold.ttf</filename>
+			<size>11</size>
+		</font>
+	 	<font>
 			<name>font10_title</name>
 			<filename>DejaVuSans-Bold.ttf</filename>
 			<size>14</size>
@@ -108,6 +113,12 @@
 			<size>55</size>
 		</font>
 	<!-- Title Fonts -->
+	 	<font>
+			<name>font8_title</name>
+			<filename>Arial.ttf</filename>
+			<size>11</size>
+			<style>bold</style>
+		</font>
 	 	<font>
 			<name>font10_title</name>
 			<filename>Arial.ttf</filename>
