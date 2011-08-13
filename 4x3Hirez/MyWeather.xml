@@ -713,7 +713,7 @@
 					<icon>-</icon>
 				</item>
 				<item>
-					<label>31203</label>
+					<label>31201</label>
 					<onclick>Weather.LocationNext</onclick>
 					<icon>-</icon>
 				</item>

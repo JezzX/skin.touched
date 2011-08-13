@@ -11,7 +11,7 @@
 		<control type="label">
 			<description>Window label</description>
 			<include>MediaWindowTitleCommons</include>
-			<label>$LOCALIZE[31022]</label>
+			<label>$LOCALIZE[31012]</label>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>

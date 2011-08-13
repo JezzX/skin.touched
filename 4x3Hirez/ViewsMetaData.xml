@@ -10,7 +10,7 @@
 			<onright>60</onright>
 			<onup>550</onup>
 			<ondown>550</ondown>
-			<viewtype label="535">list</viewtype>
+			<viewtype label="31030">list</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<itemlayout condition="Container.Content(Movies)" height="180" width="1180">
@@ -399,6 +399,7 @@
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>300</scrolltime>
 			<preloaditems>2</preloaditems>
+			<viewtype label="31031">list</viewtype>
 			<itemlayout height="144" width="1200">
 				<control type="image">
 					<posx>0</posx>

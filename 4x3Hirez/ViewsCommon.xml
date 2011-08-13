@@ -317,7 +317,7 @@
 			<onright>60</onright>
 			<onup>500</onup>
 			<ondown>500</ondown>
-			<viewtype label="21371">list</viewtype>
+			<viewtype label="21371">wide</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
@@ -641,6 +641,7 @@
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>300</scrolltime>
 			<preloaditems>2</preloaditems>
+			<viewtype label="539">wide</viewtype>
 			<itemlayout height="160" width="600">
 				<control type="image">
 					<posx>0</posx>
