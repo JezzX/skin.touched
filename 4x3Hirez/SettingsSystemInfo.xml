@@ -3,41 +3,12 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
-		<include>Clock</include>
+		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
-		<control type="grouplist">
-			<description>Top Left bar</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1000</width>
-			<height>64</height>
-			<align>left</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<include>HomeButtonCommons</include>
-			<control type="label">
-				<description>Window label</description>
-				<include>WindowTitleCommons</include>
-				<width min="0" max="300">auto</width>
-				<label>  $LOCALIZE[130]</label>
-			</control>
-			<control type="label">
-				<description>Window label</description>
-				<include>WindowTitleCommons</include>
-				<width min="0" max="800">auto</width>
-				<label>$INFO[Control.GetLabel(40),[COLOR=blue] > [/COLOR]]</label>
-			</control>
-		</control>
-		<control type="grouplist">
-			<description>Top Right bar</description>
-			<posx>680</posx>
-			<posy>0</posy>
-			<width>600</width>
-			<height>64</height>
-			<align>right</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<include>BatteryLevelReadOut</include>
+		<control type="label">
+			<description>Window label</description>
+			<include>MediaWindowTitleCommons</include>
+			<label>$LOCALIZE[130]</label>
 		</control>
 		<control type="panel">
 			<visible>!Window.IsActive(PlayerControls)</visible>
@@ -47,7 +18,7 @@
 				<item>
 					<label>31200</label>
 					<onclick>PreviousMenu</onclick>
-					<icon>icon_back.png</icon>
+					<icon>-</icon>
 				</item>
 			</content>
 		</control>
@@ -57,7 +28,7 @@
 		</control>
 		<control type="group">
 			<posx>50</posx>
-			<posy>100</posy>
+			<posy>140</posy>
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<control type="grouplist" id="9000">
 				<posx>0</posx>
@@ -333,7 +304,7 @@
 			</control>
 			<control type="group">
 				<posx>50</posx>
-				<posy>250r</posy>
+				<posy>180r</posy>
 				<control type="label" id="52">
 					<description>XBMC BUILD Version</description>
 					<posx>1130</posx>

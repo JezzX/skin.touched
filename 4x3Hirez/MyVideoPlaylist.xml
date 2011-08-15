@@ -4,52 +4,14 @@
 	<views>50,500</views>
 	<controls>
 		<include>CommonBackground</include>
-		<include>Clock</include>
+		<include>FileCountCommons</include>
+		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
-		<control type="grouplist">
-			<description>Top Left bar</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1000</width>
-			<height>64</height>
-			<align>left</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<include>HomeButtonCommons</include>
-			<control type="label">
-				<description>Window label</description>
-				<include>WindowTitleCommons</include>
-				<width min="0" max="300">auto</width>
-				<label>  $LOCALIZE[10522]</label>
-			</control>
-		</control>
-		<control type="grouplist">
-			<description>Top Right bar</description>
-			<posx>680</posx>
-			<posy>0</posy>
-			<width>600</width>
-			<height>64</height>
-			<align>right</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<control type="image">
-				<width>2</width>
-				<height>62</height>
-				<texture>header-divide.png</texture>
-			</control>
-			<control type="button">
-				<description>Submenu Button</description>
-				<width>200</width>
-				<height>60</height>
-				<label>$LOCALIZE[33063]</label>
-				<font>font16</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
-				<onclick>Skin.ToggleSetting(MediaSubMenuVisible)</onclick>
-			</control>
-			<include>BatteryLevelReadOut</include>
+		<include>OptionsButtonCommons</include>
+		<control type="label">
+			<description>Window label</description>
+			<include>MediaWindowTitleCommons</include>
+			<label>$LOCALIZE[10522]</label>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
@@ -64,12 +26,7 @@
 				<item>
 					<label>31200</label>
 					<onclick>ParentDir</onclick>
-					<icon>icon_back.png</icon>
-				</item>
-				<item>
-					<label>31201</label>
-					<onclick>Container.NextViewMode</onclick>
-					<icon>icon_view.png</icon>
+					<icon>-</icon>
 				</item>
 			</content>
 		</control>
@@ -87,14 +44,14 @@
 				<onclick>Skin.Reset(MediaSubMenuVisible)</onclick>
 			</control>
 			<control type="group">
-				<posx>350r</posx>
-				<posy>93</posy>
+				<posx>340r</posx>
+				<posy>130</posy>
 				<control type="image">
 					<description>Shadow Background</description>
 					<posx>-30</posx>
 					<posy>-30</posy>
 					<width>380</width>
-					<height>440</height>
+					<height>500</height>
 					<texture border="30">ShadowBorder.png</texture>
 				</control>
 				<control type="button">
@@ -102,7 +59,7 @@
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>320</width>
-					<height>380</height>
+					<height>440</height>
 					<texturefocus border="5">SubBack.png</texturefocus>
 					<texturenofocus border="5">SubBack.png</texturenofocus>
 					<onclick>-</onclick>
@@ -112,27 +69,32 @@
 					<posx>10</posx>
 					<posy>10</posy>
 					<width>300</width>
-					<height>354</height>
+					<height>420</height>
 					<texture border="5">SubBack2.png</texture>
 				</control>
 				<control type="image">
 					<description>Panel Arrow image</description>
-					<posx>230</posx>
+					<posx>270</posx>
 					<posy>-34</posy>
 					<width>40</width>
 					<height>40</height>
 					<texture>arrow-big-up.png</texture>
 				</control>
 				<control type="grouplist">
-					<posx>10</posx>
+					<posx>11</posx>
 					<posy>10</posy>
-					<width>300</width>
-					<height>354</height>
+					<width>298</width>
+					<height>420</height>
 					<onleft>9000</onleft>
 					<onright>50</onright>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
-					<itemgap>-1</itemgap>
+					<itemgap>0</itemgap>
+					<control type="button" id="2">
+						<description>View Change button</description>
+						<include>ButtonCommonValues2</include>
+						<label>-</label>
+					</control>
 					<control type="radiobutton" id="20">
 						<description>Shuffle button</description>
 						<include>ButtonCommonValues2</include>

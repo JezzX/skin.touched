@@ -9,9 +9,10 @@
 			<texture>black-back.png</texture>
 			<visible>!Window.IsVisible(Visualisation) + !Window.IsVisible(FullScreenVideo)</visible>
 		</control>
+		<include>CommonHeader</include>
 		<control type="group">
 			<posx>0</posx>
-			<posy>64</posy>
+			<posy>84</posy>
 			<visible>Skin.HasSetting(PlayerControlsShowInfo)</visible>
 			<animation effect="slide" start="0,-200" end="0,0" time="300" easing="out" tween="quadratic" >Visible</animation>
 			<animation effect="slide" start="0,0" end="0,-200" time="300" easing="in" tween="quadratic" >Hidden</animation>
@@ -448,9 +449,10 @@
 				</control>
 			</control>
 		</control>
+		<include>CommonHeader</include>
 		<control type="image">
 			<posx>0</posx>
-			<posy>0</posy>
+			<posy>20</posy>
 			<width>1280</width>
 			<height>64</height>
 			<texture>header.png</texture>
@@ -458,7 +460,7 @@
 		<control type="grouplist">
 			<description>Top Left bar</description>
 			<posx>0</posx>
-			<posy>0</posy>
+			<posy>20</posy>
 			<width>200</width>
 			<height>64</height>
 			<align>left</align>
@@ -492,65 +494,51 @@
 		</control>
 		<control type="grouplist">
 			<description>Top Right bar</description>
-			<posx>1000r</posx>
-			<posy>0</posy>
+			<posx>1080r</posx>
+			<posy>25</posy>
 			<width>1000</width>
 			<height>64</height>
 			<align>right</align>
 			<itemgap>5</itemgap>
 			<orientation>horizontal</orientation>
-			<control type="image">
-				<width>2</width>
-				<height>62</height>
-				<texture>header-divide.png</texture>
-			</control>
 			<control type="radiobutton">
 				<description>Show Info Button</description>
 				<width>270</width>
-				<height>60</height>
+				<height>50</height>
 				<label>$LOCALIZE[544]</label>
-				<font>font16</font>
+				<font>font13</font>
 				<align>left</align>
 				<aligny>center</aligny>
 				<selected>Skin.HasSetting(PlayerControlsShowInfo)</selected>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<onclick>Skin.ToggleSetting(PlayerControlsShowInfo)</onclick>
-			</control>
-			<control type="image">
-				<width>2</width>
-				<height>62</height>
-				<texture>header-divide.png</texture>
-				<visible>!Window.IsVisible(Karaoke)</visible>
 			</control>
 			<control type="button">
 				<description>Submenu Button</description>
 				<width>200</width>
-				<height>60</height>
+				<height>50</height>
 				<label>$LOCALIZE[33063]</label>
-				<font>font16</font>
+				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<onclick>Skin.ToggleSetting(PlayerControlsSubMenuVisible)</onclick>
-				<visible>!Window.IsVisible(Karaoke)</visible>
-			</control>
-			<control type="image">
-				<width>2</width>
-				<height>62</height>
-				<texture>header-divide.png</texture>
 				<visible>!Window.IsVisible(Karaoke)</visible>
 			</control>
 			<control type="radiobutton">
 				<description>Fullscreen Button</description>
+				<posy>5</posy>
 				<width>230</width>
-				<height>60</height>
-				<font>font16</font>
+				<height>50</height>
+				<radiowidth>36</radiowidth>
+				<radioheight>36</radioheight>
+				<font>font13</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<label>31008</label>
 				<onclick>fullscreen</onclick>
 				<textureradiofocus>GoFullscreen2.png</textureradiofocus>
@@ -559,13 +547,16 @@
 			</control>
 			<control type="radiobutton">
 				<description>Fullscreen Button</description>
+				<posy>5</posy>
 				<width>230</width>
-				<height>60</height>
-				<font>font16</font>
+				<height>50</height>
+				<radiowidth>36</radiowidth>
+				<radioheight>36</radioheight>
+				<font>font13</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<label>31008</label>
 				<onclick>Dialog.Close(VideoOSD,true)</onclick>
 				<onclick>Dialog.Close(MusicOSD,true)</onclick>
@@ -574,13 +565,21 @@
 				<textureradionofocus flipx="true" flipy="true">GoFullscreen2.png</textureradionofocus>
 				<visible>Window.IsVisible(Visualisation) | Window.IsVisible(FullScreenVideo) + !Window.IsVisible(Karaoke)</visible>
 			</control>
+		</control>
+		<control type="group">
+			<posx>65r</posx>
+			<posy>20</posy>
 			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
 				<width>2</width>
 				<height>62</height>
 				<texture>header-divide.png</texture>
 			</control>
 			<control type="button">
 				<description>Close Button</description>
+				<posx>5</posx>
+				<posy>0</posy>
 				<width>60</width>
 				<height>60</height>
 				<font>-</font>
@@ -598,7 +597,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>71</height>
-				<texture flipy="true">header.png</texture>
+				<texture>floor.png</texture>
 			</control>
 			<control type="label">
 				<posx>180</posx>
@@ -751,26 +750,83 @@
 		</control>
 		<control type="group">
 			<visible>Window.IsVisible(FullscreenVideo)</visible>
-			<posx>60r</posx>
-			<posy>445</posy>
+			<posx>80r</posx>
+			<posy>385</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>70</width>
-				<height>70</height>
-				<texture border="5">SubBack.png</texture>
+				<width>90</width>
+				<height>170</height>
+				<colordiffuse>EEFFFFFF</colordiffuse>
+				<texture border="3">PlayerControls-Background.png</texture>
+			</control>
+			<control type="label">
+				<description>header label</description>
+				<posx>0</posx>
+				<posy>10</posy>
+				<height>20</height>
+				<width>80</width>
+				<label>287</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font8_title</font>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Video Has no Subtitles label</description>
+				<posx>0</posx>
+				<posy>40</posy>
+				<height>20</height>
+				<width>80</width>
+				<label>31011</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>font10_title</font>
+				<textcolor>grey2</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<visible>!VideoPlayer.HasSubtitles</visible>
 			</control>
 			<control type="togglebutton">
-				<posx>5</posx>
-				<posy>8</posy>
-				<width>55</width>
-				<height>55</height>
+				<description>Download with Subtitles script</description>
+				<posx>10</posx>
+				<posy>38</posy>
+				<width>60</width>
+				<height>35</height>
+				<hitrect x="5" y="5" w="75" h="80" />
 				<label>31356</label>
 				<font>-</font>
-				<texturefocus>PlayerControls-SubtitleNF.png</texturefocus>
-				<texturenofocus>PlayerControls-SubtitleNF.png</texturenofocus>
-				<alttexturefocus>PlayerControls-SubtitleNF.png</alttexturefocus>
-				<alttexturenofocus>PlayerControls-SubtitleNF.png</alttexturenofocus>
+				<texturefocus>radiobutton-nofocus.png</texturefocus>
+				<texturenofocus>radiobutton-nofocus.png</texturenofocus>
+				<alttexturefocus>radiobutton-focus.png</alttexturefocus>
+				<alttexturenofocus>radiobutton-focus.png</alttexturenofocus>
+				<onleft>605</onleft>
+				<onright>702</onright>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onclick>Dialog.Close(VideoOSD,true)</onclick>
+				<onclick>ShowSubtitles</onclick>
+				<usealttexture>VideoPlayer.SubtitlesEnabled</usealttexture>
+				<visible>VideoPlayer.HasSubtitles</visible>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>88</posy>
+				<width>80</width>
+				<height>2</height>
+				<texture>header-divide.png</texture>
+			</control>
+			<control type="togglebutton">
+				<posx>10</posx>
+				<posy>100</posy>
+				<width>65</width>
+				<height>60</height>
+				<label>31356</label>
+				<hitrect x="5" y="100" w="75" h="70" />
+				<font>-</font>
+				<texturefocus flipy="true">icon_shift.png</texturefocus>
+				<texturenofocus flipy="true">icon_shift.png</texturenofocus>
+				<alttexturefocus flipy="true">icon_shift.png</alttexturefocus>
+				<alttexturenofocus flipy="true">icon_shift.png</alttexturenofocus>
 				<onleft>605</onleft>
 				<onright>702</onright>
 				<onup>1000</onup>
@@ -799,7 +855,7 @@
 			</control>
 			<control type="group">
 				<posx>570r</posx>
-				<posy>93</posy>
+				<posy>113</posy>
 				<control type="image">
 					<description>Shadow Background</description>
 					<posx>-30</posx>
@@ -835,7 +891,7 @@
 					<texture>arrow-big-up.png</texture>
 				</control>
 				<control type="grouplist">
-					<posx>10</posx>
+					<posx>11</posx>
 					<posy>10</posy>
 					<width>300</width>
 					<height>354</height>

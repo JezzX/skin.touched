@@ -3,41 +3,12 @@
 	<allowoverlay>no</allowoverlay>
 	<controls>
 		<include>CommonBackground</include>
-		<include>Clock</include>
+		<include>HomeButtonCommons</include>
 		<include>CommonNowPlaying</include>
-		<control type="grouplist">
-			<description>Top Left bar</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1000</width>
-			<height>64</height>
-			<align>left</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<include>HomeButtonCommons</include>
-			<control type="label">
-				<description>Window label</description>
-				<include>WindowTitleCommons</include>
-				<width min="0" max="300">auto</width>
-				<label>  $LOCALIZE[5]</label>
-			</control>
-			<control type="label">
-				<description>Window label</description>
-				<include>WindowTitleCommons</include>
-				<width min="0" max="300">auto</width>
-				<label>$INFO[Control.GetLabel(2),[COLOR=blue] > [/COLOR]]</label>
-			</control>
-		</control>
-		<control type="grouplist">
-			<description>Top Right bar</description>
-			<posx>680</posx>
-			<posy>0</posy>
-			<width>600</width>
-			<height>64</height>
-			<align>right</align>
-			<itemgap>5</itemgap>
-			<orientation>horizontal</orientation>
-			<include>BatteryLevelReadOut</include>
+		<control type="label">
+			<description>Window label</description>
+			<include>MediaWindowTitleCommons</include>
+			<label>$LOCALIZE[5]$INFO[Control.GetLabel(2), - ]</label>
 		</control>
 		<control type="panel" id="9002">
 			<visible>!Window.IsActive(PlayerControls)</visible>
@@ -47,14 +18,14 @@
 				<item>
 					<label>31200</label>
 					<onclick>PreviousMenu</onclick>
-					<icon>icon_back.png</icon>
+					<icon>-</icon>
 				</item>
 			</content>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>50</posx>
-			<posy>100</posy>
+			<posy>140</posy>
 			<control type="grouplist" id="3">
 				<description>button area</description>
 				<posx>0</posx>

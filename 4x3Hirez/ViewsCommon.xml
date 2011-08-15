@@ -2,9 +2,9 @@
 	<include name="CommonRootView">
 		<control type="panel" id="50">
 			<posx>50</posx>
-			<posy>110</posy>
+			<posy>140</posy>
 			<width>1180</width>
-			<height>660</height>
+			<height>720</height>
 			<onleft>2</onleft>
 			<onright>60</onright>
 			<onup>50</onup>
@@ -112,49 +112,13 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<control type="group">
-			<visible>Control.IsVisible(50)</visible>
-			<posx>610</posx>
-			<posy>75</posy>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>60</width>
-				<height>30</height>
-				<texturefocus>arrow-big-up.png</texturefocus>
-				<texturenofocus>arrow-big-up.png</texturenofocus>
-				<onclick>FirstPage</onclick>
-				<visible>Container.HasPrevious</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>700</posy>
-				<width>60</width>
-				<height>30</height>
-				<texturefocus>arrow-big-down.png</texturefocus>
-				<texturenofocus>arrow-big-down.png</texturenofocus>
-				<onclick>LastPage</onclick>
-				<visible>Container.HasNext</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-		</control>
-		<control type="label">
-			<description>Page Count Label</description>
-			<posx>1230</posx>
-			<posy>780</posy>
-			<include>FileCountCommons</include>
-			<visible>Control.IsVisible(50)</visible>
-		</control>
 	</include>
 	<include name="CommonRootViewVideo">
 		<control type="panel" id="50">
 			<posx>50</posx>
-			<posy>110</posy>
+			<posy>140</posy>
 			<width>1180</width>
-			<height>660</height>
+			<height>720</height>
 			<onleft>2</onleft>
 			<onright>60</onright>
 			<onup>50</onup>
@@ -342,85 +306,39 @@
 				</control>
 			</focusedlayout>
 		</control>
-		<control type="group">
-			<visible>Control.IsVisible(50)</visible>
-			<posx>610</posx>
-			<posy>75</posy>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>60</width>
-				<height>30</height>
-				<texturefocus>arrow-big-up.png</texturefocus>
-				<texturenofocus>arrow-big-up.png</texturenofocus>
-				<onclick>FirstPage</onclick>
-				<visible>Container.HasPrevious</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>700</posy>
-				<width>60</width>
-				<height>30</height>
-				<texturefocus>arrow-big-down.png</texturefocus>
-				<texturenofocus>arrow-big-down.png</texturenofocus>
-				<onclick>LastPage</onclick>
-				<visible>Container.HasNext</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-		</control>
-		<control type="label">
-			<description>Page Count Label</description>
-			<posx>1230</posx>
-			<posy>780</posy>
-			<include>FileCountCommons</include>
-			<visible>Control.IsVisible(50)</visible>
-		</control>
 	</include>
 	<include name="ThumbnailView">
 		<control type="panel" id="500">
 			<posx>50</posx>
-			<posy>110</posy>
+			<posy>140</posy>
 			<width>1180</width>
-			<height>678</height>
+			<height>720</height>
 			<onleft>2</onleft>
 			<onright>60</onright>
 			<onup>500</onup>
 			<ondown>500</ondown>
-			<viewtype label="21371">list</viewtype>
+			<viewtype label="21371">wide</viewtype>
 			<pagecontrol>60</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<preloaditems>2</preloaditems>
-			<itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons)" height="226" width="236">
+			<itemlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(Episodes)" height="240" width="236">
 				<control type="image">
 					<posx>5</posx>
 					<posy>5</posy>
 					<width>226</width>
-					<height>216</height>
+					<height>230</height>
 					<texture border="5">SubBack.png</texture>
 				</control>
 				<control type="image">
 					<posx>10</posx>
 					<posy>10</posy>
 					<width>216</width>
-					<height>170</height>
+					<height>185</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
-					<visible>!Container.Content(Episodes)</visible>
-				</control>
-				<control type="image">
-					<posx>10</posx>
-					<posy>10</posy>
-					<width>216</width>
-					<height>170</height>
-					<aspectratio>scale</aspectratio>
-					<texture background="true">$INFO[Listitem.Icon]</texture>
-					<visible>Container.Content(Episodes)</visible>
 				</control>
 				<control type="label">
 					<posx>119</posx>
-					<posy>185</posy>
+					<posy>200</posy>
 					<width>210</width>
 					<height>25</height>
 					<font>font12</font>
@@ -436,11 +354,11 @@
 					<width>40</width>
 					<height>30</height>
 					<texture>$INFO[ListItem.VideoResolution,light/,.png]</texture>
-					<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+					<visible>Container.Content(MusicVideos)</visible>
 				</control>
 				<control type="image">
 					<posx>195</posx>
-					<posy>160</posy>
+					<posy>170</posy>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -450,38 +368,28 @@
 					<posx>5</posx>
 					<posy>5</posy>
 					<width>226</width>
-					<height>216</height>
+					<height>230</height>
 					<texture>GlassOverlay.png</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons)" height="226" width="236">
+			<focusedlayout condition="!Container.Content(Movies) + !Container.Content(Seasons) + !Container.Content(Episodes)" height="240" width="236">
 				<control type="image">
 					<posx>5</posx>
 					<posy>5</posy>
 					<width>226</width>
-					<height>216</height>
+					<height>230</height>
 					<texture border="5">SubBack2.png</texture>
 				</control>
 				<control type="image">
 					<posx>10</posx>
 					<posy>10</posy>
 					<width>216</width>
-					<height>170</height>
+					<height>185</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
-					<visible>!Container.Content(Episodes)</visible>
-				</control>
-				<control type="image">
-					<posx>10</posx>
-					<posy>10</posy>
-					<width>216</width>
-					<height>170</height>
-					<aspectratio>scale</aspectratio>
-					<texture background="true">$INFO[Listitem.Icon]</texture>
-					<visible>Container.Content(Episodes)</visible>
 				</control>
 				<control type="label">
 					<posx>119</posx>
-					<posy>185</posy>
+					<posy>200</posy>
 					<width>210</width>
 					<height>25</height>
 					<font>font12</font>
@@ -497,11 +405,11 @@
 					<width>40</width>
 					<height>30</height>
 					<texture>$INFO[ListItem.VideoResolution,light/,.png]</texture>
-					<visible>[Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
+					<visible>Container.Content(MusicVideos)</visible>
 				</control>
 				<control type="image">
 					<posx>195</posx>
-					<posy>160</posy>
+					<posy>170</posy>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -511,28 +419,28 @@
 					<posx>5</posx>
 					<posy>5</posy>
 					<width>226</width>
-					<height>216</height>
+					<height>230</height>
 					<texture>GlassOverlay.png</texture>
 				</control>
 			</focusedlayout>
-			<itemlayout condition="Container.Content(Movies) | Container.Content(Seasons)" height="339" width="236">
+			<itemlayout condition="Container.Content(Movies) | Container.Content(Seasons)" height="360" width="236">
 				<control type="image">
 					<posx>5</posx>
 					<posy>5</posy>
 					<width>226</width>
-					<height>329</height>
+					<height>350</height>
 					<texture border="5">SubBack.png</texture>
 				</control>
 				<control type="image">
 					<posx>15</posx>
 					<posy>15</posy>
 					<width>206</width>
-					<height>280</height>
+					<height>300</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 				</control>
 				<control type="label">
 					<posx>119</posx>
-					<posy>300</posy>
+					<posy>320</posy>
 					<width>210</width>
 					<height>25</height>
 					<font>font12</font>
@@ -551,7 +459,7 @@
 				</control>
 				<control type="image">
 					<posx>195</posx>
-					<posy>270</posy>
+					<posy>280</posy>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -560,29 +468,29 @@
 				<control type="image">
 					<posx>5</posx>
 					<posy>5</posy>
-					<width>226</width>
-					<height>329</height>
+					<width>245</width>
+					<height>350</height>
 					<texture>GlassOverlay.png</texture>
 				</control>
 			</itemlayout>
-			<focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons)" height="339" width="236">
+			<focusedlayout condition="Container.Content(Movies) | Container.Content(Seasons)" height="360" width="236">
 				<control type="image">
 					<posx>5</posx>
 					<posy>5</posy>
 					<width>226</width>
-					<height>329</height>
+					<height>350</height>
 					<texture border="5">SubBack2.png</texture>
 				</control>
 				<control type="image">
 					<posx>15</posx>
 					<posy>15</posy>
 					<width>206</width>
-					<height>280</height>
+					<height>300</height>
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 				</control>
 				<control type="label">
 					<posx>119</posx>
-					<posy>300</posy>
+					<posy>320</posy>
 					<width>210</width>
 					<height>25</height>
 					<font>font12</font>
@@ -601,7 +509,58 @@
 				</control>
 				<control type="image">
 					<posx>195</posx>
-					<posy>270</posy>
+					<posy>280</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Overlay]</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>5</posy>
+					<width>245</width>
+					<height>350</height>
+					<texture>GlassOverlay.png</texture>
+				</control>
+			</focusedlayout>
+			<itemlayout condition="Container.Content(Episodes)" height="240" width="295">
+				<control type="image">
+					<posx>5</posx>
+					<posy>5</posy>
+					<width>285</width>
+					<height>230</height>
+					<texture border="5">SubBack.png</texture>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>275</width>
+					<height>185</height>
+					<aspectratio>scale</aspectratio>
+					<texture background="true">$INFO[Listitem.Icon]</texture>
+				</control>
+				<control type="label">
+					<posx>148</posx>
+					<posy>200</posy>
+					<width>275</width>
+					<height>25</height>
+					<font>font12</font>
+					<textcolor>grey2</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<info>ListItem.Label</info>
+				</control>
+				<control type="image">
+					<posx>245</posx>
+					<posy>10</posy>
+					<width>40</width>
+					<height>30</height>
+					<texture>$INFO[ListItem.VideoResolution,light/,.png]</texture>
+				</control>
+				<control type="image">
+					<posx>250</posx>
+					<posy>170</posy>
 					<width>30</width>
 					<height>30</height>
 					<aspectratio>keep</aspectratio>
@@ -611,53 +570,68 @@
 					<posx>5</posx>
 					<posy>5</posy>
 					<width>226</width>
-					<height>329</height>
+					<height>230</height>
+					<texture>GlassOverlay.png</texture>
+				</control>
+			</itemlayout>
+			<focusedlayout condition="Container.Content(Episodes)" height="240" width="295">
+				<control type="image">
+					<posx>5</posx>
+					<posy>5</posy>
+					<width>285</width>
+					<height>230</height>
+					<texture border="5">SubBack2.png</texture>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>275</width>
+					<height>185</height>
+					<aspectratio>scale</aspectratio>
+					<texture background="true">$INFO[Listitem.Icon]</texture>
+				</control>
+				<control type="label">
+					<posx>148</posx>
+					<posy>200</posy>
+					<width>275</width>
+					<height>25</height>
+					<font>font12</font>
+					<textcolor>black</textcolor>
+					<selectedcolor>selected</selectedcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<info>ListItem.Label</info>
+				</control>
+				<control type="image">
+					<posx>245</posx>
+					<posy>10</posy>
+					<width>40</width>
+					<height>30</height>
+					<texture>$INFO[ListItem.VideoResolution,light/,.png]</texture>
+				</control>
+				<control type="image">
+					<posx>250</posx>
+					<posy>170</posy>
+					<width>30</width>
+					<height>30</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Overlay]</texture>
+				</control>
+				<control type="image">
+					<posx>5</posx>
+					<posy>5</posy>
+					<width>226</width>
+					<height>230</height>
 					<texture>GlassOverlay.png</texture>
 				</control>
 			</focusedlayout>
-		</control>
-		<control type="group">
-			<visible>Control.IsVisible(500)</visible>
-			<posx>610</posx>
-			<posy>75</posy>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>60</width>
-				<height>30</height>
-				<texturefocus>arrow-big-up.png</texturefocus>
-				<texturenofocus>arrow-big-up.png</texturenofocus>
-				<onclick>FirstPage</onclick>
-				<visible>Container.HasPrevious</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>720</posy>
-				<width>60</width>
-				<height>30</height>
-				<texturefocus>arrow-big-down.png</texturefocus>
-				<texturenofocus>arrow-big-down.png</texturenofocus>
-				<onclick>LastPage</onclick>
-				<visible>Container.HasNext</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-		</control>
-		<control type="label">
-			<description>Page Count Label</description>
-			<posx>1230</posx>
-			<posy>800</posy>
-			<include>FileCountCommons</include>
-			<visible>Control.IsVisible(500)</visible>
 		</control>
 	</include>
 	<include name="WideIconView">
 		<control type="panel" id="502">
 			<visible>!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(Seasons) + !Container.Content(MusicVideos)</visible>
 			<posx>40</posx>
-			<posy>120</posy>
+			<posy>165</posy>
 			<width>1200</width>
 			<height>640</height>
 			<onleft>502</onleft>
@@ -667,6 +641,7 @@
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>300</scrolltime>
 			<preloaditems>2</preloaditems>
+			<viewtype label="539">wide</viewtype>
 			<itemlayout height="160" width="600">
 				<control type="image">
 					<posx>0</posx>
@@ -759,42 +734,6 @@
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 			</focusedlayout>
-		</control>
-		<control type="group">
-			<visible>Control.IsVisible(502)</visible>
-			<posx>605</posx>
-			<posy>80</posy>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>60</width>
-				<height>30</height>
-				<texturefocus>arrow-big-up.png</texturefocus>
-				<texturenofocus>arrow-big-up.png</texturenofocus>
-				<onclick>FirstPage</onclick>
-				<visible>Container.HasPrevious</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>695</posy>
-				<width>60</width>
-				<height>30</height>
-				<texturefocus>arrow-big-down.png</texturefocus>
-				<texturenofocus>arrow-big-down.png</texturenofocus>
-				<onclick>LastPage</onclick>
-				<visible>Container.HasNext</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-		</control>
-		<control type="label">
-			<description>Page Count Label</description>
-			<posx>1230</posx>
-			<posy>800</posy>
-			<include>FileCountCommons</include>
-			<visible>Control.IsVisible(502)</visible>
 		</control>
 	</include>
 	<include name="DVDPostersView">
@@ -967,13 +906,6 @@
 			<include>AudioChannelsFlaggingConditions</include>
 			<include>AspectCodecFlaggingConditions</include>
 			<include>VideoTypeHackFlaggingConditions</include>
-		</control>
-		<control type="label">
-			<description>Page Count Label</description>
-			<posx>1230</posx>
-			<posy>790</posy>
-			<include>FileCountCommons</include>
-			<visible>Control.IsVisible(501)</visible>
 		</control>
 	</include>
 </includes>
