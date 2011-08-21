@@ -48,6 +48,7 @@
   <!-- Submenu labels -->
   <string id="31200">Back</string>
   <string id="31201">Location</string>
+  <string id="31202">View</string>
 
   <!-- Extra labels -->
   <string id="31300">Current Temp</string>

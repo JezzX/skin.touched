@@ -2,7 +2,7 @@
 	<include name="CommonRootViewAddons">
 		<control type="panel" id="50">
 			<posx>50</posx>
-			<posy>140</posy>
+			<posy>120</posy>
 			<width>1180</width>
 			<height>720</height>
 			<onleft>2</onleft>

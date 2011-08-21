@@ -90,20 +90,48 @@
 				<height>64</height>
 				<texture>floor.png</texture>
 			</control>
-			<control type="button">
-				<description>Favourties Button</description>
-				<posx>160r</posx>
-				<posy>55r</posy>
-				<width>150</width>
-				<height>46</height>
-				<label>$LOCALIZE[1036]</label>
-				<font>font12</font>
-				<align>center</align>
-				<aligny>center</aligny>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<onclick>ActivateWindow(Favourites)</onclick>
+			<control type="group">
+				<posx>132r</posx>
+				<posy>110r</posy>
 				<visible>!Window.IsVisible(LoginScreen)</visible>
+				<control type="image">
+					<posx>16</posx>
+					<posy>80</posy>
+					<width>80</width>
+					<height>40</height>
+					<texture border="5">IconBack_reflect.png</texture>
+				</control>
+				<control type="button">
+					<description>Favourties Button</description>
+					<posx>16</posx>
+					<posy>0</posy>
+					<width>80</width>
+					<height>80</height>
+					<label>-</label>
+					<font>-</font>
+					<texturenofocus border="5">IconBack.png</texturenofocus>
+					<texturefocus border="5">IconBack-focus.png</texturefocus>
+					<onclick>ActivateWindow(Favourites)</onclick>
+				</control>
+				<control type="image">
+					<posx>28</posx>
+					<posy>12</posy>
+					<width>56</width>
+					<height>56</height>
+					<texture>icon_favourites.png</texture>
+				</control>
+				<control type="label">
+					<posx>6</posx>
+					<posy>82</posy>
+					<width>100</width>
+					<height>20</height>
+					<font>font11</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[1036]</label>
+				</control>
 			</control>
 		</control>
 	</include>
@@ -234,33 +262,25 @@
 		</control>
 	</include>
 	<include name="ScrollArrowsCommons">
-		<control type="group">
-			<posx>610</posx>
-			<posy>0</posy>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>110</posy>
-				<width>60</width>
-				<height>25</height>
-				<texturefocus>arrow-big-up.png</texturefocus>
-				<texturenofocus>arrow-big-up.png</texturenofocus>
-				<onclick>FirstPage</onclick>
-				<visible>Container.HasPrevious</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="button">
-				<description>Down Arrow</description>
-				<posx>0</posx>
-				<posy>95r</posy>
-				<width>60</width>
-				<height>25</height>
-				<texturefocus>arrow-big-down.png</texturefocus>
-				<texturenofocus>arrow-big-down.png</texturenofocus>
-				<onclick>LastPage</onclick>
-				<visible>Container.HasNext</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
+		<control type="scrollbar" id="60">
+			<posx>25r</posx>
+			<posy>120</posy>
+			<width>17</width>
+			<height>720</height>
+			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
+			<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>ScrollBarNib.png</textureslidernib>
+			<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+			<onleft>60</onleft>
+			<onright>60</onright>
+			<ondown>60</ondown>
+			<onup>60</onup>
+			<showonepage>true</showonepage>
+			<orientation>vertical</orientation>
+			<visible>Container.Scrolling</visible>
+			<animation effect="fade" time="150">Visible</animation>
+			<animation effect="fade" time="150">Hidden</animation>
 		</control>
 	</include>
 	<include name="HomeButtonCommons">
@@ -320,22 +340,34 @@
 				<item>
 					<label>31200</label>
 					<onclick>ParentDir</onclick>
-					<icon>-</icon>
+					<icon>icon_back.png</icon>
+				</item>
+				<item>
+					<label>31202</label>
+					<onclick>Container.NextViewMode</onclick>
+					<icon>icon_view.png</icon>
 				</item>
 				<item>
 					<label>587</label>
 					<onclick>SendClick(19)</onclick>
-					<icon>-</icon>
+					<icon>icon_filter.png</icon>
+					<visible>IsEmpty(Window.Property(filter))</visible>
+				</item>
+				<item>
+					<label>587</label>
+					<onclick>SendClick(19)</onclick>
+					<icon>icon_filter_on.png</icon>
+					<visible>!IsEmpty(Window.Property(filter))</visible>
 				</item>
 			</content>
 		</control>
 	</include>
 	<include name="SubMenuCommonLayout">
 		<include>Window_OpenClose_Animation</include>
-		<posx>10</posx>
-		<posy>55r</posy>
+		<posx>20</posx>
+		<posy>110r</posy>
 		<width>620</width>
-		<height>56</height>
+		<height>120</height>
 		<onleft>9002</onleft>
 		<onright>9002</onright>
 		<onup>9001</onup>
@@ -343,20 +375,29 @@
 		<pagecontrol>-</pagecontrol>
 		<scrolltime>300</scrolltime>
 		<orientation>Horizontal</orientation>
-		<itemlayout height="46" width="160">
+		<itemlayout height="200" width="112">
 			<control type="image">
-				<posx>0</posx>
+				<posx>16</posx>
+				<posy>80</posy>
+				<width>80</width>
+				<height>40</height>
+				<texture border="5">IconBack_reflect.png</texture>
+			</control>
+			<control type="image">
+				<posx>16</posx>
 				<posy>0</posy>
-				<width>150</width>
-				<height>46</height>
-				<texture border="6">floor_button.png</texture>
+				<width>80</width>
+				<height>80</height>
+				<bordertexture border="5">IconBack.png</bordertexture>
+				<bordersize>12</bordersize>
+				<texture>$INFO[ListItem.Icon]</texture>
 			</control>
 			<control type="label">
-				<posx>75</posx>
-				<posy>0</posy>
-				<width>140</width>
-				<height>46</height>
-				<font>font12</font>
+				<posx>56</posx>
+				<posy>82</posy>
+				<width>100</width>
+				<height>20</height>
+				<font>font11</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>
@@ -364,20 +405,29 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout height="56" width="160">
+		<focusedlayout height="200" width="112">
 			<control type="image">
-				<posx>0</posx>
+				<posx>16</posx>
+				<posy>80</posy>
+				<width>80</width>
+				<height>40</height>
+				<texture border="5">IconBack_reflect.png</texture>
+			</control>
+			<control type="image">
+				<posx>16</posx>
 				<posy>0</posy>
-				<width>150</width>
-				<height>46</height>
-				<texture border="6">floor_buttonFO.png</texture>
+				<width>80</width>
+				<height>80</height>
+				<bordertexture border="5">IconBack-focus.png</bordertexture>
+				<bordersize>12</bordersize>
+				<texture>$INFO[ListItem.Icon]</texture>
 			</control>
 			<control type="label">
-				<posx>75</posx>
-				<posy>0</posy>
-				<width>140</width>
-				<height>46</height>
-				<font>font12</font>
+				<posx>56</posx>
+				<posy>82</posy>
+				<width>100</width>
+				<height>20</height>
+				<font>font11</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<align>center</align>

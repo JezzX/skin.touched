@@ -301,7 +301,7 @@
 				<item>
 					<label>31200</label>
 					<onclick>ParentDir</onclick>
-					<icon>-</icon>
+					<icon>icon_back.png</icon>
 				</item>
 			</content>
 		</control>

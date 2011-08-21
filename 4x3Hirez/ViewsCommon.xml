@@ -2,7 +2,7 @@
 	<include name="CommonRootView">
 		<control type="panel" id="50">
 			<posx>50</posx>
-			<posy>140</posy>
+			<posy>120</posy>
 			<width>1180</width>
 			<height>720</height>
 			<onleft>2</onleft>
@@ -116,7 +116,7 @@
 	<include name="CommonRootViewVideo">
 		<control type="panel" id="50">
 			<posx>50</posx>
-			<posy>140</posy>
+			<posy>120</posy>
 			<width>1180</width>
 			<height>720</height>
 			<onleft>2</onleft>
@@ -310,7 +310,7 @@
 	<include name="ThumbnailView">
 		<control type="panel" id="500">
 			<posx>50</posx>
-			<posy>140</posy>
+			<posy>120</posy>
 			<width>1180</width>
 			<height>720</height>
 			<onleft>2</onleft>
@@ -631,14 +631,14 @@
 		<control type="panel" id="502">
 			<visible>!Container.Content(Movies) + !Container.Content(Episodes) + !Container.Content(Seasons) + !Container.Content(MusicVideos)</visible>
 			<posx>40</posx>
-			<posy>165</posy>
+			<posy>145</posy>
 			<width>1200</width>
 			<height>640</height>
 			<onleft>502</onleft>
 			<onright>502</onright>
 			<onup>502</onup>
 			<ondown>502</ondown>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol>60</pagecontrol>
 			<scrolltime>300</scrolltime>
 			<preloaditems>2</preloaditems>
 			<viewtype label="539">wide</viewtype>
