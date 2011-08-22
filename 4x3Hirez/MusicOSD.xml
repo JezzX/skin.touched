@@ -1,6 +1,7 @@
 <window type="dialog" id="120">
 	<defaultcontrol></defaultcontrol>
 	<include>dialogeffect</include>
+	<onunload>Skin.Reset(PlayerControlsSubMenuVisible)</onunload>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>

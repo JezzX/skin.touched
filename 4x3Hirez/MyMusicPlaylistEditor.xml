@@ -1,6 +1,7 @@
 <window id="503">
 	<defaultcontrol allways="true">6</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<onunload>Skin.Reset(MediaSubMenuVisible)</onunload>
 	<controls>
 		<include>CommonBackground</include>
 		<include>HomeButtonCommons</include>

@@ -2,6 +2,7 @@
 	<defaultcontrol></defaultcontrol>
 	<include>dialogeffect</include>
 	<visible>Player.HasMedia + Window.IsActive(PlayerControls) + !Window.IsActive(FullscreenVideo) + !Window.IsActive(Visualisation)</visible>
+	<onunload>Skin.Reset(PlayerControlsSubMenuVisible)</onunload>
 	<coordinates>
 		<system>1</system>
 		<posx>0</posx>
