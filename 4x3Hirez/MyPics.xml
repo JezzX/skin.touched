@@ -80,11 +80,6 @@
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
-					<control type="button" id="2">
-						<description>View Change button</description>
-						<include>ButtonCommonValues2</include>
-						<label>-</label>
-					</control>
 					<control type="button" id="3">
 						<description>Sort by button</description>
 						<include>ButtonCommonValues2</include>

@@ -91,8 +91,8 @@
 				<texture>floor.png</texture>
 			</control>
 			<control type="group">
-				<posx>132r</posx>
-				<posy>110r</posy>
+				<posx>122r</posx>
+				<posy>105r</posy>
 				<visible>!Window.IsVisible(LoginScreen) + !Window.IsActive(InfoDialog)</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="image">
@@ -365,8 +365,8 @@
 	</include>
 	<include name="SubMenuCommonLayout">
 		<include>Window_OpenClose_Animation</include>
-		<posx>20</posx>
-		<posy>110r</posy>
+		<posx>10</posx>
+		<posy>105r</posy>
 		<width>620</width>
 		<height>120</height>
 		<onleft>9002</onleft>
