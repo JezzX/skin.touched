@@ -93,7 +93,8 @@
 			<control type="group">
 				<posx>132r</posx>
 				<posy>110r</posy>
-				<visible>!Window.IsVisible(LoginScreen)</visible>
+				<visible>!Window.IsVisible(LoginScreen) + !Window.IsActive(InfoDialog)</visible>
+				<include>VisibleFadeEffect</include>
 				<control type="image">
 					<posx>16</posx>
 					<posy>80</posy>
