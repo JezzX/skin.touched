@@ -286,7 +286,7 @@
 					<label>Reload Skin</label>
 					<onclick>ReloadSkin</onclick>
 					<icon>icon_refresh.png</icon>
-					<visible>false</visible>
+					<visible>true</visible>
 				</item>
 			</content>
 		</control>

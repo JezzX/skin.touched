@@ -94,6 +94,13 @@
 						<altlabel>31050</altlabel>
 						<usealttexture>Container.SortDirection(Ascending)</usealttexture>
 					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>100</posy>
+						<width>298</width>
+						<height>10</height>
+						<texture>shelf_shadow.png</texture>
+					</control>
 				</control>
 			</control>
 		</control>
