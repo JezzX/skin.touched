@@ -218,6 +218,7 @@
 							<onclick>ActivateWindow(Videos)</onclick>
 							<icon>videos.png</icon>
 							<thumb>-</thumb>
+							<visible>!Skin.HasSetting(HideHomeButtonVideo)</visible>
 						</item>
 						<item>
 							<label>20342</label>
@@ -225,6 +226,7 @@
 							<icon>movies.png</icon>
 							<thumb>-</thumb>
 							<visible>Library.HasContent(Movies)</visible>
+							<visible>!Skin.HasSetting(HideHomeButtonMovies)</visible>
 						</item>
 						<item>
 							<label>20343</label>
@@ -232,24 +234,28 @@
 							<icon>tvshows.png</icon>
 							<thumb>-</thumb>
 							<visible>Library.HasContent(TVShows)</visible>
+							<visible>!Skin.HasSetting(HideHomeButtonTVShows)</visible>
 						</item>
 						<item>
 							<label>2</label>
 							<onclick>ActivateWindow(Music)</onclick>
 							<icon>music.png</icon>
 							<thumb>-</thumb>
+							<visible>!Skin.HasSetting(HideHomeButtonMusic)</visible>
 						</item>
 						<item>
 							<label>1</label>
 							<onclick>ActivateWindow(Pictures)</onclick>
 							<icon>pictures.png</icon>
 							<thumb>-</thumb>
+							<visible>!Skin.HasSetting(HideHomeButtonPictures)</visible>
 						</item>
 						<item>
 							<label>0</label>
 							<onclick>ActivateWindow(Programs,Addons,return)</onclick>
 							<icon>programs.png</icon>
 							<thumb>-</thumb>
+							<visible>!Skin.HasSetting(HideHomeButtonPrograms)</visible>
 						</item>
 					</content>
 				</control>
@@ -286,7 +292,111 @@
 					<label>Reload Skin</label>
 					<onclick>ReloadSkin</onclick>
 					<icon>icon_refresh.png</icon>
-					<visible>true</visible>
+					<visible>false</visible>
+				</item>
+			</content>
+		</control>
+		<control type="panel" id="9003">
+			<visible>!Window.IsActive(PlayerControls)</visible>
+			<include>Window_OpenClose_Animation</include>
+			<animation effect="slide" start="0,0" end="112,0" time="0" condition="StringCompare(Container(9003).NumItems,3)">conditional</animation>
+			<animation effect="slide" start="0,0" end="224,0" time="0" condition="StringCompare(Container(9003).NumItems,2)">conditional</animation>
+			<animation effect="slide" start="0,0" end="336,0" time="0" condition="StringCompare(Container(9003).NumItems,1)">conditional</animation>
+			<posx>570r</posx>
+			<posy>105r</posy>
+			<width>448</width>
+			<height>120</height>
+			<onleft>9002</onleft>
+			<onright>9002</onright>
+			<onup>9001</onup>
+			<ondown>20</ondown>
+			<pagecontrol>-</pagecontrol>
+			<scrolltime>300</scrolltime>
+			<orientation>Horizontal</orientation>
+			<itemlayout height="200" width="112">
+				<control type="image">
+					<posx>16</posx>
+					<posy>0</posy>
+					<width>80</width>
+					<height>80</height>
+					<texture diffuse="shortcut_diffuse.png">$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>16</posx>
+					<posy>0</posy>
+					<width>80</width>
+					<height>80</height>
+					<texture>shortcut_border.png</texture>
+				</control>
+				<control type="label">
+					<posx>56</posx>
+					<posy>82</posy>
+					<width>100</width>
+					<height>20</height>
+					<font>font11</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="200" width="112">
+				<control type="image">
+					<posx>16</posx>
+					<posy>0</posy>
+					<width>80</width>
+					<height>80</height>
+					<texture diffuse="shortcut_diffuse.png">$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="image">
+					<posx>16</posx>
+					<posy>0</posy>
+					<width>80</width>
+					<height>80</height>
+					<texture>shortcut_border.png</texture>
+				</control>
+				<control type="label">
+					<posx>56</posx>
+					<posy>82</posy>
+					<width>100</width>
+					<height>20</height>
+					<font>font11</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
+			<content>
+				<item>
+					<label>$INFO[system.addontitle(Skin.String(HomeAddonButton1))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButton1)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButton1))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButton1))</visible>
+				</item>
+				<item>
+					<label>$INFO[system.addontitle(Skin.String(HomeAddonButton2))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButton2)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButton2))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButton2))</visible>
+				</item>
+				<item>
+					<label>$INFO[system.addontitle(Skin.String(HomeAddonButton3))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButton3)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButton3))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButton3))</visible>
+				</item>
+				<item>
+					<label>$INFO[system.addontitle(Skin.String(HomeAddonButton4))]</label>
+					<onclick>RunAddon($INFO[Skin.String(HomeAddonButton4)])</onclick>
+					<icon>$INFO[system.addonicon(Skin.String(HomeAddonButton4))]</icon>
+					<thumb>-</thumb>
+					<visible>!IsEmpty(Skin.String(HomeAddonButton4))</visible>
 				</item>
 			</content>
 		</control>

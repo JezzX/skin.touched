@@ -26,6 +26,11 @@
 					<icon>icon_profile.png</icon>
 				</item>
 				<item>
+					<label>20077</label>
+					<onclick>ActivateWindow(1113)</onclick>
+					<icon>icon_skin.png</icon>
+				</item>
+				<item>
 					<label>130</label>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
 					<icon>icon_systeminfo.png</icon>

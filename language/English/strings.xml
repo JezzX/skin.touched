@@ -90,4 +90,13 @@
   <string id="31408">Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org · Modify Add-on settings</string>
 
   <string id="31421">Select your XBMC user Profile[CR]to login and continue</string>
-</strings>
+
+  <!-- Skin Setting Headers  -->
+  <string id="31500">Home Menu Catagory Buttons</string>
+  <string id="31501">Home Page Addon Quick Links</string>
+
+  <!-- Skin Setting Options  -->
+  <string id="31550">Hide home menu item - </string>
+  <string id="31551">Addon Shortcut</string>
+
+  </strings>
