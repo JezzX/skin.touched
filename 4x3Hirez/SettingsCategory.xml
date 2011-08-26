@@ -62,6 +62,7 @@
 			<aligny>center</aligny>
 			<font>font24_title</font>
 			<textcolor>white</textcolor>
+			<focusedcolor>selected</focusedcolor>
 			<texturefocus border="5">button-nofocus2.png</texturefocus>
 			<texturenofocus border="5">button-nofocus2.png</texturenofocus>
 			<pulseonselect>false</pulseonselect>
