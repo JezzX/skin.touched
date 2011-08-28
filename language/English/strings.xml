@@ -93,10 +93,13 @@
 
   <!-- Skin Setting Headers  -->
   <string id="31500">Home Menu Catagory Buttons</string>
-  <string id="31501">Home Page Addon Quick Links</string>
+  <string id="31501">Home Page Add-on Quick Links</string>
+  <string id="31502">Miscellaneous Options</string>
+  <string id="31503">Media Window Add-ons</string>
 
   <!-- Skin Setting Options  -->
-  <string id="31550">Hide home menu item - </string>
-  <string id="31551">Addon Shortcut</string>
+  <string id="31550">Home Screen Weather Info and button</string>
+  <string id="31551">Add-on Shortcut</string>
+  <string id="31552">Set Add-on to use for subtitles</string>
 
   </strings>
