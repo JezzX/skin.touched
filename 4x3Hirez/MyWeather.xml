@@ -26,7 +26,7 @@
 			<control type="image">
 				<description>Shadow Background</description>
 				<posx>50</posx>
-				<posy>160</posy>
+				<posy>140</posy>
 				<width>1180</width>
 				<height>680</height>
 				<texture border="30">ShadowBorder.png</texture>
@@ -34,7 +34,7 @@
 			</control>
 			<control type="group">
 				<posx>80</posx>
-				<posy>190</posy>
+				<posy>170</posy>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -277,7 +277,7 @@
 			</control>
 			<control type="group">
 				<posx>580</posx>
-				<posy>190</posy>
+				<posy>170</posy>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -705,17 +705,17 @@
 				<item>
 					<label>31200</label>
 					<onclick>ParentDir</onclick>
-					<icon>-</icon>
+					<icon>icon_back.png</icon>
 				</item>
 				<item>
 					<label>184</label>
 					<onclick>Weather.Refresh</onclick>
-					<icon>-</icon>
+					<icon>icon_refresh.png</icon>
 				</item>
 				<item>
 					<label>31201</label>
 					<onclick>Weather.LocationNext</onclick>
-					<icon>-</icon>
+					<icon>icon_city.png</icon>
 				</item>
 			</content>
 		</control>

@@ -18,7 +18,7 @@
 				<item>
 					<label>31200</label>
 					<onclick>PreviousMenu</onclick>
-					<icon>-</icon>
+					<icon>icon_back.png</icon>
 				</item>
 			</content>
 		</control>

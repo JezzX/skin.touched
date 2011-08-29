@@ -18,7 +18,7 @@
 				<item>
 					<label>31200</label>
 					<onclick>PreviousMenu</onclick>
-					<icon>-</icon>
+					<icon>icon_back.png</icon>
 				</item>
 			</content>
 		</control>
@@ -47,6 +47,7 @@
 					<aligny>center</aligny>
 					<font>font24_title</font>
 					<textcolor>white</textcolor>
+					<focusedcolor>selected</focusedcolor>
 					<texturefocus border="5">button-nofocus2.png</texturefocus>
 					<texturenofocus border="5">button-nofocus2.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -60,6 +61,7 @@
 					<aligny>center</aligny>
 					<font>font24_title</font>
 					<textcolor>white</textcolor>
+					<focusedcolor>selected</focusedcolor>
 					<texturefocus border="5">button-nofocus2.png</texturefocus>
 					<texturenofocus border="5">button-nofocus2.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -74,6 +76,7 @@
 					<aligny>center</aligny>
 					<font>font24_title</font>
 					<textcolor>white</textcolor>
+					<focusedcolor>selected</focusedcolor>
 					<texturefocus border="5">button-nofocus2.png</texturefocus>
 					<texturenofocus border="5">button-nofocus2.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -88,6 +91,7 @@
 					<aligny>center</aligny>
 					<font>font24_title</font>
 					<textcolor>white</textcolor>
+					<focusedcolor>selected</focusedcolor>
 					<texturefocus border="5">button-nofocus2.png</texturefocus>
 					<texturenofocus border="5">button-nofocus2.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -102,6 +106,7 @@
 					<aligny>center</aligny>
 					<font>font24_title</font>
 					<textcolor>white</textcolor>
+					<focusedcolor>selected</focusedcolor>
 					<texturefocus border="5">button-nofocus2.png</texturefocus>
 					<texturenofocus border="5">button-nofocus2.png</texturenofocus>
 					<pulseonselect>false</pulseonselect>
@@ -303,8 +308,8 @@
 				</control>
 			</control>
 			<control type="group">
-				<posx>50</posx>
-				<posy>180r</posy>
+				<posx>60</posx>
+				<posy>220r</posy>
 				<control type="label" id="52">
 					<description>XBMC BUILD Version</description>
 					<posx>1130</posx>

@@ -2,13 +2,13 @@
 	<include>Window_OpenClose_Animation</include>
 	<controls>
 		<control type="group">
-			<posx>545r</posx>
-			<posy>130r</posy>
+			<posx>526r</posx>
+			<posy>110r</posy>
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>490</width>
-				<height>90</height>
+				<height>80</height>
 				<texture border="8">IconBack.png</texture>
 			</control>
 			<control type="image" id="400">
@@ -16,7 +16,7 @@
 				<posx>10</posx>
 				<posy>10</posy>
 				<width>70</width>
-				<height>70</height>
+				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<texture>DefaultFile.png</texture>
 			</control>
@@ -36,9 +36,9 @@
 			<control type="textbox" id="402">
 				<description>Line 2 Label</description>
 				<posx>100</posx>
-				<posy>30</posy>
+				<posy>25</posy>
 				<width>370</width>
-				<height>45</height>
+				<height>40</height>
 				<font>font12</font>
 				<textcolor>black</textcolor>
 				<align>left</align>
@@ -48,7 +48,7 @@
 				<posx>10</posx>
 				<posy>10</posy>
 				<width>70</width>
-				<height>70</height>
+				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<visible>false</visible>
 				<texture>DefaultIconInfo.png</texture>
@@ -58,7 +58,7 @@
 				<posx>10</posx>
 				<posy>10</posy>
 				<width>70</width>
-				<height>70</height>
+				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<visible>false</visible>
 				<texture>DefaultIconWarning.png</texture>
@@ -68,7 +68,7 @@
 				<posx>10</posx>
 				<posy>10</posy>
 				<width>70</width>
-				<height>70</height>
+				<height>60</height>
 				<aspectratio>keep</aspectratio>
 				<visible>false</visible>
 				<texture>DefaultIconError.png</texture>

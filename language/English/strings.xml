@@ -48,6 +48,7 @@
   <!-- Submenu labels -->
   <string id="31200">Back</string>
   <string id="31201">Location</string>
+  <string id="31202">View</string>
 
   <!-- Extra labels -->
   <string id="31300">Current Temp</string>
@@ -89,4 +90,16 @@
   <string id="31408">Manage your installed Add-ons · Browse for and install Add-ons from xbmc.org · Modify Add-on settings</string>
 
   <string id="31421">Select your XBMC user Profile[CR]to login and continue</string>
-</strings>
+
+  <!-- Skin Setting Headers  -->
+  <string id="31500">Home Menu Catagory Buttons</string>
+  <string id="31501">Home Page Add-on Quick Links</string>
+  <string id="31502">Miscellaneous Options</string>
+  <string id="31503">Media Window Add-ons</string>
+
+  <!-- Skin Setting Options  -->
+  <string id="31550">Home Screen Weather Info and button</string>
+  <string id="31551">Add-on Shortcut</string>
+  <string id="31552">Set Add-on to use for subtitles</string>
+
+  </strings>

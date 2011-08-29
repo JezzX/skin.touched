@@ -1,6 +1,7 @@
 <window id="503">
 	<defaultcontrol allways="true">6</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<onunload>Skin.Reset(MediaSubMenuVisible)</onunload>
 	<controls>
 		<include>CommonBackground</include>
 		<include>HomeButtonCommons</include>
@@ -301,7 +302,7 @@
 				<item>
 					<label>31200</label>
 					<onclick>ParentDir</onclick>
-					<icon>-</icon>
+					<icon>icon_back.png</icon>
 				</item>
 			</content>
 		</control>
@@ -379,6 +380,13 @@
 						<description>Clear button</description>
 						<label>31057</label>
 						<include>ButtonCommonValues2</include>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>100</posy>
+						<width>298</width>
+						<height>10</height>
+						<texture>shelf_shadow.png</texture>
 					</control>
 				</control>
 			</control>

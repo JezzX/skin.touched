@@ -18,24 +18,29 @@
 				<item>
 					<label>31200</label>
 					<onclick>PreviousMenu</onclick>
-					<icon>-</icon>
+					<icon>icon_back.png</icon>
 				</item>
 				<item>
 					<label>13200</label>
 					<onclick>ActivateWindow(Profiles)</onclick>
-					<icon>-</icon>
+					<icon>icon_profile.png</icon>
+				</item>
+				<item>
+					<label>20077</label>
+					<onclick>ActivateWindow(1113)</onclick>
+					<icon>icon_skin.png</icon>
 				</item>
 				<item>
 					<label>130</label>
 					<onclick>ActivateWindow(SystemInfo)</onclick>
-					<icon>-</icon>
+					<icon>icon_systeminfo.png</icon>
 				</item>
 			</content>
 		</control>
 		<control type="panel" id="9000">
 			<include>Window_OpenClose_Animation_Zoom</include>
 			<posx>30</posx>
-			<posy>120</posy>
+			<posy>110</posy>
 			<width>1220</width>
 			<height>740</height>
 			<onleft>9000</onleft>

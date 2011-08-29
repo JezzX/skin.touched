@@ -2,6 +2,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<views>50,500</views>
+	<onunload>Skin.Reset(MediaSubMenuVisible)</onunload>
 	<controls>
 		<include>CommonBackground</include>
 		<include>FileCountCommons</include>
@@ -26,7 +27,7 @@
 				<item>
 					<label>31200</label>
 					<onclick>ParentDir</onclick>
-					<icon>-</icon>
+					<icon>icon_back.png</icon>
 				</item>
 			</content>
 		</control>
@@ -90,11 +91,6 @@
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<itemgap>0</itemgap>
-					<control type="button" id="2">
-						<description>View Change button</description>
-						<include>ButtonCommonValues2</include>
-						<label>-</label>
-					</control>
 					<control type="radiobutton" id="20">
 						<description>Shuffle button</description>
 						<include>ButtonCommonValues2</include>
@@ -117,6 +113,13 @@
 						<label>192</label>
 						<textwidth>235</textwidth>
 						<include>ButtonCommonValues2</include>
+					</control>
+					<control type="image">
+						<posx>0</posx>
+						<posy>100</posy>
+						<width>298</width>
+						<height>10</height>
+						<texture>shelf_shadow.png</texture>
 					</control>
 				</control>
 			</control>
