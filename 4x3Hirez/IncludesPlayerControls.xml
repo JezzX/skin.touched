@@ -13,7 +13,7 @@
 		<control type="group">
 			<posx>0</posx>
 			<posy>84</posy>
-			<visible>Skin.HasSetting(PlayerControlsShowInfo)</visible>
+			<visible>Skin.HasSetting(PlayerControlsShowAudioInfo) + Player.HasAudio</visible>
 			<animation effect="slide" start="0,-200" end="0,0" time="300" easing="out" tween="quadratic" >Visible</animation>
 			<animation effect="slide" start="0,0" end="0,-200" time="300" easing="in" tween="quadratic" >Hidden</animation>
 			<control type="image">
@@ -24,7 +24,6 @@
 				<texture border="5">dialogback.png</texture>
 			</control>
 			<control type="group">
-				<visible>Player.HasAudio</visible>
 				<control type="image">
 					<description>cover image</description>
 					<posx>20</posx>
@@ -150,8 +149,21 @@
 					<visible>MusicPlayer.HasNext</visible>
 				</control>
 			</control>
+		</control>
+		<control type="group">
+			<posx>0</posx>
+			<posy>84</posy>
+			<visible>Skin.HasSetting(PlayerControlsShowVideoInfo) + Player.HasVideo</visible>
+			<animation effect="slide" start="0,-200" end="0,0" time="300" easing="out" tween="quadratic" >Visible</animation>
+			<animation effect="slide" start="0,0" end="0,-200" time="300" easing="in" tween="quadratic" >Hidden</animation>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>ScreenWidth</width>
+				<height>200</height>
+				<texture border="5">dialogback.png</texture>
+			</control>
 			<control type="group">
-				<visible>Player.HasVideo</visible>
 				<control type="group">
 					<visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes)</visible>
 					<control type="image">
@@ -509,10 +521,25 @@
 				<font>font13</font>
 				<align>left</align>
 				<aligny>center</aligny>
-				<selected>Skin.HasSetting(PlayerControlsShowInfo)</selected>
+				<selected>Skin.HasSetting(PlayerControlsShowAudioInfo)</selected>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<onclick>Skin.ToggleSetting(PlayerControlsShowInfo)</onclick>
+				<onclick>Skin.ToggleSetting(PlayerControlsShowAudioInfo)</onclick>
+				<visible>Player.HasAudio</visible>
+			</control>
+			<control type="radiobutton">
+				<description>Show Info Button</description>
+				<width>270</width>
+				<height>50</height>
+				<label>$LOCALIZE[544]</label>
+				<font>font13</font>
+				<align>left</align>
+				<aligny>center</aligny>
+				<selected>Skin.HasSetting(PlayerControlsShowVideoInfo)</selected>
+				<texturenofocus border="5">floor_button.png</texturenofocus>
+				<texturefocus border="5">floor_buttonFO.png</texturefocus>
+				<onclick>Skin.ToggleSetting(PlayerControlsShowVideoInfo)</onclick>
+				<visible>Player.HasVideo</visible>
 			</control>
 			<control type="button">
 				<description>Submenu Button</description>
