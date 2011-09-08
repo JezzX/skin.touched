@@ -209,6 +209,18 @@
 				<onclick>Skin.ToggleSetting(HideHomeButtonWeather)</onclick>
 				<selected>!Skin.HasSetting(HideHomeButtonWeather)</selected>
 			</control>
+			<control type="radiobutton" id="112">
+				<description>Videos Goes to root button</description>
+				<height>55</height>
+				<width>920</width>
+				<font>font13</font>
+				<textcolor>black</textcolor>
+				<texturefocus border="0,2,0,2">MenuItemNF.png</texturefocus>
+				<texturenofocus border="0,2,0,2">MenuItemNF.png</texturenofocus>
+				<label>$LOCALIZE[31553]</label>
+				<onclick>Skin.ToggleSetting(HomeVideosGoesToRoot)</onclick>
+				<selected>Skin.HasSetting(HomeVideosGoesToRoot)</selected>
+			</control>
 		</control>
 		<control type="grouplist" id="200">
 			<description>control area</description>
