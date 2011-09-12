@@ -88,11 +88,21 @@
 					<texture>$INFO[ListItem.VideoResolution,light/,.png]</texture>
 				</control>
 				<control type="image">
+					<posx>1142</posx>
+					<posy>22</posy>
+					<width>25</width>
+					<height>25</height>
+					<aspectratio>keep</aspectratio>
+					<texture>OverlayWatching.png</texture>
+					<visible>ListItem.IsResumable</visible>
+				</control>
+				<control type="image">
 					<posx>1140</posx>
 					<posy>20</posy>
 					<width>30</width>
 					<height>30</height>
 					<texture>$INFO[ListItem.Overlay,light/]</texture>
+					<visible>!ListItem.IsResumable</visible>
 				</control>
 				<control type="textbox">
 					<posx>130</posx>
@@ -180,11 +190,21 @@
 					<texture>$INFO[ListItem.VideoResolution,dark/,.png]</texture>
 				</control>
 				<control type="image">
+					<posx>1142</posx>
+					<posy>22</posy>
+					<width>25</width>
+					<height>25</height>
+					<aspectratio>keep</aspectratio>
+					<texture>OverlayWatching.png</texture>
+					<visible>ListItem.IsResumable</visible>
+				</control>
+				<control type="image">
 					<posx>1140</posx>
 					<posy>20</posy>
 					<width>30</width>
 					<height>30</height>
 					<texture>$INFO[ListItem.Overlay,dark/]</texture>
+					<visible>ListItem.IsResumable</visible>
 				</control>
 				<control type="textbox">
 					<posx>130</posx>
@@ -273,11 +293,21 @@
 					<texture>$INFO[ListItem.VideoResolution,light/,.png]</texture>
 				</control>
 				<control type="image">
+					<posx>1142</posx>
+					<posy>22</posy>
+					<width>25</width>
+					<height>25</height>
+					<aspectratio>keep</aspectratio>
+					<texture>OverlayWatching.png</texture>
+					<visible>ListItem.IsResumable</visible>
+				</control>
+				<control type="image">
 					<posx>1140</posx>
 					<posy>20</posy>
 					<width>30</width>
 					<height>30</height>
 					<texture>$INFO[ListItem.Overlay,light/]</texture>
+					<visible>ListItem.IsResumable</visible>
 				</control>
 				<control type="textbox">
 					<posx>250</posx>
@@ -366,11 +396,21 @@
 					<texture>$INFO[ListItem.VideoResolution,dark/,.png]</texture>
 				</control>
 				<control type="image">
+					<posx>1142</posx>
+					<posy>22</posy>
+					<width>25</width>
+					<height>25</height>
+					<aspectratio>keep</aspectratio>
+					<texture>OverlayWatching.png</texture>
+					<visible>ListItem.IsResumable</visible>
+				</control>
+				<control type="image">
 					<posx>1140</posx>
 					<posy>20</posy>
 					<width>30</width>
 					<height>30</height>
 					<texture>$INFO[ListItem.Overlay,dark/]</texture>
+					<visible>!ListItem.IsResumable</visible>
 				</control>
 				<control type="textbox">
 					<posx>250</posx>

@@ -208,11 +208,21 @@
 					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 				</control>
 				<control type="image">
+					<posx>1142</posx>
+					<posy>17</posy>
+					<width>25</width>
+					<height>25</height>
+					<aspectratio>keep</aspectratio>
+					<texture>OverlayWatching.png</texture>
+					<visible>ListItem.IsResumable</visible>
+				</control>
+				<control type="image">
 					<posx>1140</posx>
 					<posy>15</posy>
 					<width>30</width>
 					<height>30</height>
 					<texture>$INFO[ListItem.Overlay,light/]</texture>
+					<visible>!ListItem.IsResumable</visible>
 				</control>
 			</itemlayout>
 			<focusedlayout height="60" width="1180">
@@ -298,11 +308,21 @@
 					<visible>[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
 				</control>
 				<control type="image">
+					<posx>1142</posx>
+					<posy>17</posy>
+					<width>25</width>
+					<height>25</height>
+					<aspectratio>keep</aspectratio>
+					<texture>OverlayWatching.png</texture>
+					<visible>ListItem.IsResumable</visible>
+				</control>
+				<control type="image">
 					<posx>1140</posx>
 					<posy>15</posy>
 					<width>30</width>
 					<height>30</height>
 					<texture>$INFO[ListItem.Overlay,dark/]</texture>
+					<visible>!ListItem.IsResumable</visible>
 				</control>
 			</focusedlayout>
 		</control>
