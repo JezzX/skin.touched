@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="skin.touched"
-  version="0.8.3"
+  version="0.8.5"
   name="Touched"
   provider-name="Jezz_X">
   <requires>
