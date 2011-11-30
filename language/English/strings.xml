@@ -54,6 +54,8 @@
   <string id="31300">Current Temp</string>
   <string id="31301">Last Updated</string>
 
+  <string id="31303">Data provider</string>
+
   <string id="31309">Memory Used:</string>
   <string id="31312">Current Scraper</string>
   <string id="31313">Choose a Scraper</string>
