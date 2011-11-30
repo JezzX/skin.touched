@@ -53,6 +53,7 @@
   <!-- Extra labels -->
   <string id="31300">Aktuelle Temperatur</string>
   <string id="31301">Letztes Update</string>
+  <string id="31303">Wetterdienst</string>
 
   <string id="31309">RAM verbraucht:</string>
   <string id="31312">Aktueller Scraper</string>
