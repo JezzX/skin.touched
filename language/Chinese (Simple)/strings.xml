@@ -48,10 +48,13 @@
   <!-- Submenu labels -->
   <string id="31200">返回</string>
   <string id="31201">位置</string>
+  <string id="31202">视图</string>
 
   <!-- Extra labels -->
   <string id="31300">当前温度</string>
   <string id="31301">最近修改</string>
+
+  <string id="31303">信息提供者</string>
 
   <string id="31309">内存使用:</string>
   <string id="31312">当前刮削器</string>
@@ -69,9 +72,10 @@
   <string id="31351">暂停</string>
   <string id="31352">停止</string>
   <string id="31353">快进</string>
-  <string id="31354">快退</string>
-  <string id="31355">电影菜单</string>
+  <string id="31354">回退</string>
+  <string id="31355">视频菜单</string>
   <string id="31356">下载字幕</string>
+  <string id="31357">图片信息</string>
 
   <!-- Skin Fontsets -->
   <string id="31390">皮肤默认</string>
@@ -89,4 +93,17 @@
   <string id="31408">[B]设置扩展功能[/B][CR][CR]管理你安装的扩展功能 · 在xbmc.org浏览并安装扩展功能 · 修改扩展功能设置</string>
   
   <string id="31421">选择您的用户配置文件[CR]登录并继续</string>
+
+  <!-- Skin Setting Headers  -->
+  <string id="31500">主菜单按钮</string>
+  <string id="31501">主界面扩展功能快速连接</string>
+  <string id="31502">其他选项</string>
+  <string id="31503">媒体窗口扩展功能</string>
+
+  <!-- Skin Setting Options  -->
+  <string id="31550">主界面天气信息和按钮</string>
+  <string id="31551">扩展功能快捷方式</string>
+  <string id="31552">设置字幕扩展功能</string>
+  <string id="31553">“视频”总是进入视频根目录</string>
+
 </strings>
