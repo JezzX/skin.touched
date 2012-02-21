@@ -1,10 +1,5 @@
 <window type="dialog" id="2000">
 	<defaultcontrol always="true">3</defaultcontrol>
-	<coordinates>
-		<system>1</system>
-		<posx>335</posx>
-		<posy>35</posy>
-	</coordinates>
 	<include>Window_OpenClose_Animation_Zoom</include>
 	<coordinates>
 		<system>1</system>

@@ -19,7 +19,7 @@
 		<control type="group">
 			<!-- weather Info -->
 			<include>Window_OpenClose_Animation</include>
-			<visible>Weather.IsFetched + ![Window.IsVisible(VideoScan) | Window.IsVisible(MusicScan)] + !Skin.HasSetting(HideHomeButtonWeather)</visible>
+			<visible>[!IsEmpty(Weather.Plugin) + Weather.IsFetched] + ![Window.IsVisible(VideoScan) | Window.IsVisible(MusicScan)] + !Skin.HasSetting(HideHomeButtonWeather)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>720r</posx>
 			<posy>23</posy>
@@ -48,7 +48,7 @@
 				<posy>12</posy>
 				<height>25</height>
 				<width>410</width>
-				<label>[B]$INFO[Weather.Location][/B]</label>
+				<label>[B]$INFO[Window(Weather).Property(Location)][/B]</label>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -66,7 +66,7 @@
 					<description>Weather label</description>
 					<height>30</height>
 					<width max="400">auto</width>
-					<label>$INFO[Window(Weather).Property(Current.Condition)]  </label>
+					<label>$INFO[Window(Weather).Property(Current.Condition)] </label>
 					<font>font12</font>
 					<aligny>center</aligny>
 					<textcolor>grey</textcolor>
