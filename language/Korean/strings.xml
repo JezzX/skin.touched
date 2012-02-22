@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <strings>
   <!-- Misc labels -->
   <string id="31000">변경</string>
@@ -12,7 +12,7 @@
   <string id="31008">전체 화면</string>
   <string id="31009">작업중...</string>
   <string id="31010">로그인한 프로파일</string>
-  <string id="31011">N/A</string> <!-- Used for subtitle button in the OSD -->
+  <string id="31011">없음</string> <!-- Used for subtitle button in the OSD -->
   <string id="31012">음악 - 파일</string>
   
   <string id="31024">페이지</string>
@@ -48,10 +48,13 @@
   <!-- Submenu Icon labels -->
   <string id="31200">뒤로</string>
   <string id="31201">위치</string>
-
+  <string id="31202">보기</string>
+ 
   <!-- Extra labels -->
   <string id="31300">현재 온도</string>
   <string id="31301">마지막 업데이트</string>
+
+  <string id="31303">날씨 정보 제공</string>
 
   <string id="31309">사용 메모리:</string>
   <string id="31312">현재 자료수집기</string>
@@ -72,6 +75,7 @@
   <string id="31354">뒤로</string>
   <string id="31355">비디오 메뉴</string>
   <string id="31356">자막 다운로드</string>
+  <string id="31357">이미지 정보</string>
 
   <!-- Skin Fontsets -->
   <string id="31390">스킨 기본값</string>
@@ -89,4 +93,17 @@
   <string id="31408">설치된 추가기능 관리 · xbmc.org 에서 추가기능 찾기 및 설치 · 추가기능 설정 변경</string>
 
   <string id="31421">로그인할 XBMC 사용자 프로파일을[CR]선택하고 계속하세요</string>
+
+  <!-- Skin Setting Headers  -->
+  <string id="31500">홈화면에 표시할 메뉴</string>
+  <string id="31501">홈화면에 표시할 추가기능 버튼</string>
+  <string id="31502">기타 옵션</string>
+  <string id="31503">미디어 윈도우 애드온</string>
+
+  <!-- Skin Setting Options  -->
+  <string id="31550">홈화면 날씨 정보와 버튼</string>
+  <string id="31551">추가기능 바로가기</string>
+  <string id="31552">자막 애드온 선택</string>
+  <string id="31553">비디오 버튼은 항상 비디오 루트로 이동</string>
+
 </strings>
